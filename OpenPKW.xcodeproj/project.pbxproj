@@ -16,6 +16,8 @@
 		A13D41571AEAA3D300B0343E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13D41561AEAA3D300B0343E /* Images.xcassets */; };
 		A13D415A1AEAA3D300B0343E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13D41581AEAA3D300B0343E /* LaunchScreen.xib */; };
 		A13D41661AEAA3D300B0343E /* OpenPKWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41651AEAA3D300B0343E /* OpenPKWTests.m */; };
+		A13D41721AEAAF7100B0343E /* OpenPKW-Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */; };
+		A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41741AEAAFE200B0343E /* OpenPKWData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		A13D415F1AEAA3D300B0343E /* OpenPKWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPKWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13D41641AEAA3D300B0343E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13D41651AEAA3D300B0343E /* OpenPKWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenPKWTests.m; sourceTree = "<group>"; };
+		A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenPKW-Data.plist"; sourceTree = "<group>"; };
+		A13D41731AEAAFE200B0343E /* OpenPKWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPKWData.h; sourceTree = "<group>"; };
+		A13D41741AEAAFE200B0343E /* OpenPKWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenPKWData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +106,11 @@
 			children = (
 				A13D414A1AEAA3D300B0343E /* AppDelegate.h */,
 				A13D414B1AEAA3D300B0343E /* AppDelegate.m */,
-				A13D41501AEAA3D300B0343E /* ViewController.h */,
-				A13D41511AEAA3D300B0343E /* ViewController.m */,
-				A13D41531AEAA3D300B0343E /* Main.storyboard */,
-				A13D41561AEAA3D300B0343E /* Images.xcassets */,
-				A13D41581AEAA3D300B0343E /* LaunchScreen.xib */,
-				A13D414D1AEAA3D300B0343E /* OpenPKW.xcdatamodeld */,
+				A13D41781AEAB3EB00B0343E /* Resources */,
+				A13D41771AEAB3D000B0343E /* Storyboards */,
+				A13D41761AEAB1C800B0343E /* CoreData */,
+				A13D41791AEAB40B00B0343E /* ViewControllers */,
+				A13D417A1AEAB41400B0343E /* Utils */,
 				A13D41461AEAA3D300B0343E /* Supporting Files */,
 			);
 			path = OpenPKW;
@@ -136,6 +140,50 @@
 				A13D41641AEAA3D300B0343E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A13D41761AEAB1C800B0343E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A13D414D1AEAA3D300B0343E /* OpenPKW.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		A13D41771AEAB3D000B0343E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A13D41531AEAA3D300B0343E /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		A13D41781AEAB3EB00B0343E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */,
+				A13D41581AEAA3D300B0343E /* LaunchScreen.xib */,
+				A13D41561AEAA3D300B0343E /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A13D41791AEAB40B00B0343E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A13D41501AEAA3D300B0343E /* ViewController.h */,
+				A13D41511AEAA3D300B0343E /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A13D417A1AEAB41400B0343E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A13D41731AEAAFE200B0343E /* OpenPKWData.h */,
+				A13D41741AEAAFE200B0343E /* OpenPKWData.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		CCED19F0077708AE187EB414 /* Frameworks */ = {
@@ -231,6 +279,7 @@
 				A13D41551AEAA3D300B0343E /* Main.storyboard in Resources */,
 				A13D415A1AEAA3D300B0343E /* LaunchScreen.xib in Resources */,
 				A13D41571AEAA3D300B0343E /* Images.xcassets in Resources */,
+				A13D41721AEAAF7100B0343E /* OpenPKW-Data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */,
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
 				A13D414F1AEAA3D300B0343E /* OpenPKW.xcdatamodeld in Sources */,
 				A13D41521AEAA3D300B0343E /* ViewController.m in Sources */,
@@ -362,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -399,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
