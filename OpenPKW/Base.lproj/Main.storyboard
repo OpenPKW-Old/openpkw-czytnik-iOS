@@ -1,25 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="WelcomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9M3-iA-15e">
+                                <rect key="frame" x="0.0" y="142" width="320" height="285"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sBi-B9-Gbj" userLabel="Logo">
+                                        <rect key="frame" x="60" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="VdE-5c-Ydy"/>
+                                            <constraint firstAttribute="width" constant="200" id="xWH-4m-g04"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pierwszy, otwarty, społecznościowy system do obsługi głosowania dla PKW" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="n7P-8q-lIt">
+                                        <rect key="frame" x="10" y="246" width="300" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaY-hv-dRp">
+                                        <rect key="frame" x="124" y="208" width="72" height="30"/>
+                                        <state key="normal" title="OpenPKW">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="n7P-8q-lIt" firstAttribute="top" secondItem="kaY-hv-dRp" secondAttribute="bottom" constant="8" id="5wM-mu-F6L"/>
+                                    <constraint firstAttribute="centerX" secondItem="sBi-B9-Gbj" secondAttribute="centerX" id="712-N3-5Zg"/>
+                                    <constraint firstAttribute="centerX" secondItem="kaY-hv-dRp" secondAttribute="centerX" id="CZF-Gz-IzQ"/>
+                                    <constraint firstItem="sBi-B9-Gbj" firstAttribute="top" secondItem="9M3-iA-15e" secondAttribute="top" id="ENe-NN-UIv"/>
+                                    <constraint firstItem="n7P-8q-lIt" firstAttribute="leading" secondItem="9M3-iA-15e" secondAttribute="leading" constant="10" id="FuT-No-ZTV"/>
+                                    <constraint firstAttribute="bottom" secondItem="n7P-8q-lIt" secondAttribute="bottom" id="YBR-NR-89r"/>
+                                    <constraint firstItem="kaY-hv-dRp" firstAttribute="top" secondItem="sBi-B9-Gbj" secondAttribute="bottom" constant="8" id="nk8-b6-PxH"/>
+                                    <constraint firstAttribute="trailing" secondItem="n7P-8q-lIt" secondAttribute="trailing" constant="10" id="yz8-gN-pLu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9M3-iA-15e" secondAttribute="trailing" id="0Xs-Y5-F4s"/>
+                            <constraint firstItem="9M3-iA-15e" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qvE-Bu-DrC"/>
+                            <constraint firstAttribute="centerY" secondItem="9M3-iA-15e" secondAttribute="centerY" id="uat-9j-g1u"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="162" y="406"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

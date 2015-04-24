@@ -11,13 +11,13 @@
 		A13D41491AEAA3D300B0343E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41481AEAA3D300B0343E /* main.m */; };
 		A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D414B1AEAA3D300B0343E /* AppDelegate.m */; };
 		A13D414F1AEAA3D300B0343E /* OpenPKW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A13D414D1AEAA3D300B0343E /* OpenPKW.xcdatamodeld */; };
-		A13D41521AEAA3D300B0343E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41511AEAA3D300B0343E /* ViewController.m */; };
 		A13D41551AEAA3D300B0343E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13D41531AEAA3D300B0343E /* Main.storyboard */; };
 		A13D41571AEAA3D300B0343E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13D41561AEAA3D300B0343E /* Images.xcassets */; };
-		A13D415A1AEAA3D300B0343E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13D41581AEAA3D300B0343E /* LaunchScreen.xib */; };
 		A13D41661AEAA3D300B0343E /* OpenPKWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41651AEAA3D300B0343E /* OpenPKWTests.m */; };
 		A13D41721AEAAF7100B0343E /* OpenPKW-Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */; };
 		A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41741AEAAFE200B0343E /* OpenPKWData.m */; };
+		A13D417E1AEABD1600B0343E /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D417D1AEABD1600B0343E /* AbstractViewController.m */; };
+		A13D41811AEABD4300B0343E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41801AEABD4300B0343E /* WelcomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,17 +40,18 @@
 		A13D414A1AEAA3D300B0343E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A13D414B1AEAA3D300B0343E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A13D414E1AEAA3D300B0343E /* OpenPKW.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenPKW.xcdatamodel; sourceTree = "<group>"; };
-		A13D41501AEAA3D300B0343E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A13D41511AEAA3D300B0343E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A13D41541AEAA3D300B0343E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A13D41561AEAA3D300B0343E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A13D41591AEAA3D300B0343E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A13D415F1AEAA3D300B0343E /* OpenPKWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPKWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13D41641AEAA3D300B0343E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13D41651AEAA3D300B0343E /* OpenPKWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenPKWTests.m; sourceTree = "<group>"; };
 		A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenPKW-Data.plist"; sourceTree = "<group>"; };
 		A13D41731AEAAFE200B0343E /* OpenPKWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPKWData.h; sourceTree = "<group>"; };
 		A13D41741AEAAFE200B0343E /* OpenPKWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenPKWData.m; sourceTree = "<group>"; };
+		A13D417C1AEABD1600B0343E /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
+		A13D417D1AEABD1600B0343E /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
+		A13D417F1AEABD4300B0343E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		A13D41801AEABD4300B0343E /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */,
-				A13D41581AEAA3D300B0343E /* LaunchScreen.xib */,
 				A13D41561AEAA3D300B0343E /* Images.xcassets */,
 			);
 			name = Resources;
@@ -171,8 +171,9 @@
 		A13D41791AEAB40B00B0343E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A13D41501AEAA3D300B0343E /* ViewController.h */,
-				A13D41511AEAA3D300B0343E /* ViewController.m */,
+				A13D417C1AEABD1600B0343E /* AbstractViewController.h */,
+				A13D417D1AEABD1600B0343E /* AbstractViewController.m */,
+				A13D417B1AEABCFB00B0343E /* BeforeLogin */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -184,6 +185,15 @@
 				A13D41741AEAAFE200B0343E /* OpenPKWData.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		A13D417B1AEABCFB00B0343E /* BeforeLogin */ = {
+			isa = PBXGroup;
+			children = (
+				A13D417F1AEABD4300B0343E /* WelcomeViewController.h */,
+				A13D41801AEABD4300B0343E /* WelcomeViewController.m */,
+			);
+			name = BeforeLogin;
 			sourceTree = "<group>";
 		};
 		CCED19F0077708AE187EB414 /* Frameworks */ = {
@@ -277,7 +287,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13D41551AEAA3D300B0343E /* Main.storyboard in Resources */,
-				A13D415A1AEAA3D300B0343E /* LaunchScreen.xib in Resources */,
 				A13D41571AEAA3D300B0343E /* Images.xcassets in Resources */,
 				A13D41721AEAAF7100B0343E /* OpenPKW-Data.plist in Resources */,
 			);
@@ -333,7 +342,8 @@
 				A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */,
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
 				A13D414F1AEAA3D300B0343E /* OpenPKW.xcdatamodeld in Sources */,
-				A13D41521AEAA3D300B0343E /* ViewController.m in Sources */,
+				A13D417E1AEABD1600B0343E /* AbstractViewController.m in Sources */,
+				A13D41811AEABD4300B0343E /* WelcomeViewController.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,14 +373,6 @@
 				A13D41541AEAA3D300B0343E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A13D41581AEAA3D300B0343E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A13D41591AEAA3D300B0343E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
