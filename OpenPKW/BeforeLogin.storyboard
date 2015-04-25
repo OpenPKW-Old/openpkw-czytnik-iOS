@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RoF-nd-Lfz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Before Login Navigation Controller-->
+        <scene sceneID="6aw-jo-oqK">
+            <objects>
+                <navigationController storyboardIdentifier="BeforeLoginNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RoF-nd-Lfz" customClass="BeforeLoginNavigationController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I4q-wJ-2KL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tkl-V6-f0R" kind="relationship" relationship="rootViewController" id="ZFd-SX-AdI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FDH-6W-OgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116.26666666666667" y="392.86666666666667"/>
+        </scene>
+        <!--Zaloguj się-->
+        <scene sceneID="e2k-F4-OR9">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tkl-V6-f0R" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eZM-ms-4Fb"/>
+                        <viewControllerLayoutGuide type="bottom" id="ikr-Ns-epX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9e8-oo-y17">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Imię.Nazwisko" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XfU-Wp-1yB" customClass="TextField">
+                                <rect key="frame" x="16" y="80" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hasło" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fev-Jy-NOg" customClass="TextField">
+                                <rect key="frame" x="16" y="118" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLR-Py-JHq" customClass="Button">
+                                <rect key="frame" x="87" y="156" width="146" height="30"/>
+                                <state key="normal" title="Nie pamiętasz hasła?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QkP-UV-bpT" kind="push" identifier="ResetPassword" id="pat-o0-zCz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ro6-x8-dgf" customClass="Button">
+                                <rect key="frame" x="114" y="194" width="92" height="30"/>
+                                <state key="normal" title="Utwórz konto">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yzD-8G-uaW" kind="push" identifier="Register" id="aNl-Ao-CMi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="uLR-Py-JHq" secondAttribute="centerX" id="6In-Pv-qrD"/>
+                            <constraint firstItem="XfU-Wp-1yB" firstAttribute="leading" secondItem="9e8-oo-y17" secondAttribute="leading" constant="16" id="9ee-Yg-tKP"/>
+                            <constraint firstAttribute="trailing" secondItem="Fev-Jy-NOg" secondAttribute="trailing" constant="16" id="GRj-EF-eAC"/>
+                            <constraint firstItem="Fev-Jy-NOg" firstAttribute="top" secondItem="XfU-Wp-1yB" secondAttribute="bottom" constant="8" id="R9o-I1-Rfa"/>
+                            <constraint firstItem="Fev-Jy-NOg" firstAttribute="leading" secondItem="9e8-oo-y17" secondAttribute="leading" constant="16" id="chG-sl-vwV"/>
+                            <constraint firstAttribute="trailing" secondItem="XfU-Wp-1yB" secondAttribute="trailing" constant="16" id="pRW-n7-HuR"/>
+                            <constraint firstItem="XfU-Wp-1yB" firstAttribute="top" secondItem="eZM-ms-4Fb" secondAttribute="bottom" constant="16" id="ulB-dW-ec2"/>
+                            <constraint firstItem="uLR-Py-JHq" firstAttribute="top" secondItem="Fev-Jy-NOg" secondAttribute="bottom" constant="8" id="xn8-U7-asO"/>
+                            <constraint firstItem="ro6-x8-dgf" firstAttribute="top" secondItem="uLR-Py-JHq" secondAttribute="bottom" constant="8" id="xwp-wO-mmd"/>
+                            <constraint firstAttribute="centerX" secondItem="ro6-x8-dgf" secondAttribute="centerX" id="yyE-Cu-8KO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Zaloguj się" id="GjI-Sq-GBA">
+                        <barButtonItem key="rightBarButtonItem" title="Zaloguj" style="done" id="Vae-Du-Peg">
+                            <connections>
+                                <action selector="loginTouchUpInside:" destination="tkl-V6-f0R" id="CQj-Wt-4QR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loginTextField" destination="XfU-Wp-1yB" id="Cch-zm-STK"/>
+                        <outlet property="passwordTextField" destination="Fev-Jy-NOg" id="bFJ-X3-eeo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ic-ea-3mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="392"/>
+        </scene>
+        <!--Odzyskaj hasło-->
+        <scene sceneID="AuV-YA-K1q">
+            <objects>
+                <viewController storyboardIdentifier="ResetPasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QkP-UV-bpT" customClass="ResetPasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qNq-Cp-9x8"/>
+                        <viewControllerLayoutGuide type="bottom" id="VrZ-tt-QLe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="muq-G3-Jg5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Imię.Nazwisko" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngT-RA-CHD" customClass="TextField">
+                                <rect key="frame" x="16" y="80" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NGo-Wm-XfU" customClass="TextField">
+                                <rect key="frame" x="16" y="118" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NGo-Wm-XfU" secondAttribute="trailing" constant="16" id="F8f-fF-q6n"/>
+                            <constraint firstItem="NGo-Wm-XfU" firstAttribute="top" secondItem="ngT-RA-CHD" secondAttribute="bottom" constant="8" id="LmE-YJ-gep"/>
+                            <constraint firstAttribute="trailing" secondItem="ngT-RA-CHD" secondAttribute="trailing" constant="16" id="Uj0-uc-HJG"/>
+                            <constraint firstItem="ngT-RA-CHD" firstAttribute="leading" secondItem="muq-G3-Jg5" secondAttribute="leading" constant="16" id="Vti-4G-Dse"/>
+                            <constraint firstItem="ngT-RA-CHD" firstAttribute="top" secondItem="qNq-Cp-9x8" secondAttribute="bottom" constant="16" id="fVZ-FW-moc"/>
+                            <constraint firstItem="NGo-Wm-XfU" firstAttribute="leading" secondItem="muq-G3-Jg5" secondAttribute="leading" constant="16" id="msZ-Qo-Mdb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Odzyskaj hasło" id="Mul-Hu-LL8">
+                        <barButtonItem key="rightBarButtonItem" title="Odzyskaj" style="done" id="mZw-jn-aoW">
+                            <connections>
+                                <action selector="resetPasswordTouchUpInside:" destination="QkP-UV-bpT" id="BQz-Da-hls"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="NGo-Wm-XfU" id="Mxw-aS-GJq"/>
+                        <outlet property="loginTextField" destination="ngT-RA-CHD" id="ljk-pK-NH4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6mc-OT-ajt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="124"/>
+        </scene>
+        <!--Zarejestruj się-->
+        <scene sceneID="RDQ-ej-rHV">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yzD-8G-uaW" customClass="RegisterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xG7-l8-WqR"/>
+                        <viewControllerLayoutGuide type="bottom" id="eW1-Qd-Q0b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AZu-iH-K0s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Imię.Nazwisko" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5G-S2-1vE" customClass="TextField">
+                                <rect key="frame" x="16" y="80" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hasło" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqD-as-Bd2" customClass="TextField">
+                                <rect key="frame" x="16" y="118" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQf-wQ-6wa" customClass="TextField">
+                                <rect key="frame" x="16" y="156" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lqD-as-Bd2" firstAttribute="leading" secondItem="AZu-iH-K0s" secondAttribute="leading" constant="16" id="0bb-LV-oIe"/>
+                            <constraint firstAttribute="trailing" secondItem="lqD-as-Bd2" secondAttribute="trailing" constant="16" id="6JW-je-Uyv"/>
+                            <constraint firstItem="lqD-as-Bd2" firstAttribute="top" secondItem="U5G-S2-1vE" secondAttribute="bottom" constant="8" id="Sxo-dX-odS"/>
+                            <constraint firstItem="U5G-S2-1vE" firstAttribute="top" secondItem="xG7-l8-WqR" secondAttribute="bottom" constant="16" id="TlY-Gy-uls"/>
+                            <constraint firstAttribute="trailing" secondItem="zQf-wQ-6wa" secondAttribute="trailing" constant="16" id="XWJ-nh-xwq"/>
+                            <constraint firstItem="zQf-wQ-6wa" firstAttribute="top" secondItem="lqD-as-Bd2" secondAttribute="bottom" constant="8" id="fmZ-ya-LsB"/>
+                            <constraint firstAttribute="trailing" secondItem="U5G-S2-1vE" secondAttribute="trailing" constant="16" id="oQf-iq-YUk"/>
+                            <constraint firstItem="U5G-S2-1vE" firstAttribute="leading" secondItem="AZu-iH-K0s" secondAttribute="leading" constant="16" id="pm2-n2-PpE"/>
+                            <constraint firstItem="zQf-wQ-6wa" firstAttribute="leading" secondItem="AZu-iH-K0s" secondAttribute="leading" constant="16" id="wKu-Iq-op0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Zarejestruj się" id="wlX-pp-XRD">
+                        <barButtonItem key="rightBarButtonItem" title="Utwórz" style="done" id="5vI-TF-Uws">
+                            <connections>
+                                <action selector="registerTouchUpInside:" destination="yzD-8G-uaW" id="OD9-07-rUv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="zQf-wQ-6wa" id="0hz-wX-PRK"/>
+                        <outlet property="loginTextField" destination="U5G-S2-1vE" id="q22-Vj-TbH"/>
+                        <outlet property="passwordTextField" destination="lqD-as-Bd2" id="eik-hK-Ji2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1h-Ae-MRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="660"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

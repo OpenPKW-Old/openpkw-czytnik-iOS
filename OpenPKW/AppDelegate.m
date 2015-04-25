@@ -10,7 +10,9 @@
 #import <CoreData/CoreData.h>
 #import <RestKit/RestKit.h>
 #import <MagicalRecord/CoreData+MagicalRecord.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 #import "OpenPKWData.h"
+#import "UIStoryboard+Storyboards.h"
 
 // Use a class extension to expose access to MagicalRecord's private setter methods
 @interface NSManagedObjectContext ()
@@ -21,6 +23,11 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[UIStoryboard storyboardBeforeLogin] instantiateInitialViewController];
+    [self.window makeKeyAndVisible];
+    
     [self setupCoreDataWithRestKit];
     return YES;
 }
@@ -48,6 +55,12 @@
     objectManager.managedObjectStore = managedObjectStore;
     [RKObjectManager setSharedManager:objectManager];
     //TODO: Create custom object manager with API mappings when available
+}
+
+//Move to own class
+#pragma mark - UI Customizaton
+- (void)customizeUI {
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
 }
 
 @end
