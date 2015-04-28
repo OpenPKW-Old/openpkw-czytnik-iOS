@@ -31,3 +31,12 @@
 }
 
 @end
+
+
+@implementation UIStoryboard (Andrzej)
+
++ (instancetype)andrzejStoryboard {
+    return [self storyboardWithName:@"Andrzej" bundle:nil];
+}
+
+@end

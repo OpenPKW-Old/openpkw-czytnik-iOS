@@ -16,3 +16,11 @@
 + (id)instantiateResetPasswordViewController;
 
 @end
+
+
+// I couldn't think of good name for this storyboard so it's called Andrzej for now. If you have better name change it or create a pull request :-)
+@interface UIStoryboard (Andrzej)
+
++ (instancetype)andrzejStoryboard;
+
+@end

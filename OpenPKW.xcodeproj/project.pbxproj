@@ -29,6 +29,7 @@
 		A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41741AEAAFE200B0343E /* OpenPKWData.m */; };
 		A13D417E1AEABD1600B0343E /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D417D1AEABD1600B0343E /* AbstractViewController.m */; };
 		A13D41811AEABD4300B0343E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41801AEABD4300B0343E /* WelcomeViewController.m */; };
+		A14943F11AF00377008E62F7 /* Andrzej.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14943F01AF00377008E62F7 /* Andrzej.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		A13D417D1AEABD1600B0343E /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
 		A13D417F1AEABD4300B0343E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		A13D41801AEABD4300B0343E /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		A14943F01AF00377008E62F7 /* Andrzej.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Andrzej.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 			children = (
 				A13D41531AEAA3D300B0343E /* Main.storyboard */,
 				A13A4ACE1AEB9482002EB070 /* BeforeLogin.storyboard */,
+				A14943F01AF00377008E62F7 /* Andrzej.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				A13A4AD01AEBD302002EB070 /* Abstracts */,
 				A13A4AEB1AEBE3B8002EB070 /* Main */,
 				A13D417B1AEABCFB00B0343E /* BeforeLogin */,
+				A14943F21AF005D2008E62F7 /* Andrzej */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -279,6 +283,13 @@
 				A13A4AE11AEBD381002EB070 /* ResetPasswordViewController.m */,
 			);
 			name = BeforeLogin;
+			sourceTree = "<group>";
+		};
+		A14943F21AF005D2008E62F7 /* Andrzej */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Andrzej;
 			sourceTree = "<group>";
 		};
 		CCED19F0077708AE187EB414 /* Frameworks */ = {
@@ -371,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14943F11AF00377008E62F7 /* Andrzej.storyboard in Resources */,
 				A13D41551AEAA3D300B0343E /* Main.storyboard in Resources */,
 				A13A4ACF1AEB9482002EB070 /* BeforeLogin.storyboard in Resources */,
 				A13D41571AEAA3D300B0343E /* Images.xcassets in Resources */,
