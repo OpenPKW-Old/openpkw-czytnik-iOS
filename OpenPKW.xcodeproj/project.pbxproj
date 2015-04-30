@@ -11,14 +11,7 @@
 		A13A4ACA1AEB93B5002EB070 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4AC91AEB93B5002EB070 /* Button.m */; };
 		A13A4ACD1AEB93D5002EB070 /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4ACC1AEB93D5002EB070 /* TextField.m */; };
 		A13A4ACF1AEB9482002EB070 /* BeforeLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13A4ACE1AEB9482002EB070 /* BeforeLogin.storyboard */; };
-		A13A4AD31AEBD322002EB070 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4AD21AEBD322002EB070 /* AbstractNavigationController.m */; };
-		A13A4AD61AEBD333002EB070 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4AD51AEBD333002EB070 /* AbstractTableViewController.m */; };
-		A13A4AD91AEBD350002EB070 /* BeforeLoginNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4AD81AEBD350002EB070 /* BeforeLoginNavigationController.m */; };
-		A13A4ADC1AEBD369002EB070 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4ADB1AEBD369002EB070 /* LoginViewController.m */; };
-		A13A4ADF1AEBD372002EB070 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4ADE1AEBD372002EB070 /* RegisterViewController.m */; };
-		A13A4AE21AEBD381002EB070 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4AE11AEBD381002EB070 /* ResetPasswordViewController.m */; };
 		A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4AE51AEBD5B3002EB070 /* UIStoryboard+Storyboards.m */; };
-		A13A4AE91AEBE3A2002EB070 /* BeforeLoginAbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4AE81AEBE3A2002EB070 /* BeforeLoginAbstractViewController.m */; };
 		A13D41491AEAA3D300B0343E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41481AEAA3D300B0343E /* main.m */; };
 		A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D414B1AEAA3D300B0343E /* AppDelegate.m */; };
 		A13D414F1AEAA3D300B0343E /* OpenPKW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A13D414D1AEAA3D300B0343E /* OpenPKW.xcdatamodeld */; };
@@ -27,9 +20,10 @@
 		A13D41661AEAA3D300B0343E /* OpenPKWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41651AEAA3D300B0343E /* OpenPKWTests.m */; };
 		A13D41721AEAAF7100B0343E /* OpenPKW-Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */; };
 		A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41741AEAAFE200B0343E /* OpenPKWData.m */; };
-		A13D417E1AEABD1600B0343E /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D417D1AEABD1600B0343E /* AbstractViewController.m */; };
-		A13D41811AEABD4300B0343E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41801AEABD4300B0343E /* WelcomeViewController.m */; };
 		A14943F11AF00377008E62F7 /* Andrzej.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14943F01AF00377008E62F7 /* Andrzej.storyboard */; };
+		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
+		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
+		BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,22 +45,8 @@
 		A13A4ACB1AEB93D5002EB070 /* TextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextField.h; sourceTree = "<group>"; };
 		A13A4ACC1AEB93D5002EB070 /* TextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextField.m; sourceTree = "<group>"; };
 		A13A4ACE1AEB9482002EB070 /* BeforeLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BeforeLogin.storyboard; sourceTree = "<group>"; };
-		A13A4AD11AEBD322002EB070 /* AbstractNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNavigationController.h; sourceTree = "<group>"; };
-		A13A4AD21AEBD322002EB070 /* AbstractNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractNavigationController.m; sourceTree = "<group>"; };
-		A13A4AD41AEBD333002EB070 /* AbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTableViewController.h; sourceTree = "<group>"; };
-		A13A4AD51AEBD333002EB070 /* AbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTableViewController.m; sourceTree = "<group>"; };
-		A13A4AD71AEBD350002EB070 /* BeforeLoginNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeforeLoginNavigationController.h; sourceTree = "<group>"; };
-		A13A4AD81AEBD350002EB070 /* BeforeLoginNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeforeLoginNavigationController.m; sourceTree = "<group>"; };
-		A13A4ADA1AEBD369002EB070 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		A13A4ADB1AEBD369002EB070 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		A13A4ADD1AEBD372002EB070 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
-		A13A4ADE1AEBD372002EB070 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
-		A13A4AE01AEBD381002EB070 /* ResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPasswordViewController.h; sourceTree = "<group>"; };
-		A13A4AE11AEBD381002EB070 /* ResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordViewController.m; sourceTree = "<group>"; };
 		A13A4AE41AEBD5B3002EB070 /* UIStoryboard+Storyboards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Storyboards.h"; sourceTree = "<group>"; };
 		A13A4AE51AEBD5B3002EB070 /* UIStoryboard+Storyboards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Storyboards.m"; sourceTree = "<group>"; };
-		A13A4AE71AEBE3A2002EB070 /* BeforeLoginAbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeforeLoginAbstractViewController.h; sourceTree = "<group>"; };
-		A13A4AE81AEBE3A2002EB070 /* BeforeLoginAbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeforeLoginAbstractViewController.m; sourceTree = "<group>"; };
 		A13D41431AEAA3D300B0343E /* OpenPKW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPKW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13D41471AEAA3D300B0343E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13D41481AEAA3D300B0343E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,11 +61,13 @@
 		A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenPKW-Data.plist"; sourceTree = "<group>"; };
 		A13D41731AEAAFE200B0343E /* OpenPKWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPKWData.h; sourceTree = "<group>"; };
 		A13D41741AEAAFE200B0343E /* OpenPKWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenPKWData.m; sourceTree = "<group>"; };
-		A13D417C1AEABD1600B0343E /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
-		A13D417D1AEABD1600B0343E /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
-		A13D417F1AEABD4300B0343E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
-		A13D41801AEABD4300B0343E /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		A14943F01AF00377008E62F7 /* Andrzej.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Andrzej.storyboard; sourceTree = "<group>"; };
+		BB9FAE8A1AF2CBED00200DE7 /* AbstractNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNavigationController.h; sourceTree = "<group>"; };
+		BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractNavigationController.m; sourceTree = "<group>"; };
+		BB9FAE8C1AF2CBED00200DE7 /* AbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTableViewController.h; sourceTree = "<group>"; };
+		BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTableViewController.m; sourceTree = "<group>"; };
+		BB9FAE8E1AF2CBED00200DE7 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
+		BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,19 +109,6 @@
 			name = "Custom UI";
 			sourceTree = "<group>";
 		};
-		A13A4AD01AEBD302002EB070 /* Abstracts */ = {
-			isa = PBXGroup;
-			children = (
-				A13D417C1AEABD1600B0343E /* AbstractViewController.h */,
-				A13D417D1AEABD1600B0343E /* AbstractViewController.m */,
-				A13A4AD11AEBD322002EB070 /* AbstractNavigationController.h */,
-				A13A4AD21AEBD322002EB070 /* AbstractNavigationController.m */,
-				A13A4AD41AEBD333002EB070 /* AbstractTableViewController.h */,
-				A13A4AD51AEBD333002EB070 /* AbstractTableViewController.m */,
-			);
-			name = Abstracts;
-			sourceTree = "<group>";
-		};
 		A13A4AE31AEBD589002EB070 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,15 +116,6 @@
 				A13A4AE51AEBD5B3002EB070 /* UIStoryboard+Storyboards.m */,
 			);
 			name = Categories;
-			sourceTree = "<group>";
-		};
-		A13A4AEB1AEBE3B8002EB070 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				A13D417F1AEABD4300B0343E /* WelcomeViewController.h */,
-				A13D41801AEABD4300B0343E /* WelcomeViewController.m */,
-			);
-			name = Main;
 			sourceTree = "<group>";
 		};
 		A13D413A1AEAA3D300B0343E = {
@@ -185,9 +145,9 @@
 				A13D414B1AEAA3D300B0343E /* AppDelegate.m */,
 				A13A4AE31AEBD589002EB070 /* Categories */,
 				A13D41771AEAB3D000B0343E /* Storyboards */,
+				BB9FAE881AF2CBED00200DE7 /* ViewControllers */,
 				A13D41761AEAB1C800B0343E /* CoreData */,
 				A13A4AC71AEB939E002EB070 /* Custom UI */,
-				A13D41791AEAB40B00B0343E /* ViewControllers */,
 				A13D417A1AEAB41400B0343E /* Utils */,
 				A13D41781AEAB3EB00B0343E /* Resources */,
 				A13D41461AEAA3D300B0343E /* Supporting Files */,
@@ -248,17 +208,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		A13D41791AEAB40B00B0343E /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				A13A4AD01AEBD302002EB070 /* Abstracts */,
-				A13A4AEB1AEBE3B8002EB070 /* Main */,
-				A13D417B1AEABCFB00B0343E /* BeforeLogin */,
-				A14943F21AF005D2008E62F7 /* Andrzej */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
 		A13D417A1AEAB41400B0343E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,28 +217,25 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
-		A13D417B1AEABCFB00B0343E /* BeforeLogin */ = {
+		BB9FAE881AF2CBED00200DE7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A13A4AE71AEBE3A2002EB070 /* BeforeLoginAbstractViewController.h */,
-				A13A4AE81AEBE3A2002EB070 /* BeforeLoginAbstractViewController.m */,
-				A13A4AD71AEBD350002EB070 /* BeforeLoginNavigationController.h */,
-				A13A4AD81AEBD350002EB070 /* BeforeLoginNavigationController.m */,
-				A13A4ADA1AEBD369002EB070 /* LoginViewController.h */,
-				A13A4ADB1AEBD369002EB070 /* LoginViewController.m */,
-				A13A4ADD1AEBD372002EB070 /* RegisterViewController.h */,
-				A13A4ADE1AEBD372002EB070 /* RegisterViewController.m */,
-				A13A4AE01AEBD381002EB070 /* ResetPasswordViewController.h */,
-				A13A4AE11AEBD381002EB070 /* ResetPasswordViewController.m */,
+				BB9FAE891AF2CBED00200DE7 /* Abstracts */,
 			);
-			name = BeforeLogin;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		A14943F21AF005D2008E62F7 /* Andrzej */ = {
+		BB9FAE891AF2CBED00200DE7 /* Abstracts */ = {
 			isa = PBXGroup;
 			children = (
+				BB9FAE8A1AF2CBED00200DE7 /* AbstractNavigationController.h */,
+				BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */,
+				BB9FAE8C1AF2CBED00200DE7 /* AbstractTableViewController.h */,
+				BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */,
+				BB9FAE8E1AF2CBED00200DE7 /* AbstractViewController.h */,
+				BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */,
 			);
-			name = Andrzej;
+			path = Abstracts;
 			sourceTree = "<group>";
 		};
 		CCED19F0077708AE187EB414 /* Frameworks */ = {
@@ -437,22 +383,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13A4AD91AEBD350002EB070 /* BeforeLoginNavigationController.m in Sources */,
+				BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */,
 				A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */,
-				A13A4AD61AEBD333002EB070 /* AbstractTableViewController.m in Sources */,
+				BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */,
 				A13A4ACA1AEB93B5002EB070 /* Button.m in Sources */,
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
-				A13A4AE91AEBE3A2002EB070 /* BeforeLoginAbstractViewController.m in Sources */,
 				A13D414F1AEAA3D300B0343E /* OpenPKW.xcdatamodeld in Sources */,
-				A13D417E1AEABD1600B0343E /* AbstractViewController.m in Sources */,
-				A13D41811AEABD4300B0343E /* WelcomeViewController.m in Sources */,
-				A13A4ADC1AEBD369002EB070 /* LoginViewController.m in Sources */,
-				A13A4ADF1AEBD372002EB070 /* RegisterViewController.m in Sources */,
-				A13A4AE21AEBD381002EB070 /* ResetPasswordViewController.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
 				A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */,
+				BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */,
 				A13A4ACD1AEB93D5002EB070 /* TextField.m in Sources */,
-				A13A4AD31AEBD322002EB070 /* AbstractNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
