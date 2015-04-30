@@ -24,6 +24,7 @@
 		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
 		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
 		BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */; };
+		BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE951AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTableViewController.m; sourceTree = "<group>"; };
 		BB9FAE8E1AF2CBED00200DE7 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
 		BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
+		BB9FAE941AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralCommissionSelectionViewController.h; sourceTree = "<group>"; };
+		BB9FAE951AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectoralCommissionSelectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				BB9FAE891AF2CBED00200DE7 /* Abstracts */,
+				BB9FAE931AF2CD5200200DE7 /* ElectoralCommissionSelection */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -236,6 +240,15 @@
 				BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */,
 			);
 			path = Abstracts;
+			sourceTree = "<group>";
+		};
+		BB9FAE931AF2CD5200200DE7 /* ElectoralCommissionSelection */ = {
+			isa = PBXGroup;
+			children = (
+				BB9FAE941AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.h */,
+				BB9FAE951AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m */,
+			);
+			path = ElectoralCommissionSelection;
 			sourceTree = "<group>";
 		};
 		CCED19F0077708AE187EB414 /* Frameworks */ = {
@@ -389,6 +402,7 @@
 				A13A4ACA1AEB93B5002EB070 /* Button.m in Sources */,
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
 				A13D414F1AEAA3D300B0343E /* OpenPKW.xcdatamodeld in Sources */,
+				BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
 				A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */,
 				BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */,
