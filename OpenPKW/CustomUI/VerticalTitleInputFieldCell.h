@@ -8,13 +8,13 @@
 
 @import UIKit;
 
+#import "BaseCell.h"
 #import "VerticalTitleInputFieldRowDescriptor.h"
 
-@interface VerticalTitleInputFieldCell : UITableViewCell
+@interface VerticalTitleInputFieldCell : BaseCell
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UITextField *inputTextField;
-
 
 - (void)configureCellWithRowDescriptor:(VerticalTitleInputFieldRowDescriptor *)descriptor;
 
