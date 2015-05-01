@@ -8,9 +8,11 @@
 
 #import "ElectoralCommisionAddViewController.h"
 
+#import "VerticalMultilineTitleCell.h"
 #import "VerticalTitleInputFieldCell.h"
 
 static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInputCell";
+static NSString *const kVerticalMultilineTitleCell   = @"VerticalMultilineTitleCell";
 
 @interface ElectoralCommisionAddViewController()
 
@@ -32,7 +34,9 @@ static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInpu
 #pragma mark - Setup
 
 - (void)setupRows {
-    self.rows = @[[VerticalTitleInputFieldRowDescriptor rowDescriptorWithTitle:@"Podaj Kod Pocztowy:"
+    self.rows = @[[VerticalMultilineTitleRowDescriptor rowDescriptorWithTitle:@"Wpisz, numer(y) komisji w Twojej Gminie,  z której chcesz przekazywać informacje."],
+                  
+                  [VerticalTitleInputFieldRowDescriptor rowDescriptorWithTitle:@"Podaj Kod Pocztowy:"
                                                               inputPlaceholder:@"62-784"],
                   
                   [VerticalTitleInputFieldRowDescriptor rowDescriptorWithTitle:@"Podaj Numer(y) Komisji Wyborczych:"
@@ -42,7 +46,7 @@ static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInpu
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat height = [self heightForVerticalTitleInputFieldCellAtIndexPath:indexPath];
+    CGFloat height = [self heightForCellAtIndexPath:indexPath];
     
     if (tableView.separatorStyle != UITableViewCellSeparatorStyleNone) {
         height += 1.0f;
@@ -60,14 +64,33 @@ static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInpu
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kElectoralCommissionInputCell
+    NSString *cellIdentifier = [self cellIdentifierForIndexPath:indexPath];
+    NSAssert(cellIdentifier != nil, @"Should have valid cell identifier.");
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier
                                                             forIndexPath:indexPath];
     
-    VerticalTitleInputFieldCell *inputCell = (VerticalTitleInputFieldCell *)cell;
+    BaseCell *inputCell = (BaseCell *)cell;
     
     [inputCell configureCellWithRowDescriptor:self.rows[indexPath.row]];
     
     return inputCell;
+}
+
+#pragma mark - Cells Identifiers
+
+- (NSString *)cellIdentifierForIndexPath:(NSIndexPath *)indexPath {
+    id rowDescriptorForPath = self.rows[indexPath.row];
+    
+    if ([rowDescriptorForPath isKindOfClass:[VerticalMultilineTitleRowDescriptor class]]) {
+        return kVerticalMultilineTitleCell;
+    }
+    
+    if ([rowDescriptorForPath isKindOfClass:[VerticalTitleInputFieldRowDescriptor class]]) {
+        return kElectoralCommissionInputCell;
+    }
+    
+    return nil;
 }
 
 #pragma mark - Sizing Cells Helper Methods
@@ -83,6 +106,35 @@ static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInpu
     
     return size.height;
 }
+
+- (CGFloat)heightForCellAtIndexPath:(NSIndexPath *)indexPath{
+    
+    id rowDescriptorForPath = self.rows[indexPath.row];
+    
+    if ([rowDescriptorForPath isKindOfClass:[VerticalMultilineTitleRowDescriptor class]]) {
+        return [self heightForVerticalMultilineTitleRowDescriptorAtIndexPath:indexPath];
+    }
+    
+    if ([rowDescriptorForPath isKindOfClass:[VerticalTitleInputFieldRowDescriptor class]]) {
+        return [self heightForVerticalTitleInputFieldCellAtIndexPath:indexPath];
+    }
+    
+    return 100;
+}
+
+- (CGFloat)heightForVerticalMultilineTitleRowDescriptorAtIndexPath:(NSIndexPath *)indexPath {
+    static VerticalMultilineTitleCell *sizingCell = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sizingCell = [self.tableView dequeueReusableCellWithIdentifier:kVerticalMultilineTitleCell];
+        NSAssert(sizingCell != nil, @"Cell shoud exist");
+    });
+    
+    [sizingCell configureCellWithRowDescriptor:self.rows[indexPath.row]];
+    
+    return [self calculateHeightForConfiguredSizingCell:sizingCell];
+}
+
 
 - (CGFloat)heightForVerticalTitleInputFieldCellAtIndexPath:(NSIndexPath *)indexPath {
     static VerticalTitleInputFieldCell *sizingCell = nil;
