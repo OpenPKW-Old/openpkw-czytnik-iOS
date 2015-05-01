@@ -107,7 +107,7 @@
             </objects>
             <point key="canvasLocation" x="998" y="513"/>
         </scene>
-        <!--Electoral Commision Add View Controller-->
+        <!--Dodaj Komisje-->
         <scene sceneID="Hcu-2r-sn1">
             <objects>
                 <tableViewController id="eKQ-II-aW5" customClass="ElectoralCommisionAddViewController" sceneMemberID="viewController">
@@ -116,18 +116,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="gLU-2F-Qmz" customClass="VerticalTitleInputFieldCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ElectoralCommissionInputCell" rowHeight="90" id="gLU-2F-Qmz" customClass="VerticalTitleInputFieldCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gLU-2F-Qmz" id="Pey-MF-oPI">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-ZQ-QdY" userLabel="titleLabel">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-ZQ-QdY" userLabel="titleLabel">
                                             <rect key="frame" x="8" y="8" width="304" height="18"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-oM-W3r" userLabel="inputTextField">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-oM-W3r" userLabel="inputTextField">
                                             <rect key="frame" x="8" y="38" width="304" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="2sd-LV-hHm"/>
@@ -137,12 +137,12 @@
                                         </textField>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="tKg-oM-W3r" secondAttribute="trailing" id="RSi-oh-F5i"/>
+                                        <constraint firstItem="tKg-oM-W3r" firstAttribute="trailing" secondItem="Pey-MF-oPI" secondAttribute="trailingMargin" id="RSi-oh-F5i"/>
                                         <constraint firstItem="tKg-oM-W3r" firstAttribute="top" secondItem="2ni-ZQ-QdY" secondAttribute="bottom" constant="12" id="SOn-fi-ILn"/>
                                         <constraint firstItem="2ni-ZQ-QdY" firstAttribute="top" secondItem="Pey-MF-oPI" secondAttribute="topMargin" id="Svc-1v-bgN"/>
                                         <constraint firstItem="tKg-oM-W3r" firstAttribute="leading" secondItem="Pey-MF-oPI" secondAttribute="leadingMargin" id="TSu-Xk-ABq"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="tKg-oM-W3r" secondAttribute="bottom" id="XT3-jh-Lv3"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="2ni-ZQ-QdY" secondAttribute="trailing" id="hkd-l9-GWc"/>
+                                        <constraint firstItem="tKg-oM-W3r" firstAttribute="bottom" secondItem="Pey-MF-oPI" secondAttribute="bottomMargin" id="XT3-jh-Lv3"/>
+                                        <constraint firstItem="2ni-ZQ-QdY" firstAttribute="trailing" secondItem="Pey-MF-oPI" secondAttribute="trailingMargin" id="hkd-l9-GWc"/>
                                         <constraint firstItem="2ni-ZQ-QdY" firstAttribute="leading" secondItem="Pey-MF-oPI" secondAttribute="leadingMargin" id="sxO-qQ-TEE"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -157,7 +157,7 @@
                             <outlet property="delegate" destination="eKQ-II-aW5" id="8oa-Am-ZKg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="zRj-di-VlH"/>
+                    <navigationItem key="navigationItem" title="Dodaj Komisje" id="zRj-di-VlH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YP1-dN-JZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
