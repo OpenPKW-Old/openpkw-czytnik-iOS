@@ -10,4 +10,6 @@
 
 @interface VerticalMultilineTitleCell : BaseCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 @end
