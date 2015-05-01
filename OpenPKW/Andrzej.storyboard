@@ -116,18 +116,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ElectoralCommissionInputCell" rowHeight="90" id="gLU-2F-Qmz" customClass="VerticalTitleInputFieldCell">
+                            <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" selectionStyle="default" indentationWidth="10" reuseIdentifier="ElectoralCommissionInputCell" rowHeight="90" id="gLU-2F-Qmz" customClass="VerticalTitleInputFieldCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gLU-2F-Qmz" id="Pey-MF-oPI">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-ZQ-QdY" userLabel="titleLabel" customClass="SizeingLabel">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="1" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-ZQ-QdY" userLabel="titleLabel" customClass="SizeingLabel">
                                             <rect key="frame" x="8" y="8" width="304" height="18"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-oM-W3r" userLabel="inputTextField">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-oM-W3r" userLabel="inputTextField">
                                             <rect key="frame" x="8" y="38" width="304" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="2sd-LV-hHm"/>
@@ -137,11 +137,11 @@
                                         </textField>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="tKg-oM-W3r" firstAttribute="trailing" secondItem="Pey-MF-oPI" secondAttribute="trailingMargin" id="RSi-oh-F5i"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="tKg-oM-W3r" secondAttribute="trailing" id="RSi-oh-F5i"/>
                                         <constraint firstItem="tKg-oM-W3r" firstAttribute="top" secondItem="2ni-ZQ-QdY" secondAttribute="bottom" constant="12" id="SOn-fi-ILn"/>
                                         <constraint firstItem="2ni-ZQ-QdY" firstAttribute="top" secondItem="Pey-MF-oPI" secondAttribute="topMargin" id="Svc-1v-bgN"/>
                                         <constraint firstItem="tKg-oM-W3r" firstAttribute="leading" secondItem="Pey-MF-oPI" secondAttribute="leadingMargin" id="TSu-Xk-ABq"/>
-                                        <constraint firstItem="tKg-oM-W3r" firstAttribute="bottom" secondItem="Pey-MF-oPI" secondAttribute="bottomMargin" id="XT3-jh-Lv3"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="tKg-oM-W3r" secondAttribute="bottom" id="XT3-jh-Lv3"/>
                                         <constraint firstItem="2ni-ZQ-QdY" firstAttribute="trailing" secondItem="Pey-MF-oPI" secondAttribute="trailingMargin" id="hkd-l9-GWc"/>
                                         <constraint firstItem="2ni-ZQ-QdY" firstAttribute="leading" secondItem="Pey-MF-oPI" secondAttribute="leadingMargin" id="sxO-qQ-TEE"/>
                                     </constraints>
