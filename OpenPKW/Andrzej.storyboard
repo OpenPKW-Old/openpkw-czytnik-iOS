@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -14,47 +15,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="ffm-j9-ul7" kind="relationship" relationship="rootViewController" id="kVt-Zh-vG9"/>
+                        <segue destination="3GP-vJ-u9K" kind="relationship" relationship="rootViewController" id="cnP-Jm-ToV"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="goi-Dx-tF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95" y="513"/>
+            <point key="canvasLocation" x="557" y="513"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="OhK-eA-gNf">
-            <objects>
-                <viewController id="ffm-j9-ul7" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="r9V-zq-Ahj"/>
-                        <viewControllerLayoutGuide type="bottom" id="0Od-Zy-VIS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WvX-eI-gEc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pierwszy ekran po zalogowaniu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fge-Rf-yic">
-                                <rect key="frame" x="40" y="273" width="241" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="33w-LR-dSh"/>
-                    <connections>
-                        <segue destination="3GP-vJ-u9K" kind="push" identifier="SelectElectoralCommision" id="C62-3O-Shu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkj-ap-I0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="552" y="513"/>
-        </scene>
-        <!--View Controller-->
+        <!--Wybór Komisji-->
         <scene sceneID="IYI-ym-6Zd">
             <objects>
-                <viewController id="3GP-vJ-u9K" sceneMemberID="viewController">
+                <viewController title="Wybór Komisji" id="3GP-vJ-u9K" customClass="ElectoralCommissionSelectionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7sC-tZ-aVO"/>
                         <viewControllerLayoutGuide type="bottom" id="S1c-2G-RXd"/>
@@ -63,51 +34,160 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wybór komisji" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpW-gF-bab">
-                                <rect key="frame" x="106" y="273" width="109" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lista komisji do których jestes przypisany:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeQ-mn-ofF">
+                                <rect key="frame" x="16" y="72" width="288" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1S-AA-xmt">
+                                <rect key="frame" x="16" y="121" width="288" height="36"/>
+                                <string key="text">Wybory prezydenta RP
+10 Maja 2015 - I Tura</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-Jo-aZr">
+                                <rect key="frame" x="0.0" y="165" width="320" height="403"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ElectoralCommissionSelectionCell" textLabel="ACf-8F-Whn" detailTextLabel="6nd-Hl-4li" rowHeight="77" style="IBUITableViewCellStyleSubtitle" id="R7M-dz-hxL">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R7M-dz-hxL" id="Otq-r1-1wG">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ACf-8F-Whn">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6nd-Hl-4li">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n1S-AA-xmt" firstAttribute="top" secondItem="VeQ-mn-ofF" secondAttribute="bottom" constant="8" id="6F5-Um-RGe"/>
+                            <constraint firstItem="7T7-Jo-aZr" firstAttribute="top" secondItem="n1S-AA-xmt" secondAttribute="bottom" constant="8" id="6tY-f1-brt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VeQ-mn-ofF" secondAttribute="trailing" id="7nA-ND-tDm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n1S-AA-xmt" secondAttribute="trailing" id="Qw4-fd-FHy"/>
+                            <constraint firstItem="VeQ-mn-ofF" firstAttribute="top" secondItem="7sC-tZ-aVO" secondAttribute="bottom" constant="8" id="RlW-Yj-AIB"/>
+                            <constraint firstItem="S1c-2G-RXd" firstAttribute="top" secondItem="7T7-Jo-aZr" secondAttribute="bottom" id="es3-vB-Osx"/>
+                            <constraint firstItem="n1S-AA-xmt" firstAttribute="leading" secondItem="hQy-fT-c53" secondAttribute="leadingMargin" id="jvk-Jb-8Oa"/>
+                            <constraint firstItem="VeQ-mn-ofF" firstAttribute="leading" secondItem="hQy-fT-c53" secondAttribute="leadingMargin" id="mom-2V-n9W"/>
+                            <constraint firstAttribute="trailing" secondItem="7T7-Jo-aZr" secondAttribute="trailing" id="pcF-s9-AaF"/>
+                            <constraint firstItem="7T7-Jo-aZr" firstAttribute="leading" secondItem="hQy-fT-c53" secondAttribute="leading" id="zhO-1h-enH"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="eqA-13-GoV"/>
+                    <navigationItem key="navigationItem" title="Wybór Komisji" id="eqA-13-GoV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ncd-L3-GGS">
+                            <connections>
+                                <segue destination="eKQ-II-aW5" kind="push" identifier="AddElectoralCommision" id="rOE-uq-aNS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <segue destination="xqA-oI-SH8" kind="push" identifier="AddElectoralCommision" id="9JL-YI-oEj"/>
+                        <outlet property="tableView" destination="7T7-Jo-aZr" id="hXc-cs-lRE"/>
+                        <outlet property="tableViewHeadingLabel" destination="n1S-AA-xmt" id="Jn4-XQ-0pd"/>
                         <segue destination="1qJ-Ex-FuS" kind="push" identifier="ValidateElectoralCommision" id="ftj-cJ-fOW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2H-JD-LL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="513"/>
+            <point key="canvasLocation" x="998" y="513"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="YQl-uE-CG7">
+        <!--Dodaj Komisje-->
+        <scene sceneID="Hcu-2r-sn1">
             <objects>
-                <viewController id="xqA-oI-SH8" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZId-07-cXz"/>
-                        <viewControllerLayoutGuide type="bottom" id="cXq-p2-IK0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="m94-IV-deB">
+                <tableViewController id="eKQ-II-aW5" customClass="ElectoralCommisionAddViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" id="cPo-Nf-O0v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dodawanie komisji" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CP-N0-BKd">
-                                <rect key="frame" x="88" y="273" width="145" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="S3j-xc-Z8P"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nl-2b-wgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VerticalMultilineTitleCell" id="kyt-TZ-KTY" customClass="VerticalMultilineTitleCell">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kyt-TZ-KTY" id="laT-Ov-n8S">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="1" translatesAutoresizingMaskIntoConstraints="NO" id="wYA-JE-T4K" customClass="SizeingLabel">
+                                            <rect key="frame" x="8" y="8" width="304" height="74"/>
+                                            <string key="text">Lorem Ipsum Sit Dolor MitAment
+Multiline Title</string>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wYA-JE-T4K" firstAttribute="bottom" secondItem="laT-Ov-n8S" secondAttribute="bottomMargin" id="Kyn-g1-UZP"/>
+                                        <constraint firstItem="wYA-JE-T4K" firstAttribute="trailing" secondItem="laT-Ov-n8S" secondAttribute="trailingMargin" id="UVU-4X-MgE"/>
+                                        <constraint firstItem="wYA-JE-T4K" firstAttribute="leading" secondItem="laT-Ov-n8S" secondAttribute="leadingMargin" id="bxz-dd-esa"/>
+                                        <constraint firstItem="wYA-JE-T4K" firstAttribute="top" secondItem="laT-Ov-n8S" secondAttribute="topMargin" id="gkg-ED-u31"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="wYA-JE-T4K" id="I3M-2v-L4i"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" selectionStyle="default" indentationWidth="10" reuseIdentifier="ElectoralCommissionInputCell" rowHeight="90" id="gLU-2F-Qmz" customClass="VerticalTitleInputFieldCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gLU-2F-Qmz" id="Pey-MF-oPI">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="1" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-ZQ-QdY" userLabel="titleLabel" customClass="SizeingLabel">
+                                            <rect key="frame" x="8" y="8" width="304" height="18"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-oM-W3r" userLabel="inputTextField">
+                                            <rect key="frame" x="8" y="38" width="304" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="2sd-LV-hHm"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="tKg-oM-W3r" secondAttribute="trailing" id="RSi-oh-F5i"/>
+                                        <constraint firstItem="tKg-oM-W3r" firstAttribute="top" secondItem="2ni-ZQ-QdY" secondAttribute="bottom" constant="12" id="SOn-fi-ILn"/>
+                                        <constraint firstItem="2ni-ZQ-QdY" firstAttribute="top" secondItem="Pey-MF-oPI" secondAttribute="topMargin" id="Svc-1v-bgN"/>
+                                        <constraint firstItem="tKg-oM-W3r" firstAttribute="leading" secondItem="Pey-MF-oPI" secondAttribute="leadingMargin" id="TSu-Xk-ABq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="tKg-oM-W3r" secondAttribute="bottom" id="XT3-jh-Lv3"/>
+                                        <constraint firstItem="2ni-ZQ-QdY" firstAttribute="trailing" secondItem="Pey-MF-oPI" secondAttribute="trailingMargin" id="hkd-l9-GWc"/>
+                                        <constraint firstItem="2ni-ZQ-QdY" firstAttribute="leading" secondItem="Pey-MF-oPI" secondAttribute="leadingMargin" id="sxO-qQ-TEE"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="inputTextField" destination="tKg-oM-W3r" id="Eau-FQ-pMi"/>
+                                    <outlet property="titleLabel" destination="2ni-ZQ-QdY" id="leh-r9-WUI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eKQ-II-aW5" id="G01-bL-f8s"/>
+                            <outlet property="delegate" destination="eKQ-II-aW5" id="8oa-Am-ZKg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Dodaj Komisje" id="zRj-di-VlH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YP1-dN-JZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1440" y="158"/>
+            <point key="canvasLocation" x="1440" y="179"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kKt-yO-caY">
@@ -124,7 +204,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Potwierdzanie wyboru komisji" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okM-vR-0PP">
                                 <rect key="frame" x="46" y="273" width="228" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -134,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLQ-OR-S3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1440" y="799"/>
+            <point key="canvasLocation" x="1440" y="869"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
