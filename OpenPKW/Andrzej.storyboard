@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="998" y="513"/>
         </scene>
-        <!--View Controller-->
+        <!--Dodaj komisje-->
         <scene sceneID="YQl-uE-CG7">
             <objects>
-                <viewController id="xqA-oI-SH8" sceneMemberID="viewController">
+                <viewController id="xqA-oI-SH8" customClass="ElectoralCommisionAddViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZId-07-cXz"/>
                         <viewControllerLayoutGuide type="bottom" id="cXq-p2-IK0"/>
@@ -118,17 +118,9 @@
                     <view key="view" contentMode="scaleToFill" id="m94-IV-deB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dodawanie komisji" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CP-N0-BKd">
-                                <rect key="frame" x="88" y="273" width="145" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="S3j-xc-Z8P"/>
+                    <navigationItem key="navigationItem" title="Dodaj komisje" id="S3j-xc-Z8P"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Nl-2b-wgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
