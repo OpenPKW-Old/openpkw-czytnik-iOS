@@ -19,7 +19,8 @@
         self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         
     } else {
-        //: TODO: fix constraints on iOS 8.X ...
+        // TODO: fix constraints on iOS 8.X ...
+        // explenation: http://stackoverflow.com/a/25884832
     }
 
     return self;
