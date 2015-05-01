@@ -27,6 +27,7 @@
 		BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA01AF3F21D00C83DCC /* BaseCell.m */; };
 		BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA31AF3F2C000C83DCC /* VerticalMultilineTitleCell.m */; };
 		BA20FDA71AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA61AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m */; };
+		BA20FDAA1AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA91AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m */; };
 		BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */; };
 		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
 		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
@@ -82,6 +83,8 @@
 		BA20FDA31AF3F2C000C83DCC /* VerticalMultilineTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalMultilineTitleCell.m; sourceTree = "<group>"; };
 		BA20FDA51AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalMultilineTitleRowDescriptor.h; sourceTree = "<group>"; };
 		BA20FDA61AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalMultilineTitleRowDescriptor.m; sourceTree = "<group>"; };
+		BA20FDA81AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ElectoralCommisionAddViewController+SizingCellsHelperMethods.h"; sourceTree = "<group>"; };
+		BA20FDA91AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ElectoralCommisionAddViewController+SizingCellsHelperMethods.m"; sourceTree = "<group>"; };
 		BA9530991AF388030021DBF2 /* ElectoralCommisionAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralCommisionAddViewController.h; sourceTree = "<group>"; };
 		BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectoralCommisionAddViewController.m; sourceTree = "<group>"; };
 		BB9FAE8A1AF2CBED00200DE7 /* AbstractNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNavigationController.h; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 			children = (
 				BA9530991AF388030021DBF2 /* ElectoralCommisionAddViewController.h */,
 				BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */,
+				BA20FDA81AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.h */,
+				BA20FDA91AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m */,
 			);
 			name = ElectoralCommisionAdd;
 			path = ../../openpkw/ViewControllers/ElectoralCommisionAdd;
@@ -454,6 +459,7 @@
 				BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */,
 				BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */,
 				A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */,
+				BA20FDAA1AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m in Sources */,
 				BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */,
 				BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */,
 				A13A4ACA1AEB93B5002EB070 /* Button.m in Sources */,
