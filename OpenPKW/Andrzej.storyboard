@@ -122,7 +122,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kyt-TZ-KTY" id="laT-Ov-n8S">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="1" translatesAutoresizingMaskIntoConstraints="NO" id="wYA-JE-T4K">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="1" translatesAutoresizingMaskIntoConstraints="NO" id="wYA-JE-T4K" customClass="SizeingLabel">
                                             <rect key="frame" x="8" y="8" width="304" height="74"/>
                                             <string key="text">Lorem Ipsum Sit Dolor MitAment
 Multiline Title</string>
