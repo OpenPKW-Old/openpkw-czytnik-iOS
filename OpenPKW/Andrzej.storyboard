@@ -93,7 +93,7 @@
                     <navigationItem key="navigationItem" title="Wybór Komisji" id="eqA-13-GoV">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ncd-L3-GGS">
                             <connections>
-                                <segue destination="xqA-oI-SH8" kind="push" identifier="AddElectoralCommision" id="XUa-dx-vLr"/>
+                                <segue destination="tm6-M0-u9d" kind="push" identifier="AddElectoralCommision" id="0CY-lb-86E"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -106,25 +106,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2H-JD-LL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="998" y="513"/>
-        </scene>
-        <!--Dodaj komisje-->
-        <scene sceneID="YQl-uE-CG7">
-            <objects>
-                <viewController id="xqA-oI-SH8" customClass="ElectoralCommisionAddViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZId-07-cXz"/>
-                        <viewControllerLayoutGuide type="bottom" id="cXq-p2-IK0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="m94-IV-deB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Dodaj komisje" id="S3j-xc-Z8P"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nl-2b-wgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1440" y="158"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kKt-yO-caY">
@@ -152,6 +133,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLQ-OR-S3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1440" y="799"/>
+        </scene>
+        <!--Dodaj Komisje-->
+        <scene sceneID="10N-6y-4bN">
+            <objects>
+                <viewController title="Dodaj Komisje" id="tm6-M0-u9d" customClass="ElectoralCommissionAddViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="crM-tw-0Q4"/>
+                        <viewControllerLayoutGuide type="bottom" id="TKQ-hb-51t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2kh-7z-bUw" userLabel="View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQn-Oj-1Wu">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QM4-Mc-98L" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wpisz, numer(y) komisji w Twojej Gminie, które chcesz dodać do swojej lisy oddzielając je znakiem ( , )" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6J-JL-cNH">
+                                                <rect key="frame" x="8" y="8" width="304" height="62"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.784230324074074" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="s6J-JL-cNH" secondAttribute="bottom" constant="434" id="RUh-Od-gow"/>
+                                            <constraint firstItem="s6J-JL-cNH" firstAttribute="leading" secondItem="QM4-Mc-98L" secondAttribute="leadingMargin" id="hFI-YD-1Ya"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="s6J-JL-cNH" secondAttribute="trailing" id="hcD-K6-0MU"/>
+                                            <constraint firstItem="s6J-JL-cNH" firstAttribute="top" secondItem="QM4-Mc-98L" secondAttribute="topMargin" id="vjY-GA-eqd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.75017361111111114" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QM4-Mc-98L" firstAttribute="top" secondItem="IQn-Oj-1Wu" secondAttribute="top" id="4OQ-qt-row"/>
+                                    <constraint firstAttribute="bottom" secondItem="QM4-Mc-98L" secondAttribute="bottom" id="9id-wP-X5E"/>
+                                    <constraint firstAttribute="trailing" secondItem="QM4-Mc-98L" secondAttribute="trailing" id="QJM-32-8Sf"/>
+                                    <constraint firstItem="QM4-Mc-98L" firstAttribute="leading" secondItem="IQn-Oj-1Wu" secondAttribute="leading" id="QiG-Nd-KSy"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.65170717592592597" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IQn-Oj-1Wu" firstAttribute="leading" secondItem="2kh-7z-bUw" secondAttribute="leading" id="OVQ-hb-AXa"/>
+                            <constraint firstItem="IQn-Oj-1Wu" firstAttribute="top" secondItem="crM-tw-0Q4" secondAttribute="top" id="mgd-rO-NUw"/>
+                            <constraint firstItem="QM4-Mc-98L" firstAttribute="width" secondItem="2kh-7z-bUw" secondAttribute="width" id="pm7-hq-wI5"/>
+                            <constraint firstAttribute="trailing" secondItem="IQn-Oj-1Wu" secondAttribute="trailing" id="wTy-Sr-E3H"/>
+                            <constraint firstItem="TKQ-hb-51t" firstAttribute="top" secondItem="IQn-Oj-1Wu" secondAttribute="bottom" id="yLb-5O-BHn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dodaj Komisje" id="itA-vK-2RJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JMM-5h-NhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440" y="119"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
