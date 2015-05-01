@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 OpenPKW. All rights reserved.
 //
 
-#import "AbstractViewController.h"
+#import "AbstractTableViewController.h"
 
-@interface ElectoralCommisionAddViewController : AbstractViewController
+@interface ElectoralCommisionAddViewController : AbstractTableViewController
 
 @end
