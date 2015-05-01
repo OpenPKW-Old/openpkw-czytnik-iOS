@@ -37,10 +37,12 @@ static NSString *const kVerticalMultilineTitleCell   = @"VerticalMultilineTitleC
     self.rows = @[[VerticalMultilineTitleRowDescriptor rowDescriptorWithTitle:@"Wpisz, numer(y) komisji w Twojej Gminie,  z której chcesz przekazywać informacje."],
                   
                   [VerticalTitleInputFieldRowDescriptor rowDescriptorWithTitle:@"Podaj Kod Pocztowy:"
-                                                              inputPlaceholder:@"62-784"],
+                                                              inputPlaceholder:@"62-784"
+                                                                  keyboardType:UIKeyboardTypeNumbersAndPunctuation],
                   
                   [VerticalTitleInputFieldRowDescriptor rowDescriptorWithTitle:@"Podaj Numer(y) Komisji Wyborczych:"
-                                                              inputPlaceholder:@"13, 18, 26"]];
+                                                              inputPlaceholder:@"13, 18, 26"
+                                                                  keyboardType:UIKeyboardTypeNumbersAndPunctuation]];
 }
 
 #pragma mark - UITableViewDelegate
