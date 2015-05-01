@@ -18,6 +18,7 @@
     
     self.titleLabel.text = rowDescriptor.title;
     self.inputTextField.placeholder = rowDescriptor.inputPlaceholder;
+    self.inputTextField.keyboardType = rowDescriptor.keyboardType;
 }
 
 @end
