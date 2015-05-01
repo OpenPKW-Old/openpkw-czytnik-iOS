@@ -16,6 +16,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UITextField *inputTextField;
 
-- (void)configureCellWithRowDescriptor:(VerticalTitleInputFieldRowDescriptor *)descriptor;
-
 @end

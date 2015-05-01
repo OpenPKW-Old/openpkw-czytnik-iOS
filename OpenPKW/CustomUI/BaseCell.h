@@ -10,4 +10,6 @@
 
 @interface BaseCell : UITableViewCell
 
+- (void)configureCellWithRowDescriptor:(id)descriptor;
+
 @end

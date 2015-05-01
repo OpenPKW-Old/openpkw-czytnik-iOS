@@ -10,10 +10,14 @@
 
 @implementation VerticalTitleInputFieldCell
 
-- (void)configureCellWithRowDescriptor:(VerticalTitleInputFieldRowDescriptor *)descriptor {
+- (void)configureCellWithRowDescriptor:(id)descriptor {
     
-    self.titleLabel.text = descriptor.title;
-    self.inputTextField.placeholder = descriptor.inputPlaceholder;
+    NSAssert([descriptor isKindOfClass:[VerticalTitleInputFieldRowDescriptor class]], @"Descriptor should be of VerticalTitleInputFieldRowDescriptor class");
+    
+    VerticalTitleInputFieldRowDescriptor *rowDescriptor = (VerticalTitleInputFieldRowDescriptor *)descriptor;
+    
+    self.titleLabel.text = rowDescriptor.title;
+    self.inputTextField.placeholder = rowDescriptor.inputPlaceholder;
 }
 
 @end
