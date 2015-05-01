@@ -6,8 +6,16 @@
 //  Copyright (c) 2015 OpenPKW. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+
+#import "VerticalTitleInputFieldRowDescriptor.h"
 
 @interface VerticalTitleInputFieldCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UITextField *inputTextField;
+
+
+- (void)configureCellWithRowDescriptor:(VerticalTitleInputFieldRowDescriptor *)descriptor;
 
 @end

@@ -10,4 +10,10 @@
 
 @implementation VerticalTitleInputFieldCell
 
+- (void)configureCellWithRowDescriptor:(VerticalTitleInputFieldRowDescriptor *)descriptor {
+    
+    self.titleLabel.text = descriptor.title;
+    self.inputTextField.placeholder = descriptor.inputPlaceholder;
+}
+
 @end

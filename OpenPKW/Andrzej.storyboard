@@ -111,16 +111,45 @@
         <scene sceneID="Hcu-2r-sn1">
             <objects>
                 <tableViewController id="eKQ-II-aW5" customClass="ElectoralCommisionAddViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cPo-Nf-O0v">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" id="cPo-Nf-O0v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gLU-2F-Qmz">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="gLU-2F-Qmz" customClass="VerticalTitleInputFieldCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gLU-2F-Qmz" id="Pey-MF-oPI">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-ZQ-QdY" userLabel="titleLabel">
+                                            <rect key="frame" x="8" y="8" width="304" height="18"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-oM-W3r" userLabel="inputTextField">
+                                            <rect key="frame" x="8" y="38" width="304" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="2sd-LV-hHm"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="tKg-oM-W3r" secondAttribute="trailing" id="RSi-oh-F5i"/>
+                                        <constraint firstItem="tKg-oM-W3r" firstAttribute="top" secondItem="2ni-ZQ-QdY" secondAttribute="bottom" constant="12" id="SOn-fi-ILn"/>
+                                        <constraint firstItem="2ni-ZQ-QdY" firstAttribute="top" secondItem="Pey-MF-oPI" secondAttribute="topMargin" id="Svc-1v-bgN"/>
+                                        <constraint firstItem="tKg-oM-W3r" firstAttribute="leading" secondItem="Pey-MF-oPI" secondAttribute="leadingMargin" id="TSu-Xk-ABq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="tKg-oM-W3r" secondAttribute="bottom" id="XT3-jh-Lv3"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="2ni-ZQ-QdY" secondAttribute="trailing" id="hkd-l9-GWc"/>
+                                        <constraint firstItem="2ni-ZQ-QdY" firstAttribute="leading" secondItem="Pey-MF-oPI" secondAttribute="leadingMargin" id="sxO-qQ-TEE"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="inputTextField" destination="tKg-oM-W3r" id="Eau-FQ-pMi"/>
+                                    <outlet property="titleLabel" destination="2ni-ZQ-QdY" id="leh-r9-WUI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
