@@ -23,7 +23,8 @@ static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInpu
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tableView.estimatedRowHeight = 80;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 90.0;
     
     [self setupRows];
 }
@@ -41,7 +42,17 @@ static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInpu
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [self heightForVerticalTitleInputFieldCellAtIndexPath:indexPath];
+    CGFloat height = [self heightForVerticalTitleInputFieldCellAtIndexPath:indexPath];
+    
+    if (tableView.separatorStyle != UITableViewCellSeparatorStyleNone) {
+        height += 1.0f;
+    }
+    
+    return height;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
 }
 
 #pragma mark - UITableViewDataSource
@@ -66,11 +77,15 @@ static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInpu
 #pragma mark - Sizing Cells Helper Methods
 
 - (CGFloat)calculateHeightForConfiguredSizingCell:(UITableViewCell *)sizingCell {
+    
+    sizingCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.tableView.frame), CGRectGetHeight(sizingCell.bounds));
+    
     [sizingCell setNeedsLayout];
     [sizingCell layoutIfNeeded];
     
     CGSize size = [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-    return size.height; // Add 1.0f if using for the cell separator height
+    
+    return size.height;
 }
 
 - (CGFloat)heightForVerticalTitleInputFieldCellAtIndexPath:(NSIndexPath *)indexPath {
@@ -78,6 +93,7 @@ static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInpu
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sizingCell = [self.tableView dequeueReusableCellWithIdentifier:kElectoralCommissionInputCell];
+        NSAssert(sizingCell != nil, @"Cell shoud exist");
     });
     
     [sizingCell configureCellWithRowDescriptor:self.rows[indexPath.row]];

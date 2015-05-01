@@ -93,7 +93,7 @@
                     <navigationItem key="navigationItem" title="Wybór Komisji" id="eqA-13-GoV">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ncd-L3-GGS">
                             <connections>
-                                <segue destination="eKQ-II-aW5" kind="push" identifier="AddElectoralCommision" id="B5C-2g-vnb"/>
+                                <segue destination="eKQ-II-aW5" kind="push" identifier="AddElectoralCommision" id="rOE-uq-aNS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -121,13 +121,13 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gLU-2F-Qmz" id="Pey-MF-oPI">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-ZQ-QdY" userLabel="titleLabel">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-ZQ-QdY" userLabel="titleLabel" customClass="SizeingLabel">
                                             <rect key="frame" x="8" y="8" width="304" height="18"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-oM-W3r" userLabel="inputTextField">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-oM-W3r" userLabel="inputTextField">
                                             <rect key="frame" x="8" y="38" width="304" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="2sd-LV-hHm"/>
