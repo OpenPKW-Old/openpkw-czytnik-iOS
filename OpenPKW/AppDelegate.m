@@ -25,7 +25,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[UIStoryboard andrzejStoryboard] instantiateInitialViewController];
+    self.window.rootViewController = [[UIStoryboard storyboardBeforeLogin] instantiateInitialViewController];
     [self.window makeKeyAndVisible];
     
     [self setupCoreDataWithRestKit];
