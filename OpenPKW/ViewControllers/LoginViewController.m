@@ -7,8 +7,11 @@
 //
 
 #import "LoginViewController.h"
-#import "ResetPasswordViewController.h"
+
+#import "AppDelegate.h"
 #import "RegisterViewController.h"
+#import "ResetPasswordViewController.h"
+#import "UIStoryboard+Storyboards.h"
 
 @interface LoginViewController ()
 
@@ -20,8 +23,11 @@
     [SVProgressHUD show];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [SVProgressHUD popActivity];
+        
         //Instantiate and present view controller
+        [self presentAndrzej];
     });
+
 }
 
 #pragma mark - UITextFieldDelegate
@@ -40,6 +46,18 @@
         BeforeLoginAbstractViewController *vc = (BeforeLoginAbstractViewController *)segue.destinationViewController;
         vc.login = self.loginTextField.text;
     }
+}
+
+- (void)presentAndrzej {
+    UIWindow *appDelegateWindow = [[[UIApplication sharedApplication] delegate] window];
+    UIViewController *vcToPresent = [[UIStoryboard andrzejStoryboard] instantiateInitialViewController];
+    
+    [UIView transitionWithView:appDelegateWindow
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:^{
+                        appDelegateWindow.rootViewController = vcToPresent;
+                    } completion:nil];
 }
 
 @end
