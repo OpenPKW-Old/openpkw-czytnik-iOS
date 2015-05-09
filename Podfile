@@ -7,3 +7,7 @@ pod 'CocoaLumberjack', '~> 2.0'
 pod 'MagicalRecord', '~> 2.2'
 pod 'SSKeychain', '~> 1.2'
 pod 'SVProgressHUD', '~> 1.1'
+
+target :OpenPKWTests, :exclusive => true do
+    pod 'Kiwi'    
+end
