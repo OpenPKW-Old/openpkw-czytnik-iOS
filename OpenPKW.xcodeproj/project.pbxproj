@@ -14,7 +14,6 @@
 		A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4AE51AEBD5B3002EB070 /* UIStoryboard+Storyboards.m */; };
 		A13D41491AEAA3D300B0343E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41481AEAA3D300B0343E /* main.m */; };
 		A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D414B1AEAA3D300B0343E /* AppDelegate.m */; };
-		A13D414F1AEAA3D300B0343E /* OpenPKW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A13D414D1AEAA3D300B0343E /* OpenPKW.xcdatamodeld */; };
 		A13D41551AEAA3D300B0343E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13D41531AEAA3D300B0343E /* Main.storyboard */; };
 		A13D41571AEAA3D300B0343E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13D41561AEAA3D300B0343E /* Images.xcassets */; };
 		A13D41661AEAA3D300B0343E /* OpenPKWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41651AEAA3D300B0343E /* OpenPKWTests.m */; };
@@ -66,7 +65,6 @@
 		A13D41481AEAA3D300B0343E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A13D414A1AEAA3D300B0343E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A13D414B1AEAA3D300B0343E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A13D414E1AEAA3D300B0343E /* OpenPKW.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenPKW.xcdatamodel; sourceTree = "<group>"; };
 		A13D41541AEAA3D300B0343E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A13D41561AEAA3D300B0343E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A13D415F1AEAA3D300B0343E /* OpenPKWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPKWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,7 +196,6 @@
 				A13A4AE31AEBD589002EB070 /* Categories */,
 				A13D41771AEAB3D000B0343E /* Storyboards */,
 				BB9FAE881AF2CBED00200DE7 /* ViewControllers */,
-				A13D41761AEAB1C800B0343E /* CoreData */,
 				A13A4AC71AEB939E002EB070 /* Custom UI */,
 				A13D417A1AEAB41400B0343E /* Utils */,
 				A13D41781AEAB3EB00B0343E /* Resources */,
@@ -231,14 +228,6 @@
 				A13D41641AEAA3D300B0343E /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A13D41761AEAB1C800B0343E /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				A13D414D1AEAA3D300B0343E /* OpenPKW.xcdatamodeld */,
-			);
-			name = CoreData;
 			sourceTree = "<group>";
 		};
 		A13D41771AEAB3D000B0343E /* Storyboards */ = {
@@ -494,7 +483,6 @@
 				A13A4ACA1AEB93B5002EB070 /* Button.m in Sources */,
 				BA2D9E421AF505A700B440D5 /* ResetPasswordViewController.m in Sources */,
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
-				A13D414F1AEAA3D300B0343E /* OpenPKW.xcdatamodeld in Sources */,
 				BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */,
 				BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
@@ -703,19 +691,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A13D414D1AEAA3D300B0343E /* OpenPKW.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A13D414E1AEAA3D300B0343E /* OpenPKW.xcdatamodel */,
-			);
-			currentVersion = A13D414E1AEAA3D300B0343E /* OpenPKW.xcdatamodel */;
-			path = OpenPKW.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A13D413B1AEAA3D300B0343E /* Project object */;
 }
