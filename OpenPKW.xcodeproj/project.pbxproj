@@ -20,6 +20,10 @@
 		A13D41721AEAAF7100B0343E /* OpenPKW-Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */; };
 		A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41741AEAAFE200B0343E /* OpenPKWData.m */; };
 		A14943F11AF00377008E62F7 /* Andrzej.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14943F01AF00377008E62F7 /* Andrzej.storyboard */; };
+		A175A7811AFE2B19004C5D02 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7801AFE2B19004C5D02 /* APIManager.m */; };
+		A175A7841AFE2E21004C5D02 /* LoginResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7831AFE2E21004C5D02 /* LoginResponseDto.m */; };
+		A175A78A1AFE522D004C5D02 /* PKWSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7891AFE522D004C5D02 /* PKWSessionManager.m */; };
+		A175A78D1AFE5DF2004C5D02 /* CommisionsForUserDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A78C1AFE5DF2004C5D02 /* CommisionsForUserDto.m */; };
 		BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */; };
 		BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D521AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m */; };
 		BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */; };
@@ -74,6 +78,14 @@
 		A13D41731AEAAFE200B0343E /* OpenPKWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPKWData.h; sourceTree = "<group>"; };
 		A13D41741AEAAFE200B0343E /* OpenPKWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenPKWData.m; sourceTree = "<group>"; };
 		A14943F01AF00377008E62F7 /* Andrzej.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Andrzej.storyboard; sourceTree = "<group>"; };
+		A175A77F1AFE2B19004C5D02 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		A175A7801AFE2B19004C5D02 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		A175A7821AFE2E21004C5D02 /* LoginResponseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResponseDto.h; sourceTree = "<group>"; };
+		A175A7831AFE2E21004C5D02 /* LoginResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponseDto.m; sourceTree = "<group>"; };
+		A175A7881AFE522D004C5D02 /* PKWSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKWSessionManager.h; sourceTree = "<group>"; };
+		A175A7891AFE522D004C5D02 /* PKWSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKWSessionManager.m; sourceTree = "<group>"; };
+		A175A78B1AFE5DF2004C5D02 /* CommisionsForUserDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommisionsForUserDto.h; sourceTree = "<group>"; };
+		A175A78C1AFE5DF2004C5D02 /* CommisionsForUserDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommisionsForUserDto.m; sourceTree = "<group>"; };
 		BA026D4E1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalTitleInputFieldCell.h; sourceTree = "<group>"; };
 		BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalTitleInputFieldCell.m; sourceTree = "<group>"; };
 		BA026D511AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalTitleInputFieldRowDescriptor.h; sourceTree = "<group>"; };
@@ -193,6 +205,7 @@
 			children = (
 				A13D414A1AEAA3D300B0343E /* AppDelegate.h */,
 				A13D414B1AEAA3D300B0343E /* AppDelegate.m */,
+				A175A77D1AFE2AF3004C5D02 /* API */,
 				A13A4AE31AEBD589002EB070 /* Categories */,
 				A13D41771AEAB3D000B0343E /* Storyboards */,
 				BB9FAE881AF2CBED00200DE7 /* ViewControllers */,
@@ -256,6 +269,29 @@
 				A13D41741AEAAFE200B0343E /* OpenPKWData.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		A175A77D1AFE2AF3004C5D02 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A175A77E1AFE2B01004C5D02 /* Dto */,
+				A175A77F1AFE2B19004C5D02 /* APIManager.h */,
+				A175A7801AFE2B19004C5D02 /* APIManager.m */,
+				A175A7881AFE522D004C5D02 /* PKWSessionManager.h */,
+				A175A7891AFE522D004C5D02 /* PKWSessionManager.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		A175A77E1AFE2B01004C5D02 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				A175A7821AFE2E21004C5D02 /* LoginResponseDto.h */,
+				A175A7831AFE2E21004C5D02 /* LoginResponseDto.m */,
+				A175A78B1AFE5DF2004C5D02 /* CommisionsForUserDto.h */,
+				A175A78C1AFE5DF2004C5D02 /* CommisionsForUserDto.m */,
+			);
+			name = Dto;
 			sourceTree = "<group>";
 		};
 		BA20FD9E1AF3F1CD00C83DCC /* RowDescriptors */ = {
@@ -471,6 +507,7 @@
 				BA2D9E3C1AF5056E00B440D5 /* BeforeLoginNavigationController.m in Sources */,
 				BA20FDA71AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m in Sources */,
 				BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */,
+				A175A78D1AFE5DF2004C5D02 /* CommisionsForUserDto.m in Sources */,
 				BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */,
 				BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */,
 				BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */,
@@ -483,12 +520,15 @@
 				A13A4ACA1AEB93B5002EB070 /* Button.m in Sources */,
 				BA2D9E421AF505A700B440D5 /* ResetPasswordViewController.m in Sources */,
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
+				A175A78A1AFE522D004C5D02 /* PKWSessionManager.m in Sources */,
 				BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */,
 				BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
 				A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */,
 				BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */,
+				A175A7811AFE2B19004C5D02 /* APIManager.m in Sources */,
 				BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */,
+				A175A7841AFE2E21004C5D02 /* LoginResponseDto.m in Sources */,
 				BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */,
 				A13A4ACD1AEB93D5002EB070 /* TextField.m in Sources */,
 			);
