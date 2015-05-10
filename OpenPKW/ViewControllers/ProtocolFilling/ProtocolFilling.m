@@ -8,7 +8,11 @@
 
 #import "ProtocolFilling.h"
 
+#import "ProtocolFillingDataSource.h"
+
 @interface ProtocolFilling ()
+
+@property (nonatomic, strong) ProtocolFillingDataSource *dataSource;
 
 @end
 
@@ -16,7 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.dataSource = [[ProtocolFillingDataSource alloc] initWithTableDescriptor:[self setupTableDescriptor]];
 }
 
 #pragma mark - UITableViewDelegate
