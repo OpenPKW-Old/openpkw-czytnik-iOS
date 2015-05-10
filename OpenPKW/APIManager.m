@@ -10,10 +10,12 @@
 #import "PKWSessionManager.h"
 
 @interface APIManager ()
+
 @property (strong, nonatomic) PKWSessionManager *sessionManager;
 @property (strong, nonatomic) LoginResponseDto *loginResponse;
 
 @end
+
 
 @implementation APIManager
 
@@ -50,6 +52,26 @@
 + (void)commissionsForCurrentUserSuccess:(void (^)(NSArray *))success failure:(void (^)(NSString *))failure {
     NSString *userId = [self sharedInstance].loginResponse.userId;
     [[self sharedInstance].sessionManager commissionsForUser:userId success:success failure:failure];
+}
+
++ (void)commissionWithPkwId:(NSString *)pkwId success:(void(^)(CommissionResponseDto *response))success failure:(void(^)(NSString *error))failure {
+    [[self sharedInstance].sessionManager commissionWithPkwId:pkwId success:success failure:failure];
+}
+
++ (void)protocolsForCommissionWithPkwId:(NSString *)pkwId success:(void(^)(NSArray *response))success failure:(void(^)(NSString *error))failure {
+    [[self sharedInstance].sessionManager protocolsForCommissionWithPkwId:pkwId success:success failure:failure];
+}
+
++ (void)sendProtocol:(ProtocolForCommissionRequestDto *)protocolForCommissionRequestDto forCommission:(NSString *)pkwId success:(void(^)())success failure:(void(^)(NSString *error))failure {
+    [[self sharedInstance].sessionManager sendProtocol:protocolForCommissionRequestDto forCommission:pkwId success:success failure:failure];
+}
+
++ (void)resultWithId:(NSString *)resultId success:(void(^)(ResultResponseDto *response))success failure:(void(^)(NSString *error))failure {
+    [[self sharedInstance].sessionManager resultWithId:resultId success:success failure:failure];
+}
+
++ (void)resultCompleteWithSuccess:(void(^)(ResultCompleteResponseDto *response))success failure:(void(^)(NSString *error))failure {
+    [[self sharedInstance].sessionManager resultCompleteWithSuccess:success failure:failure];
 }
 
 

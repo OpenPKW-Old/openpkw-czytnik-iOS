@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 OpenPKW. All rights reserved.
 //
 
-#import "CommisionsForUserDto.h"
+#import "CommisionsForUserResponseDto.h"
 
-@implementation CommisionsForUserDto
+@implementation CommisionsForUserResponseDto
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     if (self = [self init]) {
@@ -24,7 +24,7 @@
 + (NSArray *)objectWithResponseData:(NSArray *)responseData {
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:responseData.count];
     for (NSDictionary *dictionary in responseData) {
-        CommisionsForUserDto *commisionsForUserDto = [[CommisionsForUserDto alloc] initWithDictionary:dictionary];
+        CommisionsForUserResponseDto *commisionsForUserDto = [[CommisionsForUserResponseDto alloc] initWithDictionary:dictionary];
         [array addObject:commisionsForUserDto];
     }
     return array;

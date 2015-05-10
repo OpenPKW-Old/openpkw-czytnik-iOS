@@ -21,6 +21,8 @@ static NSString *const PKWPathRegister              = @"user/register";
 static NSString *const PKWPathCommissionsForUser    = @"user/{id}/obwodowa";
 static NSString *const PKWPathCommission            = @"komisja/{id}";
 static NSString *const PKWPathProtocolForCommission = @"komisja/{id}/protokol";
+static NSString *const PKWPathResult                = @"wynik/{id}";
+static NSString *const PKWPathResultComplete        = @"wynik/complete";
 
 @implementation PKWSessionManager
 
@@ -84,10 +86,10 @@ static NSString *const PKWPathProtocolForCommission = @"komisja/{id}/protokol";
 //TODO: register
 
 - (void)commissionsForUser:(NSString *)userId success:(void (^)(NSArray *))success failure:(void (^)(NSString *))failure {
-    NSString *path = [PKWPathCommissionsForUser stringByReplacingOccurrencesOfString:@"id" withString:userId];
+    NSString *path = [PKWPathCommissionsForUser stringByReplacingOccurrencesOfString:@"{id}" withString:userId];
     [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         if (success) {
-            NSArray *parsedResponse = [CommisionsForUserDto objectWithResponseData:responseObject];
+            NSArray *parsedResponse = [CommisionsForUserResponseDto objectWithResponseData:responseObject];
             if (success) success(parsedResponse);
         }
         
@@ -96,5 +98,65 @@ static NSString *const PKWPathProtocolForCommission = @"komisja/{id}/protokol";
     }];
 }
 
+- (void)commissionWithPkwId:(NSString *)pkwId success:(void (^)(CommissionResponseDto *))success failure:(void (^)(NSString *))failure {
+    NSString *path = [PKWPathCommission stringByReplacingOccurrencesOfString:@"{id}" withString:pkwId];
+    [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        if (success) {
+            CommissionResponseDto *commissionResponseDto = [[CommissionResponseDto alloc] initWithDictionary:responseObject];
+            success(commissionResponseDto);
+        }
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if (failure) failure(error.localizedRecoverySuggestion);
+    }];
+}
+
+- (void)protocolsForCommissionWithPkwId:(NSString *)pkwId success:(void (^)(NSArray *))success failure:(void (^)(NSString *))failure {
+    NSString *path = [PKWPathProtocolForCommission stringByReplacingOccurrencesOfString:@"{id}" withString:pkwId];
+    [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        if (success) {
+            NSArray *parsedResponse = [ProtocolForCommissionResponseDto objectWithResponseData:responseObject];
+            if (success) success(parsedResponse);
+        }
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if (failure) failure(error.localizedRecoverySuggestion);
+    }];
+}
+
+- (void)sendProtocol:(ProtocolForCommissionRequestDto *)protocolForCommissionRequestDto forCommission:(NSString *)pkwId success:(void (^)())success failure:(void (^)(NSString *))failure {
+    NSString *path = [PKWPathProtocolForCommission stringByReplacingOccurrencesOfString:@"{id}" withString:pkwId];
+    [self POST:path parameters:protocolForCommissionRequestDto.dictionaryRepresentation success:^(NSURLSessionDataTask *task, id responseObject) {
+        if (success) success();
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if (failure) failure(error.localizedRecoverySuggestion);
+    }];
+}
+
+- (void)resultWithId:(NSString *)resultId success:(void (^)(ResultResponseDto *))success failure:(void (^)(NSString *))failure {
+    NSString *path = [PKWPathResult stringByReplacingOccurrencesOfString:@"{id}" withString:resultId];
+    [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        if (success) {
+            ResultResponseDto *resultResponseDto = [[ResultResponseDto alloc] initWithDictionary:responseObject];
+            success(resultResponseDto);
+        }
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if (failure) failure(error.localizedRecoverySuggestion);
+    }];
+}
+
+- (void)resultCompleteWithSuccess:(void (^)(ResultCompleteResponseDto *))success failure:(void (^)(NSString *))failure {
+    [self GET:PKWPathResultComplete parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        if (success) {
+            ResultCompleteResponseDto *resultCompleteResponseDto = [[ResultCompleteResponseDto alloc] initWithDictionary:responseObject];
+            success(resultCompleteResponseDto);
+        }
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        if (failure) failure(error.localizedRecoverySuggestion);
+    }];
+}
 
 @end

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CommisionsForUserDto : NSObject
+@interface CommisionsForUserResponseDto : NSObject
 
 @property (strong, nonatomic) NSString *commisionId;
 @property (strong, nonatomic) NSString *commisionPkwId;
