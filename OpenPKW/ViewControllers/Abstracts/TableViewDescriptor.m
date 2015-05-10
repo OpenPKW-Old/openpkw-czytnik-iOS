@@ -8,6 +8,8 @@
 
 #import "TableViewDescriptor.h"
 
+#import "Macros.h"
+
 @interface TableViewDescriptor ()
 
 @property (nonatomic, strong) NSMutableArray *sections;
@@ -22,11 +24,8 @@
 }
 
 - (instancetype)init {
-    self = [super init];
     
-    if (self == nil) {
-        return nil;
-    }
+    EARLY_EXIT_IF_SELF_IS_NIL
     
     _sections = [NSMutableArray array];
     

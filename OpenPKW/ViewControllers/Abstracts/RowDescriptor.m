@@ -8,6 +8,8 @@
 
 #import "RowDescriptor.h"
 
+#import "Macros.h"
+
 @implementation RowDescriptor
 
 + (instancetype)rowDescriptorWithDisplayText:(NSString *)displayText
@@ -30,11 +32,8 @@
 - (instancetype)initWithDisplayText:(NSString *)displayText
                       secondaryText:(NSString *)secondaryText
                         cellReuseID:(NSString *)cellreuseID {
-    self = [super init];
     
-    if (self == nil) {
-        return nil;
-    }
+    EARLY_EXIT_IF_SELF_IS_NIL
     
     _displayText = [displayText copy];
     _secondaryText = [secondaryText copy];

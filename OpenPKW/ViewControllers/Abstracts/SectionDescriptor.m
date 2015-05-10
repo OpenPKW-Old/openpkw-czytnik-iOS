@@ -8,6 +8,8 @@
 
 #import "SectionDescriptor.h"
 
+#import "Macros.h"
+
 @interface SectionDescriptor ()
 
 @property (nonatomic, strong) NSMutableArray *rows;
@@ -21,11 +23,7 @@
 }
 
 - (instancetype)initWithTitle:(NSString *)title {
-    self = [super init];
-    
-    if (self == nil) {
-        return nil;
-    }
+    EARLY_EXIT_IF_SELF_IS_NIL
     
     _title = [title copy];
     _rows = [NSMutableArray array];
