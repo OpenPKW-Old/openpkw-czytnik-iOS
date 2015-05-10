@@ -47,15 +47,22 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    
+    SectionDescriptor *sectionDescriptor = self.tableDescriptor.sectionsDescriptors[section];
+    
+    return [sectionDescriptor.rowsDescriptors count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    
+    NSString *cellReuseID = [self cellReuseIdForIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseID];
+    
+    return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return [self.tableDescriptor.sectionsDescriptors count];
 }
 
 @end
