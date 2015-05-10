@@ -8,6 +8,9 @@
 
 #import "AbstractTableViewController.h"
 
+#import "Macros.h"
+#import "Candidate.h"
+
 @interface ProtocolFilling : AbstractTableViewController
 
 @property (nonatomic, strong) NSArray *candidatesList;

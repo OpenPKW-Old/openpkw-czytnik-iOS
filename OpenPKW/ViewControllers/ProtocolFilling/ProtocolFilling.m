@@ -34,7 +34,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.dataSource tableView:tableView cellForRowAtIndexPath:indexPath];
+    UITableViewCell *cell = [self.dataSource tableView:tableView cellForRowAtIndexPath:indexPath];
+    
+    [self configureCell:cell atIndexPath:indexPath];
+    
+    return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -44,7 +48,10 @@
 
 #pragma mark - Helper Methods
 
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
+    RowDescriptor *rowDescriptor = [self.dataSource rowDescriptorForIndexPath:indexPath];
     
+    cell.textLabel.text = rowDescriptor.displayText;
 }
 
 #pragma mark - Temporary Model Data Methods
