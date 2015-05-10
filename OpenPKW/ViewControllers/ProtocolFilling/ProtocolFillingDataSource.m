@@ -8,6 +8,8 @@
 
 #import "ProtocolFillingDataSource.h"
 
+#import "Macros.h"
+
 @interface ProtocolFillingDataSource ()
 
 @property (nonatomic, strong) TableViewDescriptor *tableDescriptor;
@@ -20,10 +22,9 @@
 
 - (instancetype)initWithTableDescriptor:(TableViewDescriptor *)tableDescriptor {
     
-    self = [super init];
-    if (self == nil) {
-        return nil;
-    }
+    EARLY_EXIT_IF_SELF_IS_NIL
+    
+    self.tableDescriptor = tableDescriptor;
     
     return self;
 }
