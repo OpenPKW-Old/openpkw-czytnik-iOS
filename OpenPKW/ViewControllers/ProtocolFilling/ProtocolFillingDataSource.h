@@ -14,4 +14,7 @@
 
 - (instancetype)initWithTableDescriptor:(TableViewDescriptor *)tableDescriptor;
 
+- (RowDescriptor *)rowDescriptorForIndexPath:(NSIndexPath *)indexPath;
+- (NSString *)cellReuseIdForIndexPath:(NSIndexPath *)indexPath;
+
 @end
