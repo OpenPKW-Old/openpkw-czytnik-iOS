@@ -154,16 +154,12 @@
     NSMutableArray *rows = [NSMutableArray arrayWithCapacity:self.candidatesList.count];
     
     for (Candidate *candidate in self.candidatesList) {
-        NSString *cellReuseID = @"CountedTitleInputCell";
-        
         [rows addObject:[RowDescriptor rowDescriptorWithDisplayText:candidate.cadidateName
-                                                        cellReuseID:cellReuseID]];
+                                                        cellReuseID:kCellReuseIdForCountedTitleInputCell]];
         
     }
     
-    
     [section addRowsDescriptors:rows];
-    
     
     return section;
 }
