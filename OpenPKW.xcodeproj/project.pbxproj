@@ -24,6 +24,7 @@
 		A14943F11AF00377008E62F7 /* Andrzej.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14943F01AF00377008E62F7 /* Andrzej.storyboard */; };
 		BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */; };
 		BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D521AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m */; };
+		BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF31AFF609800AA248A /* TableViewDescriptor.m */; };
 		BA160CF71AFF624D00AA248A /* SectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF61AFF624D00AA248A /* SectionDescriptor.m */; };
 		BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF91AFF63BC00AA248A /* RowDescriptor.m */; };
 		BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */; };
@@ -86,6 +87,8 @@
 		BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalTitleInputFieldCell.m; sourceTree = "<group>"; };
 		BA026D511AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalTitleInputFieldRowDescriptor.h; sourceTree = "<group>"; };
 		BA026D521AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalTitleInputFieldRowDescriptor.m; sourceTree = "<group>"; };
+		BA160CF21AFF609800AA248A /* TableViewDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewDescriptor.h; path = openpkw/ViewControllers/Abstracts/TableViewDescriptor.h; sourceTree = SOURCE_ROOT; };
+		BA160CF31AFF609800AA248A /* TableViewDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewDescriptor.m; path = openpkw/ViewControllers/Abstracts/TableViewDescriptor.m; sourceTree = SOURCE_ROOT; };
 		BA160CF51AFF624D00AA248A /* SectionDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionDescriptor.h; path = openpkw/ViewControllers/Abstracts/SectionDescriptor.h; sourceTree = SOURCE_ROOT; };
 		BA160CF61AFF624D00AA248A /* SectionDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionDescriptor.m; path = openpkw/ViewControllers/Abstracts/SectionDescriptor.m; sourceTree = SOURCE_ROOT; };
 		BA160CF81AFF63BC00AA248A /* RowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RowDescriptor.h; path = openpkw/ViewControllers/Abstracts/RowDescriptor.h; sourceTree = SOURCE_ROOT; };
@@ -348,6 +351,8 @@
 				BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */,
 				BA2D9E371AF5055400B440D5 /* BeforeLoginAbstractViewController.h */,
 				BA2D9E381AF5055400B440D5 /* BeforeLoginAbstractViewController.m */,
+				BA160CF21AFF609800AA248A /* TableViewDescriptor.h */,
+				BA160CF31AFF609800AA248A /* TableViewDescriptor.m */,
 				BA160CF51AFF624D00AA248A /* SectionDescriptor.h */,
 				BA160CF61AFF624D00AA248A /* SectionDescriptor.m */,
 				BA160CF81AFF63BC00AA248A /* RowDescriptor.h */,
@@ -566,6 +571,7 @@
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
 				A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */,
 				BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */,
+				BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */,
 				BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */,
 				BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */,
 				BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */,
