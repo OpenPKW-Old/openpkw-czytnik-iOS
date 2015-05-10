@@ -8,9 +8,6 @@
 
 #import "ProtocolFilling+Descriptors.h"
 
-// TODO: remove after using the correct model...
-@class Candidate;
-
 NSString *const kCellReuseIdForBoldSingleLineCenterCell = @"TempCell"; //@"BoldSingleLineCenterCell";
 NSString *const kCellReuseIdForButtonCell               = @"TempCell"; //@"ButtonCell";
 NSString *const kCellReuseIdForCountedTitleInputCell    = @"TempCell"; //@"CountedTitleInputCell";
