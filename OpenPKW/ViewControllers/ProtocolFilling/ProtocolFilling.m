@@ -79,18 +79,65 @@
 - (SectionDescriptor *)otherCommisonSection {
     SectionDescriptor *section = [SectionDescriptor sectionDescriptorWithTitle:nil];
     
+    NSArray *rows = @[
+                      [RowDescriptor rowDescriptorWithDisplayText:nil
+                                                      cellReuseID:@"ButtonCell"]
+                      
+                      ];
+    
+    [section addRowsDescriptors:rows];
+    
     return section;
 }
 
 - (SectionDescriptor *)votesGeneralSection {
-    NSString *titleForSection = @"II.14. Kandydaci otrzymali głosów ważnych";
-    SectionDescriptor *section = [SectionDescriptor sectionDescriptorWithTitle:titleForSection];
+    SectionDescriptor *section = [SectionDescriptor sectionDescriptorWithTitle:nil];
+    
+    NSArray *rows = @[
+                      [RowDescriptor rowDescriptorWithDisplayText:@"I.1.Uprawnionych do głosowania"
+                                                      cellReuseID:@"TitleInputCell"],
+                      
+                      [RowDescriptor rowDescriptorWithDisplayText:@"I.4.Wydano kart do głosowania"
+                                                      cellReuseID:@"TitleInputCell"],
+                      
+                      [RowDescriptor rowDescriptorWithDisplayText:@"II.11. Kart ważnych"
+                                                      cellReuseID:@"TitleInputCell"],
+                      
+                      [RowDescriptor rowDescriptorWithDisplayText:@"II.12 Głosów nieważnych"
+                                                      cellReuseID:@"TitleInputCell"],
+                      
+                      [RowDescriptor rowDescriptorWithDisplayText:@"II.13. Głosów ważnych"
+                                                      cellReuseID:@"TitleInputCell"]
+                      ];
+    
+    [section addRowsDescriptors:rows];
     
     return section;
 }
 
 - (SectionDescriptor *)votesCandidatesSection {
-    SectionDescriptor *section = [SectionDescriptor sectionDescriptorWithTitle:nil];
+    NSString *titleForSection = @"II.14. Kandydaci otrzymali głosów ważnych";
+    SectionDescriptor *section = [SectionDescriptor sectionDescriptorWithTitle:titleForSection];
+    
+    NSArray *rows = @[
+                      [RowDescriptor rowDescriptorWithDisplayText:@"Jan Kowalski"
+                                                      cellReuseID:@"CountedTitleInputCell"],
+                      
+                      [RowDescriptor rowDescriptorWithDisplayText:@"Sierotka Marysia"
+                                                      cellReuseID:@"CountedTitleInputCell"],
+                      
+                      [RowDescriptor rowDescriptorWithDisplayText:@"Kuba Maliniak"
+                                                      cellReuseID:@"CountedTitleInputCell"],
+                      
+                      [RowDescriptor rowDescriptorWithDisplayText:@"Macko z Bogdanca"
+                                                      cellReuseID:@"CountedTitleInputCell"],
+                      
+                      [RowDescriptor rowDescriptorWithDisplayText:@"Jurand"
+                                                      cellReuseID:@"CountedTitleInputCell"]
+                      ];
+    
+    [section addRowsDescriptors:rows];
+
     
     return section;
 }
