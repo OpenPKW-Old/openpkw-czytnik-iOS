@@ -27,6 +27,7 @@
 		BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF31AFF609800AA248A /* TableViewDescriptor.m */; };
 		BA160CF71AFF624D00AA248A /* SectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF61AFF624D00AA248A /* SectionDescriptor.m */; };
 		BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF91AFF63BC00AA248A /* RowDescriptor.m */; };
+		BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */; };
 		BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */; };
 		BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA01AF3F21D00C83DCC /* BaseCell.m */; };
 		BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA31AF3F2C000C83DCC /* VerticalMultilineTitleCell.m */; };
@@ -93,6 +94,8 @@
 		BA160CF61AFF624D00AA248A /* SectionDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionDescriptor.m; path = openpkw/ViewControllers/Abstracts/SectionDescriptor.m; sourceTree = SOURCE_ROOT; };
 		BA160CF81AFF63BC00AA248A /* RowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RowDescriptor.h; path = openpkw/ViewControllers/Abstracts/RowDescriptor.h; sourceTree = SOURCE_ROOT; };
 		BA160CF91AFF63BC00AA248A /* RowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RowDescriptor.m; path = openpkw/ViewControllers/Abstracts/RowDescriptor.m; sourceTree = SOURCE_ROOT; };
+		BA160CFB1AFF666F00AA248A /* ProtocolFillingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolFillingDataSource.h; sourceTree = "<group>"; };
+		BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolFillingDataSource.m; sourceTree = "<group>"; };
 		BA20FD9B1AF3E27300C83DCC /* SizeingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeingLabel.h; sourceTree = "<group>"; };
 		BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeingLabel.m; sourceTree = "<group>"; };
 		BA20FD9F1AF3F21D00C83DCC /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
@@ -304,6 +307,8 @@
 			children = (
 				BA2E1D131AFE17740099DB35 /* ProtocolFilling.h */,
 				BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */,
+				BA160CFB1AFF666F00AA248A /* ProtocolFillingDataSource.h */,
+				BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */,
 			);
 			name = ProtocolFilling;
 			path = openpkw/ViewControllers/ProtocolFilling;
@@ -557,6 +562,7 @@
 				BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */,
 				A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */,
 				BA20FDAA1AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m in Sources */,
+				BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */,
 				BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */,
 				BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */,
 				BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */,
