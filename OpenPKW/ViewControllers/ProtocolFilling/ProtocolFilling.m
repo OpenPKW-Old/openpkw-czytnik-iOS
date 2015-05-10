@@ -11,6 +11,13 @@
 #import "Macros.h"
 #import "ProtocolFillingDataSource.h"
 
+static NSString *const kCellReuseIdForBoldSingleLineCenterCell = @"TempCell"; //@"BoldSingleLineCenterCell";
+static NSString *const kCellReuseIdForButtonCell               = @"TempCell"; //@"ButtonCell";
+static NSString *const kCellReuseIdForCountedTitleInputCell    = @"TempCell"; //@"CountedTitleInputCell";
+static NSString *const kCellReuseIdForDoubleValueTextCell      = @"TempCell"; //@"DoubleValueTextCell";
+static NSString *const kCellReuseIdForSingleLineCenterCell     = @"TempCell"; //@"SingleLineCenterCell";
+static NSString *const kCellReuseIdForTitleInputCell           = @"TempCell"; //@"TitleInputCell";
+
 
 ////
 // Temp Model For Candidates Data
@@ -89,17 +96,17 @@
     
     NSArray *rows = @[
                       [RowDescriptor rowDescriptorWithDisplayText:@"Obwodowa Komisja Wyborcz Nr:"
-                                                      cellReuseID:@"BoldSingleLineCenterCell"],
+                                                      cellReuseID:kCellReuseIdForBoldSingleLineCenterCell],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"Nr: 582"
                                                     secondaryText:@"146513-582"
-                                                      cellReuseID:@"DoubleValueTextCell"],
+                                                      cellReuseID:kCellReuseIdForDoubleValueTextCell],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"Przedszkole nr 55"
-                                                      cellReuseID:@"SingleLineCenterCell"],
+                                                      cellReuseID:kCellReuseIdForSingleLineCenterCell],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"ul. Jana Cybisa 1, 02-784 Warszawa"
-                                                      cellReuseID:@"SingleLineCenterCell"]
+                                                      cellReuseID:kCellReuseIdForSingleLineCenterCell]
                       
                       ];
     
@@ -113,7 +120,7 @@
     
     NSArray *rows = @[
                       [RowDescriptor rowDescriptorWithDisplayText:nil
-                                                      cellReuseID:@"ButtonCell"]
+                                                      cellReuseID:kCellReuseIdForButtonCell]
                       
                       ];
     
@@ -127,19 +134,19 @@
     
     NSArray *rows = @[
                       [RowDescriptor rowDescriptorWithDisplayText:@"I.1.Uprawnionych do głosowania"
-                                                      cellReuseID:@"TitleInputCell"],
+                                                      cellReuseID:kCellReuseIdForTitleInputCell],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"I.4.Wydano kart do głosowania"
-                                                      cellReuseID:@"TitleInputCell"],
+                                                      cellReuseID:kCellReuseIdForTitleInputCell],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"II.11. Kart ważnych"
-                                                      cellReuseID:@"TitleInputCell"],
+                                                      cellReuseID:kCellReuseIdForTitleInputCell],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"II.12 Głosów nieważnych"
-                                                      cellReuseID:@"TitleInputCell"],
+                                                      cellReuseID:kCellReuseIdForTitleInputCell],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"II.13. Głosów ważnych"
-                                                      cellReuseID:@"TitleInputCell"]
+                                                      cellReuseID:kCellReuseIdForTitleInputCell]
                       ];
     
     [section addRowsDescriptors:rows];
