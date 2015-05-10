@@ -52,6 +52,7 @@
     [super viewDidLoad];
     
     self.dataSource = [[ProtocolFillingDataSource alloc] initWithTableDescriptor:[self setupTableDescriptor]];
+    self.candidatesList = [self setupTempCandidateList];
 }
 
 #pragma mark - UITableViewDataSource
@@ -149,27 +150,32 @@
     NSString *titleForSection = @"II.14. Kandydaci otrzymali głosów ważnych";
     SectionDescriptor *section = [SectionDescriptor sectionDescriptorWithTitle:titleForSection];
     
-    NSArray *rows = @[
-                      [RowDescriptor rowDescriptorWithDisplayText:@"Jan Kowalski"
-                                                      cellReuseID:@"CountedTitleInputCell"],
-                      
-                      [RowDescriptor rowDescriptorWithDisplayText:@"Sierotka Marysia"
-                                                      cellReuseID:@"CountedTitleInputCell"],
-                      
-                      [RowDescriptor rowDescriptorWithDisplayText:@"Kuba Maliniak"
-                                                      cellReuseID:@"CountedTitleInputCell"],
-                      
-                      [RowDescriptor rowDescriptorWithDisplayText:@"Macko z Bogdanca"
-                                                      cellReuseID:@"CountedTitleInputCell"],
-                      
-                      [RowDescriptor rowDescriptorWithDisplayText:@"Jurand"
-                                                      cellReuseID:@"CountedTitleInputCell"]
-                      ];
+    NSMutableArray *rows = [NSMutableArray arrayWithCapacity:self.candidatesList.count];
+    
+    for (Candidate *candidate in self.candidatesList) {
+        NSString *cellReuseID = @"CountedTitleInputCell";
+        
+        [rows addObject:[RowDescriptor rowDescriptorWithDisplayText:candidate.cadidateName
+                                                        cellReuseID:cellReuseID]];
+        
+    }
+    
     
     [section addRowsDescriptors:rows];
-
+    
     
     return section;
+}
+
+#pragma mark - Temporary Model Data Methods
+
+- (NSArray *)setupTempCandidateList {
+    
+    return @[ [Candidate cadidateWithName:@"Jan Kowalski"],
+              [Candidate cadidateWithName:@"Sierotka Marysia"],
+              [Candidate cadidateWithName:@"Kuba Maliniak"],
+              [Candidate cadidateWithName:@"Macko z Bogdanca"],
+              [Candidate cadidateWithName:@"Jurand"] ];
 }
 
 @end

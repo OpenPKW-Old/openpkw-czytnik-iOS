@@ -10,4 +10,6 @@
 
 @interface ProtocolFilling : AbstractTableViewController
 
+@property (nonatomic, strong) NSArray *candidatesList;
+
 @end
