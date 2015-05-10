@@ -33,6 +33,10 @@
 
 #pragma mark - Public API
 
+- (NSArray *)rowsDescriptors {
+    return [NSArray arrayWithArray:self.rows];
+}
+
 - (void)addRowDescriptor:(RowDescriptor *)rowDescriptor {
     NSAssert([rowDescriptor isKindOfClass:[RowDescriptor class]], @"Item should be of a RowDescriptor class");
 
