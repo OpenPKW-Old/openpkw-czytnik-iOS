@@ -96,6 +96,7 @@
 		BA160CF91AFF63BC00AA248A /* RowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RowDescriptor.m; path = openpkw/ViewControllers/Abstracts/RowDescriptor.m; sourceTree = SOURCE_ROOT; };
 		BA160CFB1AFF666F00AA248A /* ProtocolFillingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolFillingDataSource.h; sourceTree = "<group>"; };
 		BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolFillingDataSource.m; sourceTree = "<group>"; };
+		BA160CFE1AFF944500AA248A /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = openpkw/Macros.h; sourceTree = SOURCE_ROOT; };
 		BA20FD9B1AF3E27300C83DCC /* SizeingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeingLabel.h; sourceTree = "<group>"; };
 		BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeingLabel.m; sourceTree = "<group>"; };
 		BA20FD9F1AF3F21D00C83DCC /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
@@ -285,6 +286,7 @@
 		A13D417A1AEAB41400B0343E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BA160CFE1AFF944500AA248A /* Macros.h */,
 				A13D41731AEAAFE200B0343E /* OpenPKWData.h */,
 				A13D41741AEAAFE200B0343E /* OpenPKWData.m */,
 			);
