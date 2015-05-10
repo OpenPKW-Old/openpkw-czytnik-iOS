@@ -94,7 +94,6 @@
 		BA20FDA61AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalMultilineTitleRowDescriptor.m; sourceTree = "<group>"; };
 		BA20FDA81AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ElectoralCommisionAddViewController+SizingCellsHelperMethods.h"; sourceTree = "<group>"; };
 		BA20FDA91AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ElectoralCommisionAddViewController+SizingCellsHelperMethods.m"; sourceTree = "<group>"; };
-		BA212AB61AFE6E860072675B /* ProtocolFillingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolFillingDataSource.h; sourceTree = "<group>"; };
 		BA2D9E341AF5050A00B440D5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BA2D9E351AF5050A00B440D5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BA2D9E371AF5055400B440D5 /* BeforeLoginAbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeforeLoginAbstractViewController.h; sourceTree = "<group>"; };
@@ -296,7 +295,6 @@
 			children = (
 				BA2E1D131AFE17740099DB35 /* ProtocolFilling.h */,
 				BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */,
-				BA212AB61AFE6E860072675B /* ProtocolFillingDataSource.h */,
 			);
 			name = ProtocolFilling;
 			path = openpkw/ViewControllers/ProtocolFilling;
@@ -426,7 +424,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A13D413E1AEAA3D300B0343E /* Build configuration list for PBXProject "openpkw" */;
+			buildConfigurationList = A13D413E1AEAA3D300B0343E /* Build configuration list for PBXProject "OpenPKW" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -734,7 +732,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A13D413E1AEAA3D300B0343E /* Build configuration list for PBXProject "openpkw" */ = {
+		A13D413E1AEAA3D300B0343E /* Build configuration list for PBXProject "OpenPKW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A13D41671AEAA3D300B0343E /* Debug */,

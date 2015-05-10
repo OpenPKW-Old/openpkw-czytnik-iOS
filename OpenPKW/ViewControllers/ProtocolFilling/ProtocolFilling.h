@@ -8,10 +8,6 @@
 
 #import "AbstractTableViewController.h"
 
-#import "ProtocolFillingDataSource.h"
-
 @interface ProtocolFilling : AbstractTableViewController
-
-@property (nonatomic, strong) id <ProtocolFillingDataSource> dataSource;
 
 @end
