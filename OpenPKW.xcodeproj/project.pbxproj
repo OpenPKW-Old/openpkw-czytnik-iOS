@@ -28,6 +28,7 @@
 		BA160CF71AFF624D00AA248A /* SectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF61AFF624D00AA248A /* SectionDescriptor.m */; };
 		BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF91AFF63BC00AA248A /* RowDescriptor.m */; };
 		BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */; };
+		BA160D011AFFBD3200AA248A /* ProtocolFilling+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160D001AFFBD3200AA248A /* ProtocolFilling+Descriptors.m */; };
 		BA160D081AFFC06B00AA248A /* Candidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160D071AFFC06B00AA248A /* Candidate.m */; };
 		BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */; };
 		BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA01AF3F21D00C83DCC /* BaseCell.m */; };
@@ -98,6 +99,8 @@
 		BA160CFB1AFF666F00AA248A /* ProtocolFillingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolFillingDataSource.h; sourceTree = "<group>"; };
 		BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolFillingDataSource.m; sourceTree = "<group>"; };
 		BA160CFE1AFF944500AA248A /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = openpkw/Macros.h; sourceTree = SOURCE_ROOT; };
+		BA160CFF1AFFBD3200AA248A /* ProtocolFilling+Descriptors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProtocolFilling+Descriptors.h"; sourceTree = "<group>"; };
+		BA160D001AFFBD3200AA248A /* ProtocolFilling+Descriptors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProtocolFilling+Descriptors.m"; sourceTree = "<group>"; };
 		BA160D061AFFC06B00AA248A /* Candidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candidate.h; sourceTree = "<group>"; };
 		BA160D071AFFC06B00AA248A /* Candidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candidate.m; sourceTree = "<group>"; };
 		BA20FD9B1AF3E27300C83DCC /* SizeingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeingLabel.h; sourceTree = "<group>"; };
@@ -322,6 +325,8 @@
 				BA160D021AFFC04000AA248A /* Model */,
 				BA2E1D131AFE17740099DB35 /* ProtocolFilling.h */,
 				BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */,
+				BA160CFF1AFFBD3200AA248A /* ProtocolFilling+Descriptors.h */,
+				BA160D001AFFBD3200AA248A /* ProtocolFilling+Descriptors.m */,
 				BA160CFB1AFF666F00AA248A /* ProtocolFillingDataSource.h */,
 				BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */,
 			);
@@ -572,6 +577,7 @@
 				BA20FDA71AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m in Sources */,
 				BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */,
 				BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */,
+				BA160D011AFFBD3200AA248A /* ProtocolFilling+Descriptors.m in Sources */,
 				BA160CF71AFF624D00AA248A /* SectionDescriptor.m in Sources */,
 				BA160D081AFFC06B00AA248A /* Candidate.m in Sources */,
 				BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */,
