@@ -8,6 +8,7 @@
 
 #import "ProtocolFilling.h"
 
+#import "Macros.h"
 #import "ProtocolFillingDataSource.h"
 
 
