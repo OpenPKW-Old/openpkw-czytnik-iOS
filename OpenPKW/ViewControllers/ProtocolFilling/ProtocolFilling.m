@@ -18,36 +18,6 @@ static NSString *const kCellReuseIdForDoubleValueTextCell      = @"TempCell"; //
 static NSString *const kCellReuseIdForSingleLineCenterCell     = @"TempCell"; //@"SingleLineCenterCell";
 static NSString *const kCellReuseIdForTitleInputCell           = @"TempCell"; //@"TitleInputCell";
 
-
-////
-// Temp Model For Candidates Data
-@interface Candidate : NSObject
-
-@property (nonatomic, copy) NSString *cadidateName;
-
-+ (instancetype)cadidateWithName:(NSString *)name;
-
-@end
-
-@implementation Candidate
-
-+ (instancetype)cadidateWithName:(NSString *)name {
-    return [[self alloc] initWithName:name];
-}
-
-- (instancetype)initWithName:(NSString *)name {
-    EARLY_EXIT_IF_SELF_IS_NIL
-    
-    _cadidateName = [name copy];
-    
-    return self;
-}
-
-@end
-
-// end of temp model
-////
-
 @interface ProtocolFilling ()
 
 @property (nonatomic, strong) ProtocolFillingDataSource *dataSource;
