@@ -40,7 +40,6 @@
 		BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */; };
 		BA160D011AFFBD3200AA248A /* ProtocolFilling+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160D001AFFBD3200AA248A /* ProtocolFilling+Descriptors.m */; };
 		BA160D081AFFC06B00AA248A /* Candidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160D071AFFC06B00AA248A /* Candidate.m */; };
-		BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */; };
 		BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA01AF3F21D00C83DCC /* BaseCell.m */; };
 		BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA31AF3F2C000C83DCC /* VerticalMultilineTitleCell.m */; };
 		BA20FDA71AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA61AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m */; };
@@ -322,15 +321,6 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
-		BA160D021AFFC04000AA248A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BA160D061AFFC06B00AA248A /* Candidate.h */,
-				BA160D071AFFC06B00AA248A /* Candidate.m */,
-			);
-			path = Model;
-            sourceTree = "<group>";
-        };
 		A175A77D1AFE2AF3004C5D02 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +356,15 @@
 				A1D29E911AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m */,
 			);
 			name = Dto;
+			sourceTree = "<group>";
+		};
+		BA160D021AFFC04000AA248A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA160D061AFFC06B00AA248A /* Candidate.h */,
+				BA160D071AFFC06B00AA248A /* Candidate.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BA20FD9E1AF3F1CD00C83DCC /* RowDescriptors */ = {
@@ -667,10 +666,8 @@
 				A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */,
 				BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */,
 				BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */,
-				BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */,
 				BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */,
 				A175A7811AFE2B19004C5D02 /* APIManager.m in Sources */,
-				BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */,
 				A175A7841AFE2E21004C5D02 /* LoginResponseDto.m in Sources */,
 				BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */,
 				A175A7901AFE6406004C5D02 /* CommissionResponseDto.m in Sources */,
