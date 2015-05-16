@@ -26,7 +26,7 @@
     return self;
 }
 
-- (void)configureCellWithRowDescriptor:(id)descriptor {
+- (void)configureCellWithRowDescriptor:(RowDescriptor *)descriptor {
     [NSException raise:NSInternalInconsistencyException
                 format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
 }
