@@ -15,13 +15,23 @@
 		A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */ = {isa = PBXBuildFile; fileRef = A13A4AE51AEBD5B3002EB070 /* UIStoryboard+Storyboards.m */; };
 		A13D41491AEAA3D300B0343E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41481AEAA3D300B0343E /* main.m */; };
 		A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D414B1AEAA3D300B0343E /* AppDelegate.m */; };
-		A13D414F1AEAA3D300B0343E /* OpenPKW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A13D414D1AEAA3D300B0343E /* OpenPKW.xcdatamodeld */; };
 		A13D41551AEAA3D300B0343E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13D41531AEAA3D300B0343E /* Main.storyboard */; };
 		A13D41571AEAA3D300B0343E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13D41561AEAA3D300B0343E /* Images.xcassets */; };
 		A13D41661AEAA3D300B0343E /* OpenPKWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41651AEAA3D300B0343E /* OpenPKWTests.m */; };
 		A13D41721AEAAF7100B0343E /* OpenPKW-Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */; };
 		A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41741AEAAFE200B0343E /* OpenPKWData.m */; };
 		A14943F11AF00377008E62F7 /* Andrzej.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14943F01AF00377008E62F7 /* Andrzej.storyboard */; };
+		A175A7811AFE2B19004C5D02 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7801AFE2B19004C5D02 /* APIManager.m */; };
+		A175A7841AFE2E21004C5D02 /* LoginResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7831AFE2E21004C5D02 /* LoginResponseDto.m */; };
+		A175A78A1AFE522D004C5D02 /* PKWSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7891AFE522D004C5D02 /* PKWSessionManager.m */; };
+		A175A78D1AFE5DF2004C5D02 /* CommisionsForUserResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A78C1AFE5DF2004C5D02 /* CommisionsForUserResponseDto.m */; };
+		A175A7901AFE6406004C5D02 /* CommissionResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A78F1AFE6406004C5D02 /* CommissionResponseDto.m */; };
+		A175A7931AFF5C4E004C5D02 /* CandidateResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7921AFF5C4E004C5D02 /* CandidateResponseDto.m */; };
+		A175A7961AFF609B004C5D02 /* ProtocolForCommissionResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7951AFF609B004C5D02 /* ProtocolForCommissionResponseDto.m */; };
+		A1D29E891AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D29E881AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m */; };
+		A1D29E8C1AFF6662000604C5 /* ResultResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D29E8B1AFF6662000604C5 /* ResultResponseDto.m */; };
+		A1D29E8F1AFF6673000604C5 /* ResultCompleteResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D29E8E1AFF6673000604C5 /* ResultCompleteResponseDto.m */; };
+		A1D29E921AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D29E911AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m */; };
 		BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */; };
 		BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D521AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m */; };
 		BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */; };
@@ -69,7 +79,6 @@
 		A13D41481AEAA3D300B0343E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A13D414A1AEAA3D300B0343E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A13D414B1AEAA3D300B0343E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A13D414E1AEAA3D300B0343E /* OpenPKW.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenPKW.xcdatamodel; sourceTree = "<group>"; };
 		A13D41541AEAA3D300B0343E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A13D41561AEAA3D300B0343E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A13D415F1AEAA3D300B0343E /* OpenPKWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPKWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +88,28 @@
 		A13D41731AEAAFE200B0343E /* OpenPKWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPKWData.h; sourceTree = "<group>"; };
 		A13D41741AEAAFE200B0343E /* OpenPKWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenPKWData.m; sourceTree = "<group>"; };
 		A14943F01AF00377008E62F7 /* Andrzej.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Andrzej.storyboard; sourceTree = "<group>"; };
+		A175A77F1AFE2B19004C5D02 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		A175A7801AFE2B19004C5D02 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		A175A7821AFE2E21004C5D02 /* LoginResponseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResponseDto.h; sourceTree = "<group>"; };
+		A175A7831AFE2E21004C5D02 /* LoginResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponseDto.m; sourceTree = "<group>"; };
+		A175A7881AFE522D004C5D02 /* PKWSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKWSessionManager.h; sourceTree = "<group>"; };
+		A175A7891AFE522D004C5D02 /* PKWSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKWSessionManager.m; sourceTree = "<group>"; };
+		A175A78B1AFE5DF2004C5D02 /* CommisionsForUserResponseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommisionsForUserResponseDto.h; sourceTree = "<group>"; };
+		A175A78C1AFE5DF2004C5D02 /* CommisionsForUserResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommisionsForUserResponseDto.m; sourceTree = "<group>"; };
+		A175A78E1AFE6406004C5D02 /* CommissionResponseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommissionResponseDto.h; sourceTree = "<group>"; };
+		A175A78F1AFE6406004C5D02 /* CommissionResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommissionResponseDto.m; sourceTree = "<group>"; };
+		A175A7911AFF5C4E004C5D02 /* CandidateResponseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateResponseDto.h; sourceTree = "<group>"; };
+		A175A7921AFF5C4E004C5D02 /* CandidateResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateResponseDto.m; sourceTree = "<group>"; };
+		A175A7941AFF609B004C5D02 /* ProtocolForCommissionResponseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolForCommissionResponseDto.h; sourceTree = "<group>"; };
+		A175A7951AFF609B004C5D02 /* ProtocolForCommissionResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolForCommissionResponseDto.m; sourceTree = "<group>"; };
+		A1D29E871AFF62D3000604C5 /* ProtocolForCommissionRequestDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolForCommissionRequestDto.h; sourceTree = "<group>"; };
+		A1D29E881AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolForCommissionRequestDto.m; sourceTree = "<group>"; };
+		A1D29E8A1AFF6662000604C5 /* ResultResponseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultResponseDto.h; sourceTree = "<group>"; };
+		A1D29E8B1AFF6662000604C5 /* ResultResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultResponseDto.m; sourceTree = "<group>"; };
+		A1D29E8D1AFF6673000604C5 /* ResultCompleteResponseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultCompleteResponseDto.h; sourceTree = "<group>"; };
+		A1D29E8E1AFF6673000604C5 /* ResultCompleteResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultCompleteResponseDto.m; sourceTree = "<group>"; };
+		A1D29E901AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultCompleteParentCommissionResponseDto.h; sourceTree = "<group>"; };
+		A1D29E911AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultCompleteParentCommissionResponseDto.m; sourceTree = "<group>"; };
 		BA026D4E1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalTitleInputFieldCell.h; sourceTree = "<group>"; };
 		BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalTitleInputFieldCell.m; sourceTree = "<group>"; };
 		BA026D511AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalTitleInputFieldRowDescriptor.h; sourceTree = "<group>"; };
@@ -202,10 +233,10 @@
 			children = (
 				A13D414A1AEAA3D300B0343E /* AppDelegate.h */,
 				A13D414B1AEAA3D300B0343E /* AppDelegate.m */,
+				A175A77D1AFE2AF3004C5D02 /* API */,
 				A13A4AE31AEBD589002EB070 /* Categories */,
 				A13D41771AEAB3D000B0343E /* Storyboards */,
 				BB9FAE881AF2CBED00200DE7 /* ViewControllers */,
-				A13D41761AEAB1C800B0343E /* CoreData */,
 				A13A4AC71AEB939E002EB070 /* Custom UI */,
 				A13D417A1AEAB41400B0343E /* Utils */,
 				A13D41781AEAB3EB00B0343E /* Resources */,
@@ -240,14 +271,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A13D41761AEAB1C800B0343E /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				A13D414D1AEAA3D300B0343E /* OpenPKW.xcdatamodeld */,
-			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
 		A13D41771AEAB3D000B0343E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +297,43 @@
 				A13D41741AEAAFE200B0343E /* OpenPKWData.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		A175A77D1AFE2AF3004C5D02 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A175A77E1AFE2B01004C5D02 /* Dto */,
+				A175A77F1AFE2B19004C5D02 /* APIManager.h */,
+				A175A7801AFE2B19004C5D02 /* APIManager.m */,
+				A175A7881AFE522D004C5D02 /* PKWSessionManager.h */,
+				A175A7891AFE522D004C5D02 /* PKWSessionManager.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		A175A77E1AFE2B01004C5D02 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				A175A7821AFE2E21004C5D02 /* LoginResponseDto.h */,
+				A175A7831AFE2E21004C5D02 /* LoginResponseDto.m */,
+				A175A78B1AFE5DF2004C5D02 /* CommisionsForUserResponseDto.h */,
+				A175A78C1AFE5DF2004C5D02 /* CommisionsForUserResponseDto.m */,
+				A175A78E1AFE6406004C5D02 /* CommissionResponseDto.h */,
+				A175A78F1AFE6406004C5D02 /* CommissionResponseDto.m */,
+				A175A7911AFF5C4E004C5D02 /* CandidateResponseDto.h */,
+				A175A7921AFF5C4E004C5D02 /* CandidateResponseDto.m */,
+				A175A7941AFF609B004C5D02 /* ProtocolForCommissionResponseDto.h */,
+				A175A7951AFF609B004C5D02 /* ProtocolForCommissionResponseDto.m */,
+				A1D29E871AFF62D3000604C5 /* ProtocolForCommissionRequestDto.h */,
+				A1D29E881AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m */,
+				A1D29E8A1AFF6662000604C5 /* ResultResponseDto.h */,
+				A1D29E8B1AFF6662000604C5 /* ResultResponseDto.m */,
+				A1D29E8D1AFF6673000604C5 /* ResultCompleteResponseDto.h */,
+				A1D29E8E1AFF6673000604C5 /* ResultCompleteResponseDto.m */,
+				A1D29E901AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.h */,
+				A1D29E911AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m */,
+			);
+			name = Dto;
 			sourceTree = "<group>";
 		};
 		BA20FD9E1AF3F1CD00C83DCC /* RowDescriptors */ = {
@@ -522,26 +582,36 @@
 				BA2D9E3C1AF5056E00B440D5 /* BeforeLoginNavigationController.m in Sources */,
 				BA20FDA71AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m in Sources */,
 				BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */,
+				A1D29E8C1AFF6662000604C5 /* ResultResponseDto.m in Sources */,
+				A175A7961AFF609B004C5D02 /* ProtocolForCommissionResponseDto.m in Sources */,
+				A175A78D1AFE5DF2004C5D02 /* CommisionsForUserResponseDto.m in Sources */,
 				BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */,
 				BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */,
 				BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */,
 				A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */,
 				BA20FDAA1AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m in Sources */,
 				BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */,
+				A1D29E891AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m in Sources */,
 				BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */,
+				A1D29E8F1AFF6673000604C5 /* ResultCompleteResponseDto.m in Sources */,
 				BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */,
+				A175A7931AFF5C4E004C5D02 /* CandidateResponseDto.m in Sources */,
 				BA2D9E411AF505A700B440D5 /* RegisterViewController.m in Sources */,
 				A13A4ACA1AEB93B5002EB070 /* Button.m in Sources */,
 				BA2D9E421AF505A700B440D5 /* ResetPasswordViewController.m in Sources */,
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
-				A13D414F1AEAA3D300B0343E /* OpenPKW.xcdatamodeld in Sources */,
+				A175A78A1AFE522D004C5D02 /* PKWSessionManager.m in Sources */,
 				BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */,
 				BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
+				A1D29E921AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m in Sources */,
 				A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */,
 				BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */,
+				A175A7811AFE2B19004C5D02 /* APIManager.m in Sources */,
 				BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */,
+				A175A7841AFE2E21004C5D02 /* LoginResponseDto.m in Sources */,
 				BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */,
+				A175A7901AFE6406004C5D02 /* CommissionResponseDto.m in Sources */,
 				A13A4ACD1AEB93D5002EB070 /* TextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -745,19 +815,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A13D414D1AEAA3D300B0343E /* OpenPKW.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A13D414E1AEAA3D300B0343E /* OpenPKW.xcdatamodel */,
-			);
-			currentVersion = A13D414E1AEAA3D300B0343E /* OpenPKW.xcdatamodel */;
-			path = OpenPKW.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A13D413B1AEAA3D300B0343E /* Project object */;
 }
