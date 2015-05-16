@@ -70,6 +70,8 @@ static NSString *const PKWPathResultComplete        = @"wynik/complete";
             if (failure) failure(error.localizedRecoverySuggestion);
         }
     }];
+    
+    [dataTask resume];
 }
 
 - (void)logoutWithSuccess:(void (^)())success failure:(void (^)(NSString *))failure {
