@@ -10,10 +10,12 @@
 
 NSString *const kCellReuseIdForBoldSingleLineCenterCell = @"SingleLableBoldCenterCell";
 NSString *const kCellReuseIdForButtonCell               = @"ButtonCell";
-NSString *const kCellReuseIdForCountedTitleInputCell    = @"TempCell"; //@"CountedTitleInputCell";
+NSString *const kCellReuseIdForCountedTitleInputCell    = @"SingleLabelLeftCell"; //@"CountedTitleInputCell";
 NSString *const kCellReuseIdForDoubleValueTextCell      = @"DoubleValueTextCell";
 NSString *const kCellReuseIdForSingleLabelCenterCell    = @"SingleLabelCenterCell";
-NSString *const kCellReuseIdForTitleInputCell           = @"TempCell"; //@"TitleInputCell";
+NSString *const kCellReuseIdForTitleInputCell           = @"TitleInputCell";
+NSString *const kCellReuseIdForSingleLabelLeftCell      = @"SingleLabelLeftCell";
+
 
 @implementation ProtocolFilling (Descriptors)
 
@@ -92,10 +94,12 @@ NSString *const kCellReuseIdForTitleInputCell           = @"TempCell"; //@"Title
 }
 
 - (SectionDescriptor *)votesCandidatesSection {
-    NSString *titleForSection = @"II.14. Kandydaci otrzymali głosów ważnych";
-    SectionDescriptor *section = [SectionDescriptor sectionDescriptorWithTitle:titleForSection];
+    SectionDescriptor *section = [SectionDescriptor sectionDescriptorWithTitle:nil];
     
-    NSMutableArray *rows = [NSMutableArray arrayWithCapacity:self.candidatesList.count];
+    NSMutableArray *rows = [NSMutableArray arrayWithCapacity:self.candidatesList.count + 1];
+    
+    [rows addObject:[RowDescriptor rowDescriptorWithDisplayText:@"II.14. Kandydaci otrzymali głosów ważnych"
+                                                    cellReuseID:kCellReuseIdForDoubleValueTextCell]];
     
     for (Candidate *candidate in self.candidatesList) {
         [rows addObject:[RowDescriptor rowDescriptorWithDisplayText:candidate.cadidateName

@@ -16,6 +16,7 @@ extern NSString *const kCellReuseIdForCountedTitleInputCell;
 extern NSString *const kCellReuseIdForDoubleValueTextCell;
 extern NSString *const kCellReuseIdForSingleLabelCenterCell;
 extern NSString *const kCellReuseIdForTitleInputCell;
+extern NSString *const kCellReuseIdForSingleLabelLeftCell;
 
 @interface ProtocolFilling (Descriptors)
 

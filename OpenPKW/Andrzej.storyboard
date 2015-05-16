@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TempCell" textLabel="6Q9-Fh-CDE" style="IBUITableViewCellStyleDefault" id="pU3-5E-kuW">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SingleLabelLeftCell" textLabel="6Q9-Fh-CDE" style="IBUITableViewCellStyleDefault" id="pU3-5E-kuW">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pU3-5E-kuW" id="wKJ-rX-2aW">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -233,6 +233,43 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="button" destination="yVA-6s-TKL" id="wGD-fv-vGt"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleInputCell" id="4k3-hB-w2x" customClass="TitleInputCell">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4k3-hB-w2x" id="ZTe-6Z-tm9">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1l9-cf-4n3">
+                                            <rect key="frame" x="8" y="8" width="215" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWd-IK-mID">
+                                            <rect key="frame" x="235" y="7" width="77" height="30"/>
+                                            <color key="backgroundColor" red="0.84220694742328039" green="1" blue="0.85024013555446021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="KIP-tr-zkB"/>
+                                                <constraint firstAttribute="width" constant="77" id="dXj-KW-ODL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="fWd-IK-mID" secondAttribute="centerY" id="7pN-35-wwQ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1l9-cf-4n3" secondAttribute="bottom" id="JU5-g9-n6Q"/>
+                                        <constraint firstItem="fWd-IK-mID" firstAttribute="leading" secondItem="1l9-cf-4n3" secondAttribute="trailing" constant="12" id="bQS-UO-NjP"/>
+                                        <constraint firstItem="1l9-cf-4n3" firstAttribute="top" secondItem="ZTe-6Z-tm9" secondAttribute="topMargin" id="cSF-of-SJu"/>
+                                        <constraint firstItem="fWd-IK-mID" firstAttribute="trailing" secondItem="ZTe-6Z-tm9" secondAttribute="trailingMargin" id="exc-U9-q1u"/>
+                                        <constraint firstItem="1l9-cf-4n3" firstAttribute="leading" secondItem="ZTe-6Z-tm9" secondAttribute="leadingMargin" id="myg-kq-8Sr"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="inputTextField" destination="fWd-IK-mID" id="JZC-Ie-Ms8"/>
+                                    <outlet property="label" destination="1l9-cf-4n3" id="eOa-VH-xRv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
