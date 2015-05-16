@@ -47,6 +47,7 @@
 		BA2BBEA51B0759F3007837B4 /* SingleLableBoldCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEA41B0759F3007837B4 /* SingleLableBoldCenterCell.m */; };
 		BA2BBEA81B075E73007837B4 /* DoubleValueTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */; };
 		BA2BBEAB1B076427007837B4 /* SingleLabelCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEAA1B076427007837B4 /* SingleLabelCenterCell.m */; };
+		BA2BBEAE1B076A20007837B4 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEAD1B076A20007837B4 /* ButtonCell.m */; };
 		BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E351AF5050A00B440D5 /* LoginViewController.m */; };
 		BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E381AF5055400B440D5 /* BeforeLoginAbstractViewController.m */; };
 		BA2D9E3C1AF5056E00B440D5 /* BeforeLoginNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E3B1AF5056E00B440D5 /* BeforeLoginNavigationController.m */; };
@@ -152,6 +153,8 @@
 		BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleValueTextCell.m; sourceTree = "<group>"; };
 		BA2BBEA91B076427007837B4 /* SingleLabelCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLabelCenterCell.h; sourceTree = "<group>"; };
 		BA2BBEAA1B076427007837B4 /* SingleLabelCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLabelCenterCell.m; sourceTree = "<group>"; };
+		BA2BBEAC1B076A20007837B4 /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCell.h; sourceTree = "<group>"; };
+		BA2BBEAD1B076A20007837B4 /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
 		BA2D9E341AF5050A00B440D5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BA2D9E351AF5050A00B440D5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BA2D9E371AF5055400B440D5 /* BeforeLoginAbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeforeLoginAbstractViewController.h; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 				BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */,
 				BA2BBEA91B076427007837B4 /* SingleLabelCenterCell.h */,
 				BA2BBEAA1B076427007837B4 /* SingleLabelCenterCell.m */,
+				BA2BBEAC1B076A20007837B4 /* ButtonCell.h */,
+				BA2BBEAD1B076A20007837B4 /* ButtonCell.m */,
 				A13A4AC81AEB93B5002EB070 /* Button.h */,
 				A13A4AC91AEB93B5002EB070 /* Button.m */,
 				BA20FD9B1AF3E27300C83DCC /* SizeingLabel.h */,
@@ -690,6 +695,7 @@
 				BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */,
 				A175A7901AFE6406004C5D02 /* CommissionResponseDto.m in Sources */,
 				A13A4ACD1AEB93D5002EB070 /* TextField.m in Sources */,
+				BA2BBEAE1B076A20007837B4 /* ButtonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
