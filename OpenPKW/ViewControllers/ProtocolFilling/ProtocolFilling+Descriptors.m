@@ -8,7 +8,7 @@
 
 #import "ProtocolFilling+Descriptors.h"
 
-NSString *const kCellReuseIdForBoldSingleLineCenterCell = @"TempCell"; //@"BoldSingleLineCenterCell";
+NSString *const kCellReuseIdForBoldSingleLineCenterCell = @"BoldSingleLineCenterCell";
 NSString *const kCellReuseIdForButtonCell               = @"TempCell"; //@"ButtonCell";
 NSString *const kCellReuseIdForCountedTitleInputCell    = @"TempCell"; //@"CountedTitleInputCell";
 NSString *const kCellReuseIdForDoubleValueTextCell      = @"TempCell"; //@"DoubleValueTextCell";
@@ -35,7 +35,7 @@ NSString *const kCellReuseIdForTitleInputCell           = @"TempCell"; //@"Title
                       [RowDescriptor rowDescriptorWithDisplayText:@"Obwodowa Komisja Wyborcz Nr:"
                                                       cellReuseID:kCellReuseIdForBoldSingleLineCenterCell],
                       
-                      [RowDescriptor rowDescriptorWithDisplayText:@"Nr: 582"
+                      [RowDescriptor rowDescriptorWithDisplayText:@"582"
                                                     secondaryText:@"146513-582"
                                                       cellReuseID:kCellReuseIdForDoubleValueTextCell],
                       
