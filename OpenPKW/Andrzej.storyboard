@@ -153,6 +153,40 @@
                                     <outlet property="label" destination="bOV-C0-iHX" id="Prc-hC-L9e"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoubleValueTextCell" id="fr1-Fb-cwW" customClass="DoubleValueTextCell">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fr1-Fb-cwW" id="c4F-6L-Kcj">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdx-Cx-aCH" userLabel="leftLabel">
+                                            <rect key="frame" x="8" y="8" width="76" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUy-iX-cCG" userLabel="rightLabel">
+                                            <rect key="frame" x="224" y="8" width="88" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="wUy-iX-cCG" secondAttribute="bottom" id="07h-dV-FNr"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="wUy-iX-cCG" secondAttribute="trailing" id="2EP-rN-psw"/>
+                                        <constraint firstItem="wUy-iX-cCG" firstAttribute="top" secondItem="c4F-6L-Kcj" secondAttribute="topMargin" id="5Ft-kS-rgE"/>
+                                        <constraint firstItem="Gdx-Cx-aCH" firstAttribute="bottom" secondItem="c4F-6L-Kcj" secondAttribute="bottomMargin" id="Btr-cH-2sB"/>
+                                        <constraint firstItem="wUy-iX-cCG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gdx-Cx-aCH" secondAttribute="trailing" constant="10" id="EfI-Hk-aQL"/>
+                                        <constraint firstItem="Gdx-Cx-aCH" firstAttribute="top" secondItem="c4F-6L-Kcj" secondAttribute="topMargin" id="Em7-md-fL6"/>
+                                        <constraint firstItem="Gdx-Cx-aCH" firstAttribute="leading" secondItem="c4F-6L-Kcj" secondAttribute="leadingMargin" id="efm-qs-0pg"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="leftLabel" destination="Gdx-Cx-aCH" id="OvE-Eh-bkV"/>
+                                    <outlet property="rightLabel" destination="wUy-iX-cCG" id="8AU-lq-KcG"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Qg8-4y-fci" id="WS7-BC-vR4"/>
