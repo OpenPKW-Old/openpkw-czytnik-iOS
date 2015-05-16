@@ -1,5 +1,5 @@
 //
-//  BoldSingleLineCenterCell.h
+//  SingleLableBoldCenterCell.h
 //  OpenPKW
 //
 //  Created by Lukasz Stocki on 16.05.2015.
@@ -8,7 +8,7 @@
 
 #import "BaseCell.h"
 
-@interface BoldSingleLineCenterCell : BaseCell
+@interface SingleLableBoldCenterCell : BaseCell
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 

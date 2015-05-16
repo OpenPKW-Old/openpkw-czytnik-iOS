@@ -129,7 +129,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="152" selectionStyle="default" indentationWidth="10" reuseIdentifier="BoldSingleLineCenterCell" id="9Yz-U8-ej3" customClass="BoldSingleLineCenterCell">
+                            <tableViewCell contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="152" selectionStyle="default" indentationWidth="10" reuseIdentifier="SingleLableBoldCenterCell" id="9Yz-U8-ej3" customClass="SingleLableBoldCenterCell">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Yz-U8-ej3" id="s2o-51-YLG">

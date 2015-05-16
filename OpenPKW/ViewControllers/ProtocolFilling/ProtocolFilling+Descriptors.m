@@ -8,7 +8,7 @@
 
 #import "ProtocolFilling+Descriptors.h"
 
-NSString *const kCellReuseIdForBoldSingleLineCenterCell = @"BoldSingleLineCenterCell";
+NSString *const kCellReuseIdForBoldSingleLineCenterCell = @"SingleLableBoldCenterCell";
 NSString *const kCellReuseIdForButtonCell               = @"TempCell"; //@"ButtonCell";
 NSString *const kCellReuseIdForCountedTitleInputCell    = @"TempCell"; //@"CountedTitleInputCell";
 NSString *const kCellReuseIdForDoubleValueTextCell      = @"TempCell"; //@"DoubleValueTextCell";
