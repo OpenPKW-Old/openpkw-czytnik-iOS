@@ -49,6 +49,7 @@
 		BA2BBEAB1B076427007837B4 /* SingleLabelCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEAA1B076427007837B4 /* SingleLabelCenterCell.m */; };
 		BA2BBEAE1B076A20007837B4 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEAD1B076A20007837B4 /* ButtonCell.m */; };
 		BA2BBEB11B077049007837B4 /* TitleInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEB01B077049007837B4 /* TitleInputCell.m */; };
+		BA2BBEB41B079A3F007837B4 /* CountedTitleInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEB31B079A3F007837B4 /* CountedTitleInputCell.m */; };
 		BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E351AF5050A00B440D5 /* LoginViewController.m */; };
 		BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E381AF5055400B440D5 /* BeforeLoginAbstractViewController.m */; };
 		BA2D9E3C1AF5056E00B440D5 /* BeforeLoginNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E3B1AF5056E00B440D5 /* BeforeLoginNavigationController.m */; };
@@ -158,6 +159,8 @@
 		BA2BBEAD1B076A20007837B4 /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
 		BA2BBEAF1B077049007837B4 /* TitleInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleInputCell.h; sourceTree = "<group>"; };
 		BA2BBEB01B077049007837B4 /* TitleInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleInputCell.m; sourceTree = "<group>"; };
+		BA2BBEB21B079A3F007837B4 /* CountedTitleInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountedTitleInputCell.h; sourceTree = "<group>"; };
+		BA2BBEB31B079A3F007837B4 /* CountedTitleInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountedTitleInputCell.m; sourceTree = "<group>"; };
 		BA2D9E341AF5050A00B440D5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BA2D9E351AF5050A00B440D5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BA2D9E371AF5055400B440D5 /* BeforeLoginAbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeforeLoginAbstractViewController.h; sourceTree = "<group>"; };
@@ -230,6 +233,8 @@
 				BA2BBEAD1B076A20007837B4 /* ButtonCell.m */,
 				BA2BBEAF1B077049007837B4 /* TitleInputCell.h */,
 				BA2BBEB01B077049007837B4 /* TitleInputCell.m */,
+				BA2BBEB21B079A3F007837B4 /* CountedTitleInputCell.h */,
+				BA2BBEB31B079A3F007837B4 /* CountedTitleInputCell.m */,
 				A13A4AC81AEB93B5002EB070 /* Button.h */,
 				A13A4AC91AEB93B5002EB070 /* Button.m */,
 				BA20FD9B1AF3E27300C83DCC /* SizeingLabel.h */,
@@ -685,6 +690,7 @@
 				A13A4ACA1AEB93B5002EB070 /* Button.m in Sources */,
 				BA2D9E421AF505A700B440D5 /* ResetPasswordViewController.m in Sources */,
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
+				BA2BBEB41B079A3F007837B4 /* CountedTitleInputCell.m in Sources */,
 				A175A78A1AFE522D004C5D02 /* PKWSessionManager.m in Sources */,
 				BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */,
 				BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */,
