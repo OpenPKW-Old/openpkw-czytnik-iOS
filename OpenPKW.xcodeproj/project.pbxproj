@@ -45,6 +45,7 @@
 		BA20FDA71AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA61AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m */; };
 		BA20FDAA1AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA91AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m */; };
 		BA2BBEA51B0759F3007837B4 /* SingleLableBoldCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEA41B0759F3007837B4 /* SingleLableBoldCenterCell.m */; };
+		BA2BBEA81B075E73007837B4 /* DoubleValueTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */; };
 		BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E351AF5050A00B440D5 /* LoginViewController.m */; };
 		BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E381AF5055400B440D5 /* BeforeLoginAbstractViewController.m */; };
 		BA2D9E3C1AF5056E00B440D5 /* BeforeLoginNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E3B1AF5056E00B440D5 /* BeforeLoginNavigationController.m */; };
@@ -146,6 +147,8 @@
 		BA20FDA91AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ElectoralCommisionAddViewController+SizingCellsHelperMethods.m"; sourceTree = "<group>"; };
 		BA2BBEA31B0759F3007837B4 /* SingleLableBoldCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLableBoldCenterCell.h; sourceTree = "<group>"; };
 		BA2BBEA41B0759F3007837B4 /* SingleLableBoldCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLableBoldCenterCell.m; sourceTree = "<group>"; };
+		BA2BBEA61B075E73007837B4 /* DoubleValueTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleValueTextCell.h; sourceTree = "<group>"; };
+		BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleValueTextCell.m; sourceTree = "<group>"; };
 		BA2D9E341AF5050A00B440D5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BA2D9E351AF5050A00B440D5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BA2D9E371AF5055400B440D5 /* BeforeLoginAbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeforeLoginAbstractViewController.h; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 				BA20FDA01AF3F21D00C83DCC /* BaseCell.m */,
 				BA2BBEA31B0759F3007837B4 /* SingleLableBoldCenterCell.h */,
 				BA2BBEA41B0759F3007837B4 /* SingleLableBoldCenterCell.m */,
+				BA2BBEA61B075E73007837B4 /* DoubleValueTextCell.h */,
+				BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */,
 				A13A4AC81AEB93B5002EB070 /* Button.h */,
 				A13A4AC91AEB93B5002EB070 /* Button.m */,
 				BA20FD9B1AF3E27300C83DCC /* SizeingLabel.h */,
@@ -674,6 +679,7 @@
 				BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */,
 				BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */,
 				A175A7811AFE2B19004C5D02 /* APIManager.m in Sources */,
+				BA2BBEA81B075E73007837B4 /* DoubleValueTextCell.m in Sources */,
 				A175A7841AFE2E21004C5D02 /* LoginResponseDto.m in Sources */,
 				BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */,
 				A175A7901AFE6406004C5D02 /* CommissionResponseDto.m in Sources */,
