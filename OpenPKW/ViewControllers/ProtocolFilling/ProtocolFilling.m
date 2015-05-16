@@ -10,11 +10,13 @@
 
 #import "BaseCell.h"
 #import "ButtonCell.h"
+#import "CountedTitleInputCell.h"
 #import "Macros.h"
 #import "ProtocolFilling+Descriptors.h"
 #import "ProtocolFillingDataSource.h"
+#import "TitleInputCell.h"
 
-@interface ProtocolFilling () <ButtonCellInteractionDelegate>
+@interface ProtocolFilling () <ButtonCellInteractionDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong) ProtocolFillingDataSource *dataSource;
 
@@ -47,6 +49,9 @@
     return [self.dataSource numberOfSectionsInTableView:tableView];
 }
 
+#pragma mark - UITextFieldDelegate
+
+// TODO: implement some if needed
 
 #pragma mark - Helper Methods
 
@@ -59,6 +64,19 @@
         if ([cell isKindOfClass:[ButtonCell class]]) {
             ButtonCell *buttonCell = (ButtonCell *)cell;
             buttonCell.interactionDelegate = self;
+        }
+        else if ([cell isKindOfClass:[TitleInputCell class]]) {
+            TitleInputCell *titleInputCell = (TitleInputCell *)cell;
+            titleInputCell.inputTextField.delegate = self;
+        }
+        else if ([cell isKindOfClass:[CountedTitleInputCell class]]) {
+            CountedTitleInputCell *countedCell = (CountedTitleInputCell *)cell;
+            
+            [countedCell configureCellWithRowDescriptor:rowDescriptor
+                                            atIndexPath:indexPath
+                                             idexOffset:0];
+            
+            countedCell.input.delegate = self;
         }
     }
     else {

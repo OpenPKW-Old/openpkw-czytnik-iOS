@@ -272,6 +272,53 @@
                                     <outlet property="label" destination="1l9-cf-4n3" id="eOa-VH-xRv"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountedTitleInputCell" id="0Q1-8C-czZ" customClass="CountedTitleInputCell">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Q1-8C-czZ" id="xao-jF-4qk">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="99" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000007" translatesAutoresizingMaskIntoConstraints="NO" id="E6e-H8-CzB" userLabel="number">
+                                            <rect key="frame" x="8" y="8" width="20" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lj-80-C35" userLabel="name">
+                                            <rect key="frame" x="33" y="8" width="197" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePf-JP-kaI" userLabel="votes">
+                                            <rect key="frame" x="235" y="7" width="77" height="30"/>
+                                            <color key="backgroundColor" red="0.84220694740000002" green="1" blue="0.8502401356" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4L4-GU-eHl"/>
+                                                <constraint firstAttribute="width" constant="77" id="fDU-ex-ZQe"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5lj-80-C35" firstAttribute="top" secondItem="xao-jF-4qk" secondAttribute="topMargin" id="59G-KK-lxX"/>
+                                        <constraint firstItem="E6e-H8-CzB" firstAttribute="leading" secondItem="xao-jF-4qk" secondAttribute="leadingMargin" id="FQr-PY-4OD"/>
+                                        <constraint firstItem="5lj-80-C35" firstAttribute="leading" secondItem="E6e-H8-CzB" secondAttribute="trailing" constant="5" id="LUa-j1-lyX"/>
+                                        <constraint firstItem="ePf-JP-kaI" firstAttribute="leading" secondItem="5lj-80-C35" secondAttribute="trailing" constant="5" id="LrA-kH-xaL"/>
+                                        <constraint firstAttribute="centerY" secondItem="ePf-JP-kaI" secondAttribute="centerY" id="beZ-xe-fyZ"/>
+                                        <constraint firstItem="ePf-JP-kaI" firstAttribute="trailing" secondItem="xao-jF-4qk" secondAttribute="trailingMargin" id="gm8-kG-SRj"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="5lj-80-C35" secondAttribute="bottom" id="oqU-2s-oX2"/>
+                                        <constraint firstItem="E6e-H8-CzB" firstAttribute="top" secondItem="xao-jF-4qk" secondAttribute="topMargin" id="qQY-5e-AUS"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="E6e-H8-CzB" secondAttribute="bottom" id="ynF-CX-fxN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="countLabel" destination="E6e-H8-CzB" id="6ZY-46-c0r"/>
+                                    <outlet property="input" destination="ePf-JP-kaI" id="aV4-lL-KPU"/>
+                                    <outlet property="nameLabel" destination="5lj-80-C35" id="uwt-6o-XoG"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Qg8-4y-fci" id="WS7-BC-vR4"/>

@@ -10,7 +10,7 @@
 
 NSString *const kCellReuseIdForBoldSingleLineCenterCell = @"SingleLableBoldCenterCell";
 NSString *const kCellReuseIdForButtonCell               = @"ButtonCell";
-NSString *const kCellReuseIdForCountedTitleInputCell    = @"SingleLabelLeftCell"; //@"CountedTitleInputCell";
+NSString *const kCellReuseIdForCountedTitleInputCell    = @"CountedTitleInputCell";
 NSString *const kCellReuseIdForDoubleValueTextCell      = @"DoubleValueTextCell";
 NSString *const kCellReuseIdForSingleLabelCenterCell    = @"SingleLabelCenterCell";
 NSString *const kCellReuseIdForTitleInputCell           = @"TitleInputCell";
