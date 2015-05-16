@@ -9,11 +9,12 @@
 #import "ProtocolFilling.h"
 
 #import "BaseCell.h"
+#import "ButtonCell.h"
 #import "Macros.h"
 #import "ProtocolFilling+Descriptors.h"
 #import "ProtocolFillingDataSource.h"
 
-@interface ProtocolFilling ()
+@interface ProtocolFilling () <ButtonCellInteractionDelegate>
 
 @property (nonatomic, strong) ProtocolFillingDataSource *dataSource;
 
@@ -54,10 +55,22 @@
     
     if ([cell isKindOfClass:[BaseCell class]]) {
         [(BaseCell *)cell configureCellWithRowDescriptor:rowDescriptor];
+        
+        if ([cell isKindOfClass:[ButtonCell class]]) {
+            ButtonCell *buttonCell = (ButtonCell *)cell;
+            buttonCell.interactionDelegate = self;
+        }
     }
     else {
         cell.textLabel.text = rowDescriptor.displayText;
     }
+}
+
+#pragma mark - ButtonCell Interaction Delegate
+
+- (void)userDidTapOnButtonCell:(ButtonCell *)buttonCell {
+    // TODO: handle button tap...
+    NSLog(@"%s\t ", __PRETTY_FUNCTION__);
 }
 
 #pragma mark - Temporary Model Data Methods

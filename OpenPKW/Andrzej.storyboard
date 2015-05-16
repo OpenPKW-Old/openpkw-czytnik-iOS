@@ -211,6 +211,30 @@
                                     <outlet property="label" destination="KwJ-SG-wzR" id="GlY-ak-k6t"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ButtonCell" id="5nW-0u-AIe" customClass="ButtonCell">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5nW-0u-AIe" id="0Of-oC-2oK">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVA-6s-TKL">
+                                            <rect key="frame" x="266" y="8" width="46" height="27"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="yVA-6s-TKL" secondAttribute="bottom" id="HEJ-kK-vDb"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="yVA-6s-TKL" secondAttribute="trailing" id="MeC-M0-XTR"/>
+                                        <constraint firstItem="yVA-6s-TKL" firstAttribute="top" secondItem="0Of-oC-2oK" secondAttribute="topMargin" id="dMj-El-lFc"/>
+                                        <constraint firstItem="yVA-6s-TKL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0Of-oC-2oK" secondAttribute="leadingMargin" id="dTF-Xr-7q4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="button" destination="yVA-6s-TKL" id="wGD-fv-vGt"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Qg8-4y-fci" id="WS7-BC-vR4"/>
