@@ -187,6 +187,30 @@
                                     <outlet property="rightLabel" destination="wUy-iX-cCG" id="8AU-lq-KcG"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SingleLabelCenterCell" id="7rP-LH-WgO" customClass="SingleLabelCenterCell">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7rP-LH-WgO" id="PfJ-os-ieX">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwJ-SG-wzR">
+                                            <rect key="frame" x="8" y="8" width="304" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KwJ-SG-wzR" firstAttribute="top" secondItem="PfJ-os-ieX" secondAttribute="topMargin" id="Drr-xV-jTc"/>
+                                        <constraint firstItem="KwJ-SG-wzR" firstAttribute="bottom" secondItem="PfJ-os-ieX" secondAttribute="bottomMargin" id="H3u-NZ-Ecb"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KwJ-SG-wzR" secondAttribute="trailing" id="aJ8-jB-fyp"/>
+                                        <constraint firstItem="KwJ-SG-wzR" firstAttribute="leading" secondItem="PfJ-os-ieX" secondAttribute="leadingMargin" id="d8f-6E-TnZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="KwJ-SG-wzR" id="GlY-ak-k6t"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Qg8-4y-fci" id="WS7-BC-vR4"/>

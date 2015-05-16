@@ -12,7 +12,7 @@ NSString *const kCellReuseIdForBoldSingleLineCenterCell = @"SingleLableBoldCente
 NSString *const kCellReuseIdForButtonCell               = @"TempCell"; //@"ButtonCell";
 NSString *const kCellReuseIdForCountedTitleInputCell    = @"TempCell"; //@"CountedTitleInputCell";
 NSString *const kCellReuseIdForDoubleValueTextCell      = @"DoubleValueTextCell";
-NSString *const kCellReuseIdForSingleLineCenterCell     = @"TempCell"; //@"SingleLineCenterCell";
+NSString *const kCellReuseIdForSingleLabelCenterCell    = @"SingleLabelCenterCell";
 NSString *const kCellReuseIdForTitleInputCell           = @"TempCell"; //@"TitleInputCell";
 
 @implementation ProtocolFilling (Descriptors)
@@ -40,10 +40,10 @@ NSString *const kCellReuseIdForTitleInputCell           = @"TempCell"; //@"Title
                                                       cellReuseID:kCellReuseIdForDoubleValueTextCell],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"Przedszkole nr 55"
-                                                      cellReuseID:kCellReuseIdForSingleLineCenterCell],
+                                                      cellReuseID:kCellReuseIdForSingleLabelCenterCell],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"ul. Jana Cybisa 1, 02-784 Warszawa"
-                                                      cellReuseID:kCellReuseIdForSingleLineCenterCell]
+                                                      cellReuseID:kCellReuseIdForSingleLabelCenterCell]
                       
                       ];
     
