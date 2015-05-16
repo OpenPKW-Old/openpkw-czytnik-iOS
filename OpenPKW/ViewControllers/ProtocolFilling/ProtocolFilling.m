@@ -8,6 +8,7 @@
 
 #import "ProtocolFilling.h"
 
+#import "BaseCell.h"
 #import "Macros.h"
 #import "ProtocolFilling+Descriptors.h"
 #import "ProtocolFillingDataSource.h"
@@ -51,7 +52,12 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
     RowDescriptor *rowDescriptor = [self.dataSource rowDescriptorForIndexPath:indexPath];
     
-    cell.textLabel.text = rowDescriptor.displayText;
+    if ([cell isKindOfClass:[BaseCell class]]) {
+        [(BaseCell *)cell configureCellWithRowDescriptor:rowDescriptor];
+    }
+    else {
+        cell.textLabel.text = rowDescriptor.displayText;
+    }
 }
 
 #pragma mark - Temporary Model Data Methods
