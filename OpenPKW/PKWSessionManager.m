@@ -58,8 +58,7 @@ static NSString *const PKWPathResultComplete        = @"wynik/complete";
     [request setValue:password forHTTPHeaderField:PKWHeaderFieldPassword];
     [request setValue:nil forHTTPHeaderField:PKWHeaderFieldToken];
     
-    __block NSURLSessionDataTask *dataTask = nil;
-    dataTask = [self dataTaskWithRequest:request completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
+    [[self dataTaskWithRequest:request completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
         if (error == nil) {
             LoginResponseDto *loginResponseDto = [[LoginResponseDto alloc] initWithDictionary:responseObject];
             [self.requestSerializer setValue:loginResponseDto.login forHTTPHeaderField:PKWHeaderFieldLogin];
@@ -69,9 +68,7 @@ static NSString *const PKWPathResultComplete        = @"wynik/complete";
         } else {
             if (failure) failure(error.localizedRecoverySuggestion);
         }
-    }];
-    
-    [dataTask resume];
+    }] resume];
 }
 
 - (void)logoutWithSuccess:(void (^)())success failure:(void (^)(NSString *))failure {
@@ -159,6 +156,19 @@ static NSString *const PKWPathResultComplete        = @"wynik/complete";
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         if (failure) failure(error.localizedRecoverySuggestion);
     }];
+}
+
+- (void)createUploadURLForCommission:(NSString *)pkwId fileName:(NSString *)fileName success:(void (^)(NSString *))success failure:(void (^)(NSString *))failure {
+    NSDictionary *parameters = @{ @"pkwId" : pkwId, @"fileName" : fileName };
+    NSMutableURLRequest *request = [[AFJSONRequestSerializer serializer] requestWithMethod:@"POST" URLString:[OpenPKWData sharedInstance].createPhotoUploadURL parameters:parameters error:nil];
+    [[self dataTaskWithRequest:request completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
+        if (error == nil) {
+            if (success) success(responseObject[@"uploadUrl"]);
+            
+        } else {
+            if (failure) failure(error.localizedRecoverySuggestion);
+        }
+    }] resume];
 }
 
 @end

@@ -49,5 +49,9 @@
 - (void)resultCompleteWithSuccess:(void(^)(ResultCompleteResponseDto *response))success
                           failure:(void(^)(NSString *error))failure;
 
+- (void)createUploadURLForCommission:(NSString *)pkwId
+                            fileName:(NSString *)fileName
+                             success:(void(^)(NSString *uploadURLString))success
+                             failure:(void(^)(NSString *error))failure;
 
 @end

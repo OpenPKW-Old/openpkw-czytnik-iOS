@@ -9,6 +9,7 @@
 #import "OpenPKWData.h"
 
 static NSString *const OpenPKWDataAPIURLKey = @"API_URL";
+static NSString *const CreatePhotoUploadURL = @"CREATE_PHOTO_UPLOAD_URL";
 
 @interface OpenPKWData ()
 
@@ -38,6 +39,10 @@ static NSString *const OpenPKWDataAPIURLKey = @"API_URL";
 
 - (NSString *)apiURL {
     return self.data[OpenPKWDataAPIURLKey];
+}
+
+- (NSString *)createPhotoUploadURL {
+    return self.data[CreatePhotoUploadURL];
 }
 
 @end

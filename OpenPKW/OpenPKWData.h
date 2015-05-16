@@ -10,7 +10,8 @@
 
 @interface OpenPKWData : NSObject
 
-@property (nonatomic, strong, readonly) NSString *apiURL;
+@property (nonatomic, readonly) NSString *apiURL;
+@property (nonatomic, readonly) NSString *createPhotoUploadURL;
 
 + (instancetype)sharedInstance;
 
