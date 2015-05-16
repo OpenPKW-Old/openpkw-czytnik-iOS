@@ -11,7 +11,7 @@
 NSString *const kCellReuseIdForBoldSingleLineCenterCell = @"SingleLableBoldCenterCell";
 NSString *const kCellReuseIdForButtonCell               = @"TempCell"; //@"ButtonCell";
 NSString *const kCellReuseIdForCountedTitleInputCell    = @"TempCell"; //@"CountedTitleInputCell";
-NSString *const kCellReuseIdForDoubleValueTextCell      = @"TempCell"; //@"DoubleValueTextCell";
+NSString *const kCellReuseIdForDoubleValueTextCell      = @"DoubleValueTextCell";
 NSString *const kCellReuseIdForSingleLineCenterCell     = @"TempCell"; //@"SingleLineCenterCell";
 NSString *const kCellReuseIdForTitleInputCell           = @"TempCell"; //@"TitleInputCell";
 
@@ -35,7 +35,7 @@ NSString *const kCellReuseIdForTitleInputCell           = @"TempCell"; //@"Title
                       [RowDescriptor rowDescriptorWithDisplayText:@"Obwodowa Komisja Wyborcz Nr:"
                                                       cellReuseID:kCellReuseIdForBoldSingleLineCenterCell],
                       
-                      [RowDescriptor rowDescriptorWithDisplayText:@"582"
+                      [RowDescriptor rowDescriptorWithDisplayText:@"Nr: 582"
                                                     secondaryText:@"146513-582"
                                                       cellReuseID:kCellReuseIdForDoubleValueTextCell],
                       
