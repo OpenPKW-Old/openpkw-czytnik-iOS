@@ -81,7 +81,8 @@
               [Candidate cadidateWithName:@"Sierotka Marysia"],
               [Candidate cadidateWithName:@"Kuba Maliniak"],
               [Candidate cadidateWithName:@"Macko z Bogdanca"],
-              [Candidate cadidateWithName:@"Jurand"] ];
+              [Candidate cadidateWithName:@"Jurand"],
+              [Candidate cadidateWithName:@"Jurand O Bardzo Warjacko Dlugim Imieniu I Nazwisku Do 4 Pokolenia"]];
 }
 
 @end
