@@ -16,4 +16,8 @@
     self.inputTextField.placeholder = descriptor.secondaryText;
 }
 
+- (void)prepareForReuse {
+    self.inputTextField.delegate = nil;
+}
+
 @end
