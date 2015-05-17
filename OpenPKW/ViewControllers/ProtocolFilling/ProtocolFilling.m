@@ -49,6 +49,13 @@
     return [self.dataSource numberOfSectionsInTableView:tableView];
 }
 
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 #pragma mark - UITextFieldDelegate
 
 // TODO: implement some if needed
