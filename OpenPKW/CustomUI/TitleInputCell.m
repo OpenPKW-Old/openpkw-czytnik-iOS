@@ -13,11 +13,13 @@
 - (void)configureCellWithRowDescriptor:(RowDescriptor *)descriptor {
 
     self.label.text = descriptor.displayText;
-    self.inputTextField.placeholder = descriptor.secondaryText;
+    self.inputTextField.placeholder  = descriptor.secondaryText;
+    self.inputTextField.keyboardType = descriptor.keyboardType;
 }
 
 - (void)prepareForReuse {
     self.inputTextField.delegate = nil;
+    self.inputTextField.keyboardType = UIKeyboardTypeDefault;
 }
 
 @end

@@ -73,19 +73,24 @@ NSString *const kCellReuseIdForSingleLabelLeftCell      = @"SingleLabelLeftCell"
     
     NSArray *rows = @[
                       [RowDescriptor rowDescriptorWithDisplayText:@"I.1.Uprawnionych do głosowania"
-                                                      cellReuseID:kCellReuseIdForTitleInputCell],
+                                                      cellReuseID:kCellReuseIdForTitleInputCell
+                                                     keyboardType:UIKeyboardTypeNumberPad],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"I.4.Wydano kart do głosowania"
-                                                      cellReuseID:kCellReuseIdForTitleInputCell],
+                                                      cellReuseID:kCellReuseIdForTitleInputCell
+                                                     keyboardType:UIKeyboardTypeNumberPad],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"II.11. Kart ważnych"
-                                                      cellReuseID:kCellReuseIdForTitleInputCell],
+                                                      cellReuseID:kCellReuseIdForTitleInputCell
+                                                     keyboardType:UIKeyboardTypeNumberPad],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"II.12 Głosów nieważnych"
-                                                      cellReuseID:kCellReuseIdForTitleInputCell],
+                                                      cellReuseID:kCellReuseIdForTitleInputCell
+                                                     keyboardType:UIKeyboardTypeNumberPad],
                       
                       [RowDescriptor rowDescriptorWithDisplayText:@"II.13. Głosów ważnych"
-                                                      cellReuseID:kCellReuseIdForTitleInputCell]
+                                                      cellReuseID:kCellReuseIdForTitleInputCell
+                                                     keyboardType:UIKeyboardTypeNumberPad]
                       ];
     
     [section addRowsDescriptors:rows];
@@ -103,7 +108,8 @@ NSString *const kCellReuseIdForSingleLabelLeftCell      = @"SingleLabelLeftCell"
     
     for (Candidate *candidate in self.candidatesList) {
         [rows addObject:[RowDescriptor rowDescriptorWithDisplayText:candidate.cadidateName
-                                                        cellReuseID:kCellReuseIdForCountedTitleInputCell]];
+                                                        cellReuseID:kCellReuseIdForCountedTitleInputCell
+                                                       keyboardType:UIKeyboardTypeNumberPad]];
         
     }
     

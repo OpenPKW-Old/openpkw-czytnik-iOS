@@ -22,6 +22,8 @@
         self.countLabel.text = [NSString stringWithFormat:@"%@.", count];
     }
     
+    self.input.keyboardType = descriptor.keyboardType;
+    
 }
 
 - (void)configureCellWithRowDescriptor:(RowDescriptor *)descriptor {
@@ -32,6 +34,7 @@
 
 - (void)prepareForReuse {
     self.input.delegate = nil;
+    self.input.keyboardType = UIKeyboardTypeDefault;
 }
 
 @end
