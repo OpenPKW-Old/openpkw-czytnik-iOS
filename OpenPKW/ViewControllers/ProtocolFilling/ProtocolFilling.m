@@ -104,7 +104,7 @@
     
     return @[ [Candidate cadidateWithName:@"Jan Kowalski"],
               [Candidate cadidateWithName:@"Sierotka Marysia"],
-              [Candidate cadidateWithName:@"Kuba Maliniak"],
+              [Candidate cadidateWithName:@"Kuba Maliniak Rowniez O Bardzo Dlugim Imieni I Nazwisku Albowiem Walczyl Dzielnie I Dostal Wloscia Takiego Mamy Kandydata Jegomoscia"],
               [Candidate cadidateWithName:@"Macko z Bogdanca"],
               [Candidate cadidateWithName:@"Jurand"],
               [Candidate cadidateWithName:@"Jurand O Bardzo Warjacko Dlugim Imieniu I Nazwisku Do 4 Pokolenia"]];
