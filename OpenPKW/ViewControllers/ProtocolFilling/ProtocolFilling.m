@@ -54,6 +54,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self.tableView endEditing:YES];
 }
 
 #pragma mark - UITextFieldDelegate
