@@ -96,8 +96,7 @@
 #pragma mark - ButtonCell Interaction Delegate
 
 - (void)userDidTapOnButtonCell:(ButtonCell *)buttonCell {
-    // TODO: handle button tap...
-    NSLog(@"%s\t ", __PRETTY_FUNCTION__);
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - Temporary Model Data Methods
