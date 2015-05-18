@@ -42,5 +42,24 @@
     [self.sections addObject:sectionDescriptor];
 }
 
+#pragma mark - Table View Helpers
+
+- (NSUInteger)countForSection:(NSInteger)sectionIndex {
+	SectionDescriptor *sectionDescriptor = self.sections[sectionIndex];
+	return [sectionDescriptor.rowsDescriptors count];
+}
+
+- (RowDescriptor *)rowDescriptorForIndexPath:(NSIndexPath *)indexPath {
+	SectionDescriptor *section = self.sections[indexPath.section];
+	RowDescriptor *row = section.rowsDescriptors[indexPath.row];
+	
+	return row;
+}
+
+- (NSString *)cellReuseIdForIndexPath:(NSIndexPath *)indexPath {
+	RowDescriptor *row = [self rowDescriptorForIndexPath:indexPath];
+	
+	return row.cellReuseID;
+}
 
 @end

@@ -24,4 +24,12 @@
 
 - (void)addSectionDescriptor:(SectionDescriptor *)sectionDescriptor;
 
+#pragma mark - Table View Helpers
+
+- (NSUInteger)countForSection:(NSInteger)sectionIndex;
+
+- (RowDescriptor *)rowDescriptorForIndexPath:(NSIndexPath *)indexPath;
+
+- (NSString *)cellReuseIdForIndexPath:(NSIndexPath *)indexPath;
+
 @end
