@@ -11,12 +11,8 @@
 @implementation VerticalMultilineTitleCell
 
 - (void)configureCellWithRowDescriptor:(RowDescriptor *)descriptor {
-    
-    NSAssert([descriptor isKindOfClass:[VerticalMultilineTitleRowDescriptor class]], @"Descriptor should be of VerticalMultilineTitleRowDescriptor class");
-    
-    VerticalMultilineTitleRowDescriptor *rowDescriptor = (VerticalMultilineTitleRowDescriptor *)descriptor;
-    
-    self.titleLabel.text = rowDescriptor.title;
+	
+    self.titleLabel.text = descriptor.displayText;
 }
 
 @end

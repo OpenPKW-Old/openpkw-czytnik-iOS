@@ -8,8 +8,6 @@
 
 #import "BaseCell.h"
 
-#import "VerticalMultilineTitleRowDescriptor.h"
-
 @interface VerticalMultilineTitleCell : BaseCell
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;

@@ -12,13 +12,9 @@
 
 - (void)configureCellWithRowDescriptor:(RowDescriptor *)descriptor {
     
-    NSAssert([descriptor isKindOfClass:[VerticalTitleInputFieldRowDescriptor class]], @"Descriptor should be of VerticalTitleInputFieldRowDescriptor class");
-    
-    VerticalTitleInputFieldRowDescriptor *rowDescriptor = (VerticalTitleInputFieldRowDescriptor *)descriptor;
-    
-    self.titleLabel.text = rowDescriptor.title;
-    self.inputTextField.placeholder = rowDescriptor.inputPlaceholder;
-    self.inputTextField.keyboardType = rowDescriptor.keyboardType;
+    self.titleLabel.text = descriptor.displayText;
+    self.inputTextField.placeholder = descriptor.secondaryText;
+    self.inputTextField.keyboardType = descriptor.keyboardType;
 }
 
 @end

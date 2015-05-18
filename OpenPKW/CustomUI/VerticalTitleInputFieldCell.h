@@ -9,7 +9,6 @@
 @import UIKit;
 
 #import "BaseCell.h"
-#import "VerticalTitleInputFieldRowDescriptor.h"
 
 @interface VerticalTitleInputFieldCell : BaseCell
 
