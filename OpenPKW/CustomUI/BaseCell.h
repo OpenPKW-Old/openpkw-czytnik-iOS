@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RowDescriptor.h"
+
 @interface BaseCell : UITableViewCell
 
-- (void)configureCellWithRowDescriptor:(id)descriptor;
+- (void)configureCellWithRowDescriptor:(RowDescriptor *)descriptor;
 
 @end

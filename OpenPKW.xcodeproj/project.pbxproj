@@ -34,16 +34,28 @@
 		A1D29E921AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D29E911AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m */; };
 		BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */; };
 		BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D521AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m */; };
-		BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */; };
+		BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF31AFF609800AA248A /* TableViewDescriptor.m */; };
+		BA160CF71AFF624D00AA248A /* SectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF61AFF624D00AA248A /* SectionDescriptor.m */; };
+		BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF91AFF63BC00AA248A /* RowDescriptor.m */; };
+		BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */; };
+		BA160D011AFFBD3200AA248A /* ProtocolFilling+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160D001AFFBD3200AA248A /* ProtocolFilling+Descriptors.m */; };
+		BA160D081AFFC06B00AA248A /* Candidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160D071AFFC06B00AA248A /* Candidate.m */; };
 		BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA01AF3F21D00C83DCC /* BaseCell.m */; };
 		BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA31AF3F2C000C83DCC /* VerticalMultilineTitleCell.m */; };
 		BA20FDA71AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA61AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m */; };
 		BA20FDAA1AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA91AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m */; };
+		BA2BBEA51B0759F3007837B4 /* SingleLableBoldCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEA41B0759F3007837B4 /* SingleLableBoldCenterCell.m */; };
+		BA2BBEA81B075E73007837B4 /* DoubleValueTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */; };
+		BA2BBEAB1B076427007837B4 /* SingleLabelCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEAA1B076427007837B4 /* SingleLabelCenterCell.m */; };
+		BA2BBEAE1B076A20007837B4 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEAD1B076A20007837B4 /* ButtonCell.m */; };
+		BA2BBEB11B077049007837B4 /* TitleInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEB01B077049007837B4 /* TitleInputCell.m */; };
+		BA2BBEB41B079A3F007837B4 /* CountedTitleInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEB31B079A3F007837B4 /* CountedTitleInputCell.m */; };
 		BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E351AF5050A00B440D5 /* LoginViewController.m */; };
 		BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E381AF5055400B440D5 /* BeforeLoginAbstractViewController.m */; };
 		BA2D9E3C1AF5056E00B440D5 /* BeforeLoginNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E3B1AF5056E00B440D5 /* BeforeLoginNavigationController.m */; };
 		BA2D9E411AF505A700B440D5 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E3E1AF505A700B440D5 /* RegisterViewController.m */; };
 		BA2D9E421AF505A700B440D5 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E401AF505A700B440D5 /* ResetPasswordViewController.m */; };
+		BA2E1D151AFE17740099DB35 /* ProtocolFilling.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */; };
 		BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */; };
 		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
 		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
@@ -114,6 +126,19 @@
 		BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalTitleInputFieldCell.m; sourceTree = "<group>"; };
 		BA026D511AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalTitleInputFieldRowDescriptor.h; sourceTree = "<group>"; };
 		BA026D521AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalTitleInputFieldRowDescriptor.m; sourceTree = "<group>"; };
+		BA160CF21AFF609800AA248A /* TableViewDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewDescriptor.h; path = openpkw/ViewControllers/Abstracts/TableViewDescriptor.h; sourceTree = SOURCE_ROOT; };
+		BA160CF31AFF609800AA248A /* TableViewDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewDescriptor.m; path = openpkw/ViewControllers/Abstracts/TableViewDescriptor.m; sourceTree = SOURCE_ROOT; };
+		BA160CF51AFF624D00AA248A /* SectionDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionDescriptor.h; path = openpkw/ViewControllers/Abstracts/SectionDescriptor.h; sourceTree = SOURCE_ROOT; };
+		BA160CF61AFF624D00AA248A /* SectionDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionDescriptor.m; path = openpkw/ViewControllers/Abstracts/SectionDescriptor.m; sourceTree = SOURCE_ROOT; };
+		BA160CF81AFF63BC00AA248A /* RowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RowDescriptor.h; path = openpkw/ViewControllers/Abstracts/RowDescriptor.h; sourceTree = SOURCE_ROOT; };
+		BA160CF91AFF63BC00AA248A /* RowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RowDescriptor.m; path = openpkw/ViewControllers/Abstracts/RowDescriptor.m; sourceTree = SOURCE_ROOT; };
+		BA160CFB1AFF666F00AA248A /* ProtocolFillingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolFillingDataSource.h; sourceTree = "<group>"; };
+		BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolFillingDataSource.m; sourceTree = "<group>"; };
+		BA160CFE1AFF944500AA248A /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = openpkw/Macros.h; sourceTree = SOURCE_ROOT; };
+		BA160CFF1AFFBD3200AA248A /* ProtocolFilling+Descriptors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProtocolFilling+Descriptors.h"; sourceTree = "<group>"; };
+		BA160D001AFFBD3200AA248A /* ProtocolFilling+Descriptors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProtocolFilling+Descriptors.m"; sourceTree = "<group>"; };
+		BA160D061AFFC06B00AA248A /* Candidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candidate.h; sourceTree = "<group>"; };
+		BA160D071AFFC06B00AA248A /* Candidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candidate.m; sourceTree = "<group>"; };
 		BA20FD9B1AF3E27300C83DCC /* SizeingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeingLabel.h; sourceTree = "<group>"; };
 		BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeingLabel.m; sourceTree = "<group>"; };
 		BA20FD9F1AF3F21D00C83DCC /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
@@ -124,6 +149,18 @@
 		BA20FDA61AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalMultilineTitleRowDescriptor.m; sourceTree = "<group>"; };
 		BA20FDA81AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ElectoralCommisionAddViewController+SizingCellsHelperMethods.h"; sourceTree = "<group>"; };
 		BA20FDA91AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ElectoralCommisionAddViewController+SizingCellsHelperMethods.m"; sourceTree = "<group>"; };
+		BA2BBEA31B0759F3007837B4 /* SingleLableBoldCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLableBoldCenterCell.h; sourceTree = "<group>"; };
+		BA2BBEA41B0759F3007837B4 /* SingleLableBoldCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLableBoldCenterCell.m; sourceTree = "<group>"; };
+		BA2BBEA61B075E73007837B4 /* DoubleValueTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleValueTextCell.h; sourceTree = "<group>"; };
+		BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleValueTextCell.m; sourceTree = "<group>"; };
+		BA2BBEA91B076427007837B4 /* SingleLabelCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLabelCenterCell.h; sourceTree = "<group>"; };
+		BA2BBEAA1B076427007837B4 /* SingleLabelCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLabelCenterCell.m; sourceTree = "<group>"; };
+		BA2BBEAC1B076A20007837B4 /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCell.h; sourceTree = "<group>"; };
+		BA2BBEAD1B076A20007837B4 /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
+		BA2BBEAF1B077049007837B4 /* TitleInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleInputCell.h; sourceTree = "<group>"; };
+		BA2BBEB01B077049007837B4 /* TitleInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleInputCell.m; sourceTree = "<group>"; };
+		BA2BBEB21B079A3F007837B4 /* CountedTitleInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountedTitleInputCell.h; sourceTree = "<group>"; };
+		BA2BBEB31B079A3F007837B4 /* CountedTitleInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountedTitleInputCell.m; sourceTree = "<group>"; };
 		BA2D9E341AF5050A00B440D5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BA2D9E351AF5050A00B440D5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BA2D9E371AF5055400B440D5 /* BeforeLoginAbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeforeLoginAbstractViewController.h; sourceTree = "<group>"; };
@@ -134,6 +171,8 @@
 		BA2D9E3E1AF505A700B440D5 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		BA2D9E3F1AF505A700B440D5 /* ResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPasswordViewController.h; sourceTree = "<group>"; };
 		BA2D9E401AF505A700B440D5 /* ResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordViewController.m; sourceTree = "<group>"; };
+		BA2E1D131AFE17740099DB35 /* ProtocolFilling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolFilling.h; sourceTree = "<group>"; };
+		BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolFilling.m; sourceTree = "<group>"; };
 		BA9530991AF388030021DBF2 /* ElectoralCommisionAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralCommisionAddViewController.h; sourceTree = "<group>"; };
 		BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectoralCommisionAddViewController.m; sourceTree = "<group>"; };
 		BB9FAE8A1AF2CBED00200DE7 /* AbstractNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNavigationController.h; sourceTree = "<group>"; };
@@ -184,6 +223,18 @@
 				BA20FD9E1AF3F1CD00C83DCC /* RowDescriptors */,
 				BA20FD9F1AF3F21D00C83DCC /* BaseCell.h */,
 				BA20FDA01AF3F21D00C83DCC /* BaseCell.m */,
+				BA2BBEA31B0759F3007837B4 /* SingleLableBoldCenterCell.h */,
+				BA2BBEA41B0759F3007837B4 /* SingleLableBoldCenterCell.m */,
+				BA2BBEA61B075E73007837B4 /* DoubleValueTextCell.h */,
+				BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */,
+				BA2BBEA91B076427007837B4 /* SingleLabelCenterCell.h */,
+				BA2BBEAA1B076427007837B4 /* SingleLabelCenterCell.m */,
+				BA2BBEAC1B076A20007837B4 /* ButtonCell.h */,
+				BA2BBEAD1B076A20007837B4 /* ButtonCell.m */,
+				BA2BBEAF1B077049007837B4 /* TitleInputCell.h */,
+				BA2BBEB01B077049007837B4 /* TitleInputCell.m */,
+				BA2BBEB21B079A3F007837B4 /* CountedTitleInputCell.h */,
+				BA2BBEB31B079A3F007837B4 /* CountedTitleInputCell.m */,
 				A13A4AC81AEB93B5002EB070 /* Button.h */,
 				A13A4AC91AEB93B5002EB070 /* Button.m */,
 				BA20FD9B1AF3E27300C83DCC /* SizeingLabel.h */,
@@ -293,6 +344,7 @@
 		A13D417A1AEAB41400B0343E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BA160CFE1AFF944500AA248A /* Macros.h */,
 				A13D41731AEAAFE200B0343E /* OpenPKWData.h */,
 				A13D41741AEAAFE200B0343E /* OpenPKWData.m */,
 			);
@@ -336,6 +388,15 @@
 			name = Dto;
 			sourceTree = "<group>";
 		};
+		BA160D021AFFC04000AA248A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA160D061AFFC06B00AA248A /* Candidate.h */,
+				BA160D071AFFC06B00AA248A /* Candidate.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BA20FD9E1AF3F1CD00C83DCC /* RowDescriptors */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +407,21 @@
 			);
 			name = RowDescriptors;
 			sourceTree = "<group>";
+		};
+		BA2E1D121AFE0AA60099DB35 /* ProtocolFilling */ = {
+			isa = PBXGroup;
+			children = (
+				BA160D021AFFC04000AA248A /* Model */,
+				BA2E1D131AFE17740099DB35 /* ProtocolFilling.h */,
+				BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */,
+				BA160CFF1AFFBD3200AA248A /* ProtocolFilling+Descriptors.h */,
+				BA160D001AFFBD3200AA248A /* ProtocolFilling+Descriptors.m */,
+				BA160CFB1AFF666F00AA248A /* ProtocolFillingDataSource.h */,
+				BA160CFC1AFF666F00AA248A /* ProtocolFillingDataSource.m */,
+			);
+			name = ProtocolFilling;
+			path = openpkw/ViewControllers/ProtocolFilling;
+			sourceTree = SOURCE_ROOT;
 		};
 		BA9530981AF387D60021DBF2 /* ElectoralCommisionAdd */ = {
 			isa = PBXGroup;
@@ -373,6 +449,7 @@
 				BA2D9E3E1AF505A700B440D5 /* RegisterViewController.m */,
 				BA2D9E3F1AF505A700B440D5 /* ResetPasswordViewController.h */,
 				BA2D9E401AF505A700B440D5 /* ResetPasswordViewController.m */,
+				BA2E1D121AFE0AA60099DB35 /* ProtocolFilling */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -388,6 +465,12 @@
 				BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */,
 				BA2D9E371AF5055400B440D5 /* BeforeLoginAbstractViewController.h */,
 				BA2D9E381AF5055400B440D5 /* BeforeLoginAbstractViewController.m */,
+				BA160CF21AFF609800AA248A /* TableViewDescriptor.h */,
+				BA160CF31AFF609800AA248A /* TableViewDescriptor.m */,
+				BA160CF51AFF624D00AA248A /* SectionDescriptor.h */,
+				BA160CF61AFF624D00AA248A /* SectionDescriptor.m */,
+				BA160CF81AFF63BC00AA248A /* RowDescriptor.h */,
+				BA160CF91AFF63BC00AA248A /* RowDescriptor.m */,
 			);
 			path = Abstracts;
 			sourceTree = "<group>";
@@ -470,7 +553,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A13D413E1AEAA3D300B0343E /* Build configuration list for PBXProject "openpkw" */;
+			buildConfigurationList = A13D413E1AEAA3D300B0343E /* Build configuration list for PBXProject "OpenPKW" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -585,11 +668,17 @@
 				A1D29E8C1AFF6662000604C5 /* ResultResponseDto.m in Sources */,
 				A175A7961AFF609B004C5D02 /* ProtocolForCommissionResponseDto.m in Sources */,
 				A175A78D1AFE5DF2004C5D02 /* CommisionsForUserResponseDto.m in Sources */,
+				BA2BBEAB1B076427007837B4 /* SingleLabelCenterCell.m in Sources */,
+				BA2BBEA51B0759F3007837B4 /* SingleLableBoldCenterCell.m in Sources */,
 				BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */,
+				BA160D011AFFBD3200AA248A /* ProtocolFilling+Descriptors.m in Sources */,
+				BA160CF71AFF624D00AA248A /* SectionDescriptor.m in Sources */,
+				BA160D081AFFC06B00AA248A /* Candidate.m in Sources */,
 				BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */,
 				BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */,
 				A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */,
 				BA20FDAA1AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m in Sources */,
+				BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */,
 				BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */,
 				A1D29E891AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m in Sources */,
 				BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */,
@@ -597,22 +686,28 @@
 				BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */,
 				A175A7931AFF5C4E004C5D02 /* CandidateResponseDto.m in Sources */,
 				BA2D9E411AF505A700B440D5 /* RegisterViewController.m in Sources */,
+				BA2BBEB11B077049007837B4 /* TitleInputCell.m in Sources */,
 				A13A4ACA1AEB93B5002EB070 /* Button.m in Sources */,
 				BA2D9E421AF505A700B440D5 /* ResetPasswordViewController.m in Sources */,
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
+				BA2BBEB41B079A3F007837B4 /* CountedTitleInputCell.m in Sources */,
 				A175A78A1AFE522D004C5D02 /* PKWSessionManager.m in Sources */,
 				BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */,
 				BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */,
+				BA2E1D151AFE17740099DB35 /* ProtocolFilling.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
 				A1D29E921AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m in Sources */,
 				A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */,
 				BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */,
+				BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */,
+				BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */,
 				A175A7811AFE2B19004C5D02 /* APIManager.m in Sources */,
-				BA20FD9D1AF3E27300C83DCC /* SizeingLabel.m in Sources */,
+				BA2BBEA81B075E73007837B4 /* DoubleValueTextCell.m in Sources */,
 				A175A7841AFE2E21004C5D02 /* LoginResponseDto.m in Sources */,
 				BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */,
 				A175A7901AFE6406004C5D02 /* CommissionResponseDto.m in Sources */,
 				A13A4ACD1AEB93D5002EB070 /* TextField.m in Sources */,
+				BA2BBEAE1B076A20007837B4 /* ButtonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +777,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -719,7 +814,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -787,7 +882,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A13D413E1AEAA3D300B0343E /* Build configuration list for PBXProject "openpkw" */ = {
+		A13D413E1AEAA3D300B0343E /* Build configuration list for PBXProject "OpenPKW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A13D41671AEAA3D300B0343E /* Debug */,
