@@ -32,7 +32,6 @@
 		A1D29E8C1AFF6662000604C5 /* ResultResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D29E8B1AFF6662000604C5 /* ResultResponseDto.m */; };
 		A1D29E8F1AFF6673000604C5 /* ResultCompleteResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D29E8E1AFF6673000604C5 /* ResultCompleteResponseDto.m */; };
 		A1D29E921AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D29E911AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m */; };
-		BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */; };
 		BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF31AFF609800AA248A /* TableViewDescriptor.m */; };
 		BA160CF71AFF624D00AA248A /* SectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF61AFF624D00AA248A /* SectionDescriptor.m */; };
 		BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF91AFF63BC00AA248A /* RowDescriptor.m */; };
@@ -40,7 +39,6 @@
 		BA160D011AFFBD3200AA248A /* ProtocolFilling+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160D001AFFBD3200AA248A /* ProtocolFilling+Descriptors.m */; };
 		BA160D081AFFC06B00AA248A /* Candidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160D071AFFC06B00AA248A /* Candidate.m */; };
 		BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA01AF3F21D00C83DCC /* BaseCell.m */; };
-		BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA31AF3F2C000C83DCC /* VerticalMultilineTitleCell.m */; };
 		BA2BBEA51B0759F3007837B4 /* SingleLableBoldCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEA41B0759F3007837B4 /* SingleLableBoldCenterCell.m */; };
 		BA2BBEA81B075E73007837B4 /* DoubleValueTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */; };
 		BA2BBEAB1B076427007837B4 /* SingleLabelCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEAA1B076427007837B4 /* SingleLabelCenterCell.m */; };
@@ -120,8 +118,6 @@
 		A1D29E8E1AFF6673000604C5 /* ResultCompleteResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultCompleteResponseDto.m; sourceTree = "<group>"; };
 		A1D29E901AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultCompleteParentCommissionResponseDto.h; sourceTree = "<group>"; };
 		A1D29E911AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultCompleteParentCommissionResponseDto.m; sourceTree = "<group>"; };
-		BA026D4E1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalTitleInputFieldCell.h; sourceTree = "<group>"; };
-		BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalTitleInputFieldCell.m; sourceTree = "<group>"; };
 		BA160CF21AFF609800AA248A /* TableViewDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewDescriptor.h; path = openpkw/ViewControllers/Abstracts/TableViewDescriptor.h; sourceTree = SOURCE_ROOT; };
 		BA160CF31AFF609800AA248A /* TableViewDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewDescriptor.m; path = openpkw/ViewControllers/Abstracts/TableViewDescriptor.m; sourceTree = SOURCE_ROOT; };
 		BA160CF51AFF624D00AA248A /* SectionDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionDescriptor.h; path = openpkw/ViewControllers/Abstracts/SectionDescriptor.h; sourceTree = SOURCE_ROOT; };
@@ -139,8 +135,6 @@
 		BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeingLabel.m; sourceTree = "<group>"; };
 		BA20FD9F1AF3F21D00C83DCC /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
 		BA20FDA01AF3F21D00C83DCC /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
-		BA20FDA21AF3F2C000C83DCC /* VerticalMultilineTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalMultilineTitleCell.h; sourceTree = "<group>"; };
-		BA20FDA31AF3F2C000C83DCC /* VerticalMultilineTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalMultilineTitleCell.m; sourceTree = "<group>"; };
 		BA2BBEA31B0759F3007837B4 /* SingleLableBoldCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLableBoldCenterCell.h; sourceTree = "<group>"; };
 		BA2BBEA41B0759F3007837B4 /* SingleLableBoldCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLableBoldCenterCell.m; sourceTree = "<group>"; };
 		BA2BBEA61B075E73007837B4 /* DoubleValueTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleValueTextCell.h; sourceTree = "<group>"; };
@@ -234,10 +228,6 @@
 				BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */,
 				A13A4ACB1AEB93D5002EB070 /* TextField.h */,
 				A13A4ACC1AEB93D5002EB070 /* TextField.m */,
-				BA20FDA21AF3F2C000C83DCC /* VerticalMultilineTitleCell.h */,
-				BA20FDA31AF3F2C000C83DCC /* VerticalMultilineTitleCell.m */,
-				BA026D4E1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.h */,
-				BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */,
 			);
 			name = "Custom UI";
 			path = ../openpkw/CustomUI;
@@ -660,7 +650,6 @@
 				BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */,
 				BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */,
 				A1D29E891AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m in Sources */,
-				BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */,
 				A1D29E8F1AFF6673000604C5 /* ResultCompleteResponseDto.m in Sources */,
 				BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */,
 				A175A7931AFF5C4E004C5D02 /* CandidateResponseDto.m in Sources */,
@@ -673,7 +662,6 @@
 				BA2BBEB41B079A3F007837B4 /* CountedTitleInputCell.m in Sources */,
 				A175A78A1AFE522D004C5D02 /* PKWSessionManager.m in Sources */,
 				BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */,
-				BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */,
 				BA2E1D151AFE17740099DB35 /* ProtocolFilling.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
 				A1D29E921AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m in Sources */,
