@@ -54,6 +54,7 @@
 		BA2D9E421AF505A700B440D5 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E401AF505A700B440D5 /* ResetPasswordViewController.m */; };
 		BA2E1D151AFE17740099DB35 /* ProtocolFilling.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */; };
 		BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */; };
+		BB6D63041B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */; };
 		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
 		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
 		BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */; };
@@ -166,6 +167,8 @@
 		BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolFilling.m; sourceTree = "<group>"; };
 		BA9530991AF388030021DBF2 /* ElectoralCommisionAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralCommisionAddViewController.h; sourceTree = "<group>"; };
 		BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectoralCommisionAddViewController.m; sourceTree = "<group>"; };
+		BB6D63021B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ElectoralCommisionAddViewController+Descriptors.h"; path = "OpenPKW/ViewControllers/ElectoralCommisionAdd/ElectoralCommisionAddViewController+Descriptors.h"; sourceTree = SOURCE_ROOT; };
+		BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ElectoralCommisionAddViewController+Descriptors.m"; path = "OpenPKW/ViewControllers/ElectoralCommisionAdd/ElectoralCommisionAddViewController+Descriptors.m"; sourceTree = SOURCE_ROOT; };
 		BB9FAE8A1AF2CBED00200DE7 /* AbstractNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNavigationController.h; sourceTree = "<group>"; };
 		BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractNavigationController.m; sourceTree = "<group>"; };
 		BB9FAE8C1AF2CBED00200DE7 /* AbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTableViewController.h; sourceTree = "<group>"; };
@@ -407,6 +410,8 @@
 			children = (
 				BA9530991AF388030021DBF2 /* ElectoralCommisionAddViewController.h */,
 				BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */,
+				BB6D63021B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.h */,
+				BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */,
 			);
 			name = ElectoralCommisionAdd;
 			path = ../../openpkw/ViewControllers/ElectoralCommisionAdd;
@@ -661,6 +666,7 @@
 				A175A7931AFF5C4E004C5D02 /* CandidateResponseDto.m in Sources */,
 				BA2D9E411AF505A700B440D5 /* RegisterViewController.m in Sources */,
 				BA2BBEB11B077049007837B4 /* TitleInputCell.m in Sources */,
+				BB6D63041B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m in Sources */,
 				A13A4ACA1AEB93B5002EB070 /* Button.m in Sources */,
 				BA2D9E421AF505A700B440D5 /* ResetPasswordViewController.m in Sources */,
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
