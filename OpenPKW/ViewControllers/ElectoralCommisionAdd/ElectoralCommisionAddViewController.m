@@ -8,10 +8,8 @@
 
 #import "ElectoralCommisionAddViewController.h"
 
-#import "ElectoralCommisionAddViewController+SizingCellsHelperMethods.h"
-
-static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInputCell";
-static NSString *const kVerticalMultilineTitleCell   = @"VerticalMultilineTitleCell";
+#import "BaseCell.h"
+#import "ElectoralCommisionAddViewController+Descriptors.h"
 
 @interface ElectoralCommisionAddViewController()
 
@@ -22,76 +20,30 @@ static NSString *const kVerticalMultilineTitleCell   = @"VerticalMultilineTitleC
 @implementation ElectoralCommisionAddViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 90.0;
-    
-    [self setupRows];
-}
-
-#pragma mark - Setup
-
-- (void)setupRows {
-    self.rows = @[[VerticalMultilineTitleRowDescriptor rowDescriptorWithTitle:@"Wpisz, numer(y) komisji w Twojej Gminie,  z której chcesz przekazywać informacje."],
-                  
-                  [VerticalTitleInputFieldRowDescriptor rowDescriptorWithTitle:@"Podaj Kod Pocztowy:"
-                                                              inputPlaceholder:@"62-784"
-                                                                  keyboardType:UIKeyboardTypeNumbersAndPunctuation],
-                  
-                  [VerticalTitleInputFieldRowDescriptor rowDescriptorWithTitle:@"Podaj Numer(y) Komisji Wyborczych:"
-                                                              inputPlaceholder:@"13, 18, 26"
-                                                                  keyboardType:UIKeyboardTypeNumbersAndPunctuation]];
-}
-
-#pragma mark - UITableViewDelegate
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat height = [self heightForCellAtIndexPath:indexPath];
-    
-    if (tableView.separatorStyle != UITableViewCellSeparatorStyleNone) {
-        height += 1.0f;
-    }
-    
-    return height;
+	[super viewDidLoad];
+	
+	self.tableDescriptor = [self setupTableDescriptor];
 }
 
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.rows count];
+	return [self.tableDescriptor countForSection:section];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    NSString *cellIdentifier = [self cellIdentifierForIndexPath:indexPath];
-    NSAssert(cellIdentifier != nil, @"Should have valid cell identifier.");
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier
-                                                            forIndexPath:indexPath];
-    
-    BaseCell *inputCell = (BaseCell *)cell;
-    
-    [inputCell configureCellWithRowDescriptor:self.rows[indexPath.row]];
-    
-    return inputCell;
-}
-
-#pragma mark - Cells Identifiers
-
-- (NSString *)cellIdentifierForIndexPath:(NSIndexPath *)indexPath {
-    id rowDescriptorForPath = self.rows[indexPath.row];
-    
-    if ([rowDescriptorForPath isKindOfClass:[VerticalMultilineTitleRowDescriptor class]]) {
-        return kVerticalMultilineTitleCell;
-    }
-    
-    if ([rowDescriptorForPath isKindOfClass:[VerticalTitleInputFieldRowDescriptor class]]) {
-        return kElectoralCommissionInputCell;
-    }
-    
-    return nil;
+	
+	// get the cell
+	NSString *cellReuseID = [self.tableDescriptor cellReuseIdForIndexPath:indexPath];
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseID];
+	
+	// configure the cell
+	NSAssert([cell isKindOfClass:[BaseCell class]], @"Should be of BaseCell class");
+	BaseCell *baseCell = (BaseCell *)cell;
+	[baseCell configureCellWithRowDescriptor:[self.tableDescriptor rowDescriptorForIndexPath:indexPath]];
+	
+	return cell;
 }
 
 @end
