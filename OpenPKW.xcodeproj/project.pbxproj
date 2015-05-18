@@ -33,7 +33,6 @@
 		A1D29E8F1AFF6673000604C5 /* ResultCompleteResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D29E8E1AFF6673000604C5 /* ResultCompleteResponseDto.m */; };
 		A1D29E921AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D29E911AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m */; };
 		BA026D501AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */; };
-		BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA026D521AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m */; };
 		BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF31AFF609800AA248A /* TableViewDescriptor.m */; };
 		BA160CF71AFF624D00AA248A /* SectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF61AFF624D00AA248A /* SectionDescriptor.m */; };
 		BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160CF91AFF63BC00AA248A /* RowDescriptor.m */; };
@@ -42,7 +41,6 @@
 		BA160D081AFFC06B00AA248A /* Candidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA160D071AFFC06B00AA248A /* Candidate.m */; };
 		BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA01AF3F21D00C83DCC /* BaseCell.m */; };
 		BA20FDA41AF3F2C000C83DCC /* VerticalMultilineTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA31AF3F2C000C83DCC /* VerticalMultilineTitleCell.m */; };
-		BA20FDA71AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA61AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m */; };
 		BA20FDAA1AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20FDA91AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m */; };
 		BA2BBEA51B0759F3007837B4 /* SingleLableBoldCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEA41B0759F3007837B4 /* SingleLableBoldCenterCell.m */; };
 		BA2BBEA81B075E73007837B4 /* DoubleValueTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2BBEA71B075E73007837B4 /* DoubleValueTextCell.m */; };
@@ -124,8 +122,6 @@
 		A1D29E911AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultCompleteParentCommissionResponseDto.m; sourceTree = "<group>"; };
 		BA026D4E1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalTitleInputFieldCell.h; sourceTree = "<group>"; };
 		BA026D4F1AF3A99C00E6CC04 /* VerticalTitleInputFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalTitleInputFieldCell.m; sourceTree = "<group>"; };
-		BA026D511AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalTitleInputFieldRowDescriptor.h; sourceTree = "<group>"; };
-		BA026D521AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalTitleInputFieldRowDescriptor.m; sourceTree = "<group>"; };
 		BA160CF21AFF609800AA248A /* TableViewDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewDescriptor.h; path = openpkw/ViewControllers/Abstracts/TableViewDescriptor.h; sourceTree = SOURCE_ROOT; };
 		BA160CF31AFF609800AA248A /* TableViewDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewDescriptor.m; path = openpkw/ViewControllers/Abstracts/TableViewDescriptor.m; sourceTree = SOURCE_ROOT; };
 		BA160CF51AFF624D00AA248A /* SectionDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionDescriptor.h; path = openpkw/ViewControllers/Abstracts/SectionDescriptor.h; sourceTree = SOURCE_ROOT; };
@@ -145,8 +141,6 @@
 		BA20FDA01AF3F21D00C83DCC /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
 		BA20FDA21AF3F2C000C83DCC /* VerticalMultilineTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalMultilineTitleCell.h; sourceTree = "<group>"; };
 		BA20FDA31AF3F2C000C83DCC /* VerticalMultilineTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalMultilineTitleCell.m; sourceTree = "<group>"; };
-		BA20FDA51AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalMultilineTitleRowDescriptor.h; sourceTree = "<group>"; };
-		BA20FDA61AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalMultilineTitleRowDescriptor.m; sourceTree = "<group>"; };
 		BA20FDA81AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ElectoralCommisionAddViewController+SizingCellsHelperMethods.h"; sourceTree = "<group>"; };
 		BA20FDA91AF40ACF00C83DCC /* ElectoralCommisionAddViewController+SizingCellsHelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ElectoralCommisionAddViewController+SizingCellsHelperMethods.m"; sourceTree = "<group>"; };
 		BA2BBEA31B0759F3007837B4 /* SingleLableBoldCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLableBoldCenterCell.h; sourceTree = "<group>"; };
@@ -220,7 +214,6 @@
 		A13A4AC71AEB939E002EB070 /* Custom UI */ = {
 			isa = PBXGroup;
 			children = (
-				BA20FD9E1AF3F1CD00C83DCC /* RowDescriptors */,
 				BA20FD9F1AF3F21D00C83DCC /* BaseCell.h */,
 				BA20FDA01AF3F21D00C83DCC /* BaseCell.m */,
 				BA2BBEA31B0759F3007837B4 /* SingleLableBoldCenterCell.h */,
@@ -395,17 +388,6 @@
 				BA160D071AFFC06B00AA248A /* Candidate.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		BA20FD9E1AF3F1CD00C83DCC /* RowDescriptors */ = {
-			isa = PBXGroup;
-			children = (
-				BA026D511AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.h */,
-				BA026D521AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m */,
-				BA20FDA51AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.h */,
-				BA20FDA61AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m */,
-			);
-			name = RowDescriptors;
 			sourceTree = "<group>";
 		};
 		BA2E1D121AFE0AA60099DB35 /* ProtocolFilling */ = {
@@ -663,14 +645,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2D9E3C1AF5056E00B440D5 /* BeforeLoginNavigationController.m in Sources */,
-				BA20FDA71AF3F54A00C83DCC /* VerticalMultilineTitleRowDescriptor.m in Sources */,
 				BA20FDA11AF3F21D00C83DCC /* BaseCell.m in Sources */,
 				A1D29E8C1AFF6662000604C5 /* ResultResponseDto.m in Sources */,
 				A175A7961AFF609B004C5D02 /* ProtocolForCommissionResponseDto.m in Sources */,
 				A175A78D1AFE5DF2004C5D02 /* CommisionsForUserResponseDto.m in Sources */,
 				BA2BBEAB1B076427007837B4 /* SingleLabelCenterCell.m in Sources */,
 				BA2BBEA51B0759F3007837B4 /* SingleLableBoldCenterCell.m in Sources */,
-				BA026D531AF3B5EE00E6CC04 /* VerticalTitleInputFieldRowDescriptor.m in Sources */,
 				BA160D011AFFBD3200AA248A /* ProtocolFilling+Descriptors.m in Sources */,
 				BA160CF71AFF624D00AA248A /* SectionDescriptor.m in Sources */,
 				BA160D081AFFC06B00AA248A /* Candidate.m in Sources */,
