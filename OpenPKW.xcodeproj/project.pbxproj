@@ -131,8 +131,6 @@
 		BA160D001AFFBD3200AA248A /* ProtocolFilling+Descriptors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProtocolFilling+Descriptors.m"; sourceTree = "<group>"; };
 		BA160D061AFFC06B00AA248A /* Candidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candidate.h; sourceTree = "<group>"; };
 		BA160D071AFFC06B00AA248A /* Candidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candidate.m; sourceTree = "<group>"; };
-		BA20FD9B1AF3E27300C83DCC /* SizeingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeingLabel.h; sourceTree = "<group>"; };
-		BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeingLabel.m; sourceTree = "<group>"; };
 		BA20FD9F1AF3F21D00C83DCC /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
 		BA20FDA01AF3F21D00C83DCC /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
 		BA2BBEA31B0759F3007837B4 /* SingleLableBoldCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLableBoldCenterCell.h; sourceTree = "<group>"; };
@@ -224,8 +222,6 @@
 				BA2BBEB31B079A3F007837B4 /* CountedTitleInputCell.m */,
 				A13A4AC81AEB93B5002EB070 /* Button.h */,
 				A13A4AC91AEB93B5002EB070 /* Button.m */,
-				BA20FD9B1AF3E27300C83DCC /* SizeingLabel.h */,
-				BA20FD9C1AF3E27300C83DCC /* SizeingLabel.m */,
 				A13A4ACB1AEB93D5002EB070 /* TextField.h */,
 				A13A4ACC1AEB93D5002EB070 /* TextField.m */,
 			);
