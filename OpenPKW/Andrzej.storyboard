@@ -430,13 +430,15 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S5Z-3E-RKH" id="k49-4Z-bgB">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="protokol_wyborczy" translatesAutoresizingMaskIntoConstraints="NO" id="GVS-ga-Br0">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="protokol_wyborczy" translatesAutoresizingMaskIntoConstraints="NO" id="GVS-ga-Br0">
                                             <rect key="frame" x="8" y="8" width="304" height="64"/>
+                                            <color key="backgroundColor" red="0.89922291040420532" green="0.86444497699196932" blue="0.016966357739720619" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" priority="750" constant="100" id="qCj-NY-aCz"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.89922288456163202" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="GVS-ga-Br0" secondAttribute="trailing" id="6oi-hi-bHq"/>
                                         <constraint firstItem="GVS-ga-Br0" firstAttribute="leading" secondItem="k49-4Z-bgB" secondAttribute="leadingMargin" id="VGs-G9-j5R"/>
