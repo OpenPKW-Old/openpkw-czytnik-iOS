@@ -30,10 +30,14 @@ NSString *const kCellReuseIdForElectoralCommisionInputCell = @"ElectoralCommissi
 																  cellReuseID:kCellReuseIdForElectoralCommisionTitle],
 								  [RowDescriptor rowDescriptorWithDisplayText:@"Wpisz, Kod Terytorialny Gminy w której znajduje się Twoja Komisja (znajdziesz go na protokole wyborczym)"
 																  cellReuseID:kCellReuseIdForElectoralCommisionEmTitle],
-								  [RowDescriptor rowDescriptorWithDisplayText:@"Podaj Kod Terytorialny"
-																secondaryText:@"xxxxxx-xxx"
-																  cellReuseID:kCellReuseIdForElectoralCommisionInputCell]
 								  
+								  ({
+									RowDescriptor *row = [RowDescriptor rowDescriptorWithDisplayText:@"Podaj Kod Terytorialny"
+																					   secondaryText:@"xxxxxx-xxx"
+																						 cellReuseID:kCellReuseIdForElectoralCommisionInputCell];
+									row.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+									row;
+								  })
 								  ]];
 	
 	return section;
