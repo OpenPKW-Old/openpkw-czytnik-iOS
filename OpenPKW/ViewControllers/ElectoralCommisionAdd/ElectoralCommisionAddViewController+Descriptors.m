@@ -11,6 +11,7 @@
 NSString *const kCellReuseIdForElectoralCommisionEmTitle   = @"ElectoralCommissionEmTitle";
 NSString *const kCellReuseIdForElectoralCommisionTitle     = @"ElectoralCommissionTitle";
 NSString *const kCellReuseIdForElectoralCommisionInputCell = @"ElectoralCommissionInputCell";
+NSString *const kCellReuseIdForElectoralCommisionImageHint = @"ElectoralCommisionImageHint";
 
 @implementation ElectoralCommisionAddViewController (Descriptors)
 
@@ -37,7 +38,10 @@ NSString *const kCellReuseIdForElectoralCommisionInputCell = @"ElectoralCommissi
 																						 cellReuseID:kCellReuseIdForElectoralCommisionInputCell];
 									row.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 									row;
-								  })
+								  }),
+								  
+								  [RowDescriptor rowDescriptorWithDisplayText:nil
+																  cellReuseID:kCellReuseIdForElectoralCommisionImageHint]
 								  ]];
 	
 	return section;
