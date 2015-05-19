@@ -52,6 +52,7 @@
 		BA2D9E421AF505A700B440D5 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E401AF505A700B440D5 /* ResetPasswordViewController.m */; };
 		BA2E1D151AFE17740099DB35 /* ProtocolFilling.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */; };
 		BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */; };
+		BB14CE5E1B0BBEA2001E051D /* LongTitleInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB14CE5D1B0BBEA2001E051D /* LongTitleInputCell.m */; };
 		BB6D63041B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */; };
 		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
 		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
@@ -159,6 +160,8 @@
 		BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolFilling.m; sourceTree = "<group>"; };
 		BA9530991AF388030021DBF2 /* ElectoralCommisionAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralCommisionAddViewController.h; sourceTree = "<group>"; };
 		BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectoralCommisionAddViewController.m; sourceTree = "<group>"; };
+		BB14CE5C1B0BBEA2001E051D /* LongTitleInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongTitleInputCell.h; path = OpenPKW/CustomUI/LongTitleInputCell.h; sourceTree = SOURCE_ROOT; };
+		BB14CE5D1B0BBEA2001E051D /* LongTitleInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongTitleInputCell.m; path = OpenPKW/CustomUI/LongTitleInputCell.m; sourceTree = SOURCE_ROOT; };
 		BB6D63021B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ElectoralCommisionAddViewController+Descriptors.h"; path = "OpenPKW/ViewControllers/ElectoralCommisionAdd/ElectoralCommisionAddViewController+Descriptors.h"; sourceTree = SOURCE_ROOT; };
 		BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ElectoralCommisionAddViewController+Descriptors.m"; path = "OpenPKW/ViewControllers/ElectoralCommisionAdd/ElectoralCommisionAddViewController+Descriptors.m"; sourceTree = SOURCE_ROOT; };
 		BB9FAE8A1AF2CBED00200DE7 /* AbstractNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNavigationController.h; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				BA2BBEAD1B076A20007837B4 /* ButtonCell.m */,
 				BA2BBEAF1B077049007837B4 /* TitleInputCell.h */,
 				BA2BBEB01B077049007837B4 /* TitleInputCell.m */,
+				BB14CE5C1B0BBEA2001E051D /* LongTitleInputCell.h */,
+				BB14CE5D1B0BBEA2001E051D /* LongTitleInputCell.m */,
 				BA2BBEB21B079A3F007837B4 /* CountedTitleInputCell.h */,
 				BA2BBEB31B079A3F007837B4 /* CountedTitleInputCell.m */,
 				A13A4AC81AEB93B5002EB070 /* Button.h */,
@@ -643,6 +648,7 @@
 				BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */,
 				BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */,
 				A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */,
+				BB14CE5E1B0BBEA2001E051D /* LongTitleInputCell.m in Sources */,
 				BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */,
 				BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */,
 				A1D29E891AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m in Sources */,
