@@ -424,6 +424,30 @@
                                     <outlet property="label" destination="yJs-9X-CCM" id="2LL-pT-MaS"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ElectoralCommisionImageHint" id="S5Z-3E-RKH" userLabel="ImageCell" customClass="ImageCell">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S5Z-3E-RKH" id="k49-4Z-bgB">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="protokol_wyborczy" translatesAutoresizingMaskIntoConstraints="NO" id="GVS-ga-Br0">
+                                            <rect key="frame" x="8" y="8" width="304" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" priority="750" constant="100" id="qCj-NY-aCz"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="GVS-ga-Br0" secondAttribute="trailing" id="6oi-hi-bHq"/>
+                                        <constraint firstItem="GVS-ga-Br0" firstAttribute="leading" secondItem="k49-4Z-bgB" secondAttribute="leadingMargin" id="VGs-G9-j5R"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="GVS-ga-Br0" secondAttribute="bottom" id="sbz-ZK-sLq"/>
+                                        <constraint firstItem="GVS-ga-Br0" firstAttribute="top" secondItem="k49-4Z-bgB" secondAttribute="topMargin" id="wgp-Yf-2O0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="image" destination="GVS-ga-Br0" id="rhL-zI-gDA"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="eKQ-II-aW5" id="G01-bL-f8s"/>
@@ -437,6 +461,9 @@
             <point key="canvasLocation" x="1440" y="179"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="protokol_wyborczy" width="486" height="239"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
