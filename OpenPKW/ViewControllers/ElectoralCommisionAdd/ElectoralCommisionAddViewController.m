@@ -7,11 +7,14 @@
 //
 
 #import "ElectoralCommisionAddViewController.h"
-
-#import "BaseCell.h"
 #import "ElectoralCommisionAddViewController+Descriptors.h"
 
-@interface ElectoralCommisionAddViewController()
+#import "BaseCell.h"
+#import "ButtonCell.h"
+
+static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision";
+
+@interface ElectoralCommisionAddViewController() <ButtonCellInteractionDelegate>
 
 @property (nonatomic, strong) NSArray *rows;
 
@@ -38,12 +41,41 @@
 	NSString *cellReuseID = [self.tableDescriptor cellReuseIdForIndexPath:indexPath];
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseID];
 	
+	[self configureCell:cell atIndexPath:indexPath];
+	
 	// configure the cell
 	NSAssert([cell isKindOfClass:[BaseCell class]], @"Should be of BaseCell class");
 	BaseCell *baseCell = (BaseCell *)cell;
 	[baseCell configureCellWithRowDescriptor:[self.tableDescriptor rowDescriptorForIndexPath:indexPath]];
 	
 	return cell;
+}
+
+#pragma mark - ButtonCell Interaction Delegate
+
+- (void)userDidTapOnButtonCell:(ButtonCell *)buttonCell {
+	// TODO: uncoment this code when the flow will change
+//	[self performSegueWithIdentifier:kSegueGoToProtocolFilling
+//							  sender:self];
+}
+
+#pragma mark - Helper Methods
+
+// TODO: think how to move the common stuff to the base class...
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+	RowDescriptor *rowDescriptor = [self.tableDescriptor rowDescriptorForIndexPath:indexPath];
+	
+	if ([cell isKindOfClass:[BaseCell class]]) {
+		[(BaseCell *)cell configureCellWithRowDescriptor:rowDescriptor];
+		
+		if ([cell isKindOfClass:[ButtonCell class]]) {
+			ButtonCell *buttonCell = (ButtonCell *)cell;
+			buttonCell.interactionDelegate = self;
+		}
+	}
+	else {
+		cell.textLabel.text = rowDescriptor.displayText;
+	}
 }
 
 @end
