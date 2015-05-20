@@ -65,7 +65,7 @@
 
 #pragma mark - Helper Methods
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     RowDescriptor *rowDescriptor = [self.tableDescriptor rowDescriptorForIndexPath:indexPath];
     
     if ([cell isKindOfClass:[BaseCell class]]) {
