@@ -12,6 +12,7 @@ extern NSString *const kCellReuseIdForElectoralCommisionEmTitle;
 extern NSString *const kCellReuseIdForElectoralCommisionTitle;
 extern NSString *const kCellReuseIdForElectoralCommisionInputCell;
 extern NSString *const kCellReuseIdForElectoralCommisionImageHint;
+extern NSString *const kCellReuseIdForElectoralCommisionButton;
 
 @interface ElectoralCommisionAddViewController (Descriptors)
 

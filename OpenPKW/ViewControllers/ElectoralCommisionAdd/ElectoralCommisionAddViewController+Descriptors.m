@@ -12,6 +12,8 @@ NSString *const kCellReuseIdForElectoralCommisionEmTitle   = @"ElectoralCommissi
 NSString *const kCellReuseIdForElectoralCommisionTitle     = @"ElectoralCommissionTitle";
 NSString *const kCellReuseIdForElectoralCommisionInputCell = @"ElectoralCommissionInputCell";
 NSString *const kCellReuseIdForElectoralCommisionImageHint = @"ElectoralCommisionImageHint";
+NSString *const kCellReuseIdForElectoralCommisionButton    = @"ElectoralCommisionButton";
+
 
 @implementation ElectoralCommisionAddViewController (Descriptors)
 
@@ -41,7 +43,10 @@ NSString *const kCellReuseIdForElectoralCommisionImageHint = @"ElectoralCommisio
 								  }),
 								  
 								  [RowDescriptor rowDescriptorWithDisplayText:nil
-																  cellReuseID:kCellReuseIdForElectoralCommisionImageHint]
+																  cellReuseID:kCellReuseIdForElectoralCommisionImageHint],
+								  
+								  [RowDescriptor rowDescriptorWithDisplayText:@"Dalej"
+																  cellReuseID:kCellReuseIdForElectoralCommisionButton]
 								  ]];
 	
 	return section;
