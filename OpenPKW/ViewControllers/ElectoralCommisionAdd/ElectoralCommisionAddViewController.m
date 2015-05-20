@@ -11,10 +11,11 @@
 
 #import "BaseCell.h"
 #import "ButtonCell.h"
+#import "LongTitleInputCell.h"
 
 static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision";
 
-@interface ElectoralCommisionAddViewController() <ButtonCellInteractionDelegate>
+@interface ElectoralCommisionAddViewController() <ButtonCellInteractionDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong) NSArray *rows;
 
@@ -54,6 +55,14 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 //							  sender:self];
 }
 
+#pragma mark - UITextField Delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	[textField resignFirstResponder];
+	
+	return YES;
+}
+
 #pragma mark - Helper Methods
 
 // TODO: think how to move the common stuff to the base class...
@@ -66,6 +75,10 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 		if ([cell isKindOfClass:[ButtonCell class]]) {
 			ButtonCell *buttonCell = (ButtonCell *)cell;
 			buttonCell.interactionDelegate = self;
+		}
+		else if ([cell isKindOfClass:[LongTitleInputCell class]]) {
+			LongTitleInputCell *longTitleInputCell = (LongTitleInputCell *)cell;
+			longTitleInputCell.inputTextField.delegate = self;
 		}
 	}
 	else {
