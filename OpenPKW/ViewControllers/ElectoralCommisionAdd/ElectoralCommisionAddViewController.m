@@ -7,13 +7,15 @@
 //
 
 #import "ElectoralCommisionAddViewController.h"
+#import "ElectoralCommisionAddViewController+Descriptors.h"
 
-#import "ElectoralCommisionAddViewController+SizingCellsHelperMethods.h"
+#import "BaseCell.h"
+#import "ButtonCell.h"
+#import "LongTitleInputCell.h"
 
-static NSString *const kElectoralCommissionInputCell = @"ElectoralCommissionInputCell";
-static NSString *const kVerticalMultilineTitleCell   = @"VerticalMultilineTitleCell";
+static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision";
 
-@interface ElectoralCommisionAddViewController()
+@interface ElectoralCommisionAddViewController() <ButtonCellInteractionDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong) NSArray *rows;
 
@@ -22,76 +24,66 @@ static NSString *const kVerticalMultilineTitleCell   = @"VerticalMultilineTitleC
 @implementation ElectoralCommisionAddViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 90.0;
-    
-    [self setupRows];
-}
-
-#pragma mark - Setup
-
-- (void)setupRows {
-    self.rows = @[[VerticalMultilineTitleRowDescriptor rowDescriptorWithTitle:@"Wpisz, numer(y) komisji w Twojej Gminie,  z której chcesz przekazywać informacje."],
-                  
-                  [VerticalTitleInputFieldRowDescriptor rowDescriptorWithTitle:@"Podaj Kod Pocztowy:"
-                                                              inputPlaceholder:@"62-784"
-                                                                  keyboardType:UIKeyboardTypeNumbersAndPunctuation],
-                  
-                  [VerticalTitleInputFieldRowDescriptor rowDescriptorWithTitle:@"Podaj Numer(y) Komisji Wyborczych:"
-                                                              inputPlaceholder:@"13, 18, 26"
-                                                                  keyboardType:UIKeyboardTypeNumbersAndPunctuation]];
-}
-
-#pragma mark - UITableViewDelegate
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat height = [self heightForCellAtIndexPath:indexPath];
-    
-    if (tableView.separatorStyle != UITableViewCellSeparatorStyleNone) {
-        height += 1.0f;
-    }
-    
-    return height;
+	[super viewDidLoad];
+	
+	self.tableDescriptor = [self setupTableDescriptor];
 }
 
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.rows count];
+	return [self.tableDescriptor countForSection:section];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    NSString *cellIdentifier = [self cellIdentifierForIndexPath:indexPath];
-    NSAssert(cellIdentifier != nil, @"Should have valid cell identifier.");
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier
-                                                            forIndexPath:indexPath];
-    
-    BaseCell *inputCell = (BaseCell *)cell;
-    
-    [inputCell configureCellWithRowDescriptor:self.rows[indexPath.row]];
-    
-    return inputCell;
+	
+	// get the cell
+	NSString *cellReuseID = [self.tableDescriptor cellReuseIdForIndexPath:indexPath];
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseID];
+	
+	[self configureCell:cell atIndexPath:indexPath];
+	
+	return cell;
 }
 
-#pragma mark - Cells Identifiers
+#pragma mark - ButtonCell Interaction Delegate
 
-- (NSString *)cellIdentifierForIndexPath:(NSIndexPath *)indexPath {
-    id rowDescriptorForPath = self.rows[indexPath.row];
-    
-    if ([rowDescriptorForPath isKindOfClass:[VerticalMultilineTitleRowDescriptor class]]) {
-        return kVerticalMultilineTitleCell;
-    }
-    
-    if ([rowDescriptorForPath isKindOfClass:[VerticalTitleInputFieldRowDescriptor class]]) {
-        return kElectoralCommissionInputCell;
-    }
-    
-    return nil;
+- (void)userDidTapOnButtonCell:(ButtonCell *)buttonCell {
+	// TODO: uncoment this code when the flow will change
+//	[self performSegueWithIdentifier:kSegueGoToProtocolFilling
+//							  sender:self];
+}
+
+#pragma mark - UITextField Delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	[textField resignFirstResponder];
+	
+	return YES;
+}
+
+#pragma mark - Helper Methods
+
+// TODO: think how to move the common stuff to the base class...
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+	RowDescriptor *rowDescriptor = [self.tableDescriptor rowDescriptorForIndexPath:indexPath];
+	
+	if ([cell isKindOfClass:[BaseCell class]]) {
+		[(BaseCell *)cell configureCellWithRowDescriptor:rowDescriptor];
+		
+		if ([cell isKindOfClass:[ButtonCell class]]) {
+			ButtonCell *buttonCell = (ButtonCell *)cell;
+			buttonCell.interactionDelegate = self;
+		}
+		else if ([cell isKindOfClass:[LongTitleInputCell class]]) {
+			LongTitleInputCell *longTitleInputCell = (LongTitleInputCell *)cell;
+			longTitleInputCell.inputTextField.delegate = self;
+		}
+	}
+	else {
+		cell.textLabel.text = rowDescriptor.displayText;
+	}
 }
 
 @end

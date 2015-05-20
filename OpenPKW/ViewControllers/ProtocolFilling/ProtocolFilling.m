@@ -28,7 +28,8 @@
     [super viewDidLoad];
     
     self.candidatesList = [self setupTempCandidateList];
-    self.dataSource = [[ProtocolFillingDataSource alloc] initWithTableDescriptor:[self setupTableDescriptor]];
+	self.tableDescriptor = [self setupTableDescriptor];
+    self.dataSource = [[ProtocolFillingDataSource alloc] initWithTableDescriptor:self.tableDescriptor];
 }
 
 #pragma mark - UITableViewDataSource
@@ -64,8 +65,8 @@
 
 #pragma mark - Helper Methods
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
-    RowDescriptor *rowDescriptor = [self.dataSource rowDescriptorForIndexPath:indexPath];
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    RowDescriptor *rowDescriptor = [self.tableDescriptor rowDescriptorForIndexPath:indexPath];
     
     if ([cell isKindOfClass:[BaseCell class]]) {
         [(BaseCell *)cell configureCellWithRowDescriptor:rowDescriptor];

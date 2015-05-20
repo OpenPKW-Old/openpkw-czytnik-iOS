@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TableViewDescriptor.h"
+
 @interface AbstractTableViewController : UITableViewController
+
+@property (nonatomic, strong) TableViewDescriptor *tableDescriptor;
 
 @end
