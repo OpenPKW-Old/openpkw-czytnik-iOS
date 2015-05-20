@@ -450,6 +450,31 @@
                                     <outlet property="image" destination="GVS-ga-Br0" id="rhL-zI-gDA"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ElectoralCommisionButton" id="OsC-nI-XhH" customClass="ButtonCell">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OsC-nI-XhH" id="KOe-tG-iYy">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2g-fh-ZLK">
+                                            <rect key="frame" x="8" y="8" width="304" height="64"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="E2g-fh-ZLK" firstAttribute="top" secondItem="KOe-tG-iYy" secondAttribute="topMargin" id="BIO-cr-xmE"/>
+                                        <constraint firstAttribute="centerX" secondItem="E2g-fh-ZLK" secondAttribute="centerX" id="C1a-Jx-GUV"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="E2g-fh-ZLK" secondAttribute="bottom" id="T0o-sc-Lop"/>
+                                        <constraint firstItem="E2g-fh-ZLK" firstAttribute="leading" relation="lessThanOrEqual" secondItem="KOe-tG-iYy" secondAttribute="leadingMargin" id="iUg-vB-YDW"/>
+                                        <constraint firstItem="E2g-fh-ZLK" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="KOe-tG-iYy" secondAttribute="trailingMargin" id="qID-WQ-uIh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="button" destination="E2g-fh-ZLK" id="B8Q-kY-jqF"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="eKQ-II-aW5" id="G01-bL-f8s"/>
