@@ -43,11 +43,6 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 	
 	[self configureCell:cell atIndexPath:indexPath];
 	
-	// configure the cell
-	NSAssert([cell isKindOfClass:[BaseCell class]], @"Should be of BaseCell class");
-	BaseCell *baseCell = (BaseCell *)cell;
-	[baseCell configureCellWithRowDescriptor:[self.tableDescriptor rowDescriptorForIndexPath:indexPath]];
-	
 	return cell;
 }
 
