@@ -55,6 +55,7 @@
 		BB14CE5E1B0BBEA2001E051D /* LongTitleInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB14CE5D1B0BBEA2001E051D /* LongTitleInputCell.m */; };
 		BB14CE611B0BCADE001E051D /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB14CE601B0BCADE001E051D /* ImageCell.m */; };
 		BB4A62AB1B0E6B5300452B47 /* TerytCodeInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4A62AA1B0E6B5300452B47 /* TerytCodeInputValidator.m */; };
+		BB4A62AE1B0E81AF00452B47 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4A62AD1B0E81AF00452B47 /* WelcomeViewController.m */; };
 		BB6D63041B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */; };
 		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
 		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
@@ -167,6 +168,8 @@
 		BB14CE601B0BCADE001E051D /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageCell.m; path = OpenPKW/CustomUI/ImageCell.m; sourceTree = SOURCE_ROOT; };
 		BB4A62A91B0E6B5300452B47 /* TerytCodeInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TerytCodeInputValidator.h; path = OpenPKW/ViewControllers/ElectoralCommisionAdd/TerytCodeInputValidator.h; sourceTree = SOURCE_ROOT; };
 		BB4A62AA1B0E6B5300452B47 /* TerytCodeInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TerytCodeInputValidator.m; path = OpenPKW/ViewControllers/ElectoralCommisionAdd/TerytCodeInputValidator.m; sourceTree = SOURCE_ROOT; };
+		BB4A62AC1B0E81AF00452B47 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		BB4A62AD1B0E81AF00452B47 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		BB6D63021B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ElectoralCommisionAddViewController+Descriptors.h"; path = "OpenPKW/ViewControllers/ElectoralCommisionAdd/ElectoralCommisionAddViewController+Descriptors.h"; sourceTree = SOURCE_ROOT; };
 		BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ElectoralCommisionAddViewController+Descriptors.m"; path = "OpenPKW/ViewControllers/ElectoralCommisionAdd/ElectoralCommisionAddViewController+Descriptors.m"; sourceTree = SOURCE_ROOT; };
 		BB9FAE8A1AF2CBED00200DE7 /* AbstractNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNavigationController.h; sourceTree = "<group>"; };
@@ -424,6 +427,8 @@
 				BA9530981AF387D60021DBF2 /* ElectoralCommisionAdd */,
 				BA2D9E341AF5050A00B440D5 /* LoginViewController.h */,
 				BA2D9E351AF5050A00B440D5 /* LoginViewController.m */,
+				BB4A62AC1B0E81AF00452B47 /* WelcomeViewController.h */,
+				BB4A62AD1B0E81AF00452B47 /* WelcomeViewController.m */,
 				BA2D9E3D1AF505A700B440D5 /* RegisterViewController.h */,
 				BA2D9E3E1AF505A700B440D5 /* RegisterViewController.m */,
 				BA2D9E3F1AF505A700B440D5 /* ResetPasswordViewController.h */,
@@ -652,6 +657,7 @@
 				BB4A62AB1B0E6B5300452B47 /* TerytCodeInputValidator.m in Sources */,
 				A1D29E891AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m in Sources */,
 				A1D29E8F1AFF6673000604C5 /* ResultCompleteResponseDto.m in Sources */,
+				BB4A62AE1B0E81AF00452B47 /* WelcomeViewController.m in Sources */,
 				BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */,
 				A175A7931AFF5C4E004C5D02 /* CandidateResponseDto.m in Sources */,
 				BA2D9E411AF505A700B440D5 /* RegisterViewController.m in Sources */,
