@@ -39,4 +39,8 @@
     return [self storyboardWithName:@"Andrzej" bundle:nil];
 }
 
++ (instancetype)beforeLoginStoryboard {
+	return [self storyboardWithName:@"BeforeLogin" bundle:nil];
+}
+
 @end
