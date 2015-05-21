@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PRd-bX-iJ0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PRd-bX-iJ0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="3GP-vJ-u9K" kind="relationship" relationship="rootViewController" id="cnP-Jm-ToV"/>
+                        <segue destination="eKQ-II-aW5" kind="relationship" relationship="rootViewController" id="n65-bO-A1O"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="goi-Dx-tF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,12 +99,11 @@
                     <connections>
                         <outlet property="tableView" destination="7T7-Jo-aZr" id="hXc-cs-lRE"/>
                         <outlet property="tableViewHeadingLabel" destination="n1S-AA-xmt" id="Jn4-XQ-0pd"/>
-                        <segue destination="Qg8-4y-fci" kind="push" identifier="ValidateElectoralCommision" id="sgV-cg-jgq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2H-JD-LL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="998" y="513"/>
+            <point key="canvasLocation" x="1346" y="-303"/>
         </scene>
         <!--Protocol Filling-->
         <scene sceneID="yI6-TQ-Iq2">
@@ -329,7 +328,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNe-Dl-6ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1440" y="843"/>
+            <point key="canvasLocation" x="1414" y="513"/>
         </scene>
         <!--Dodaj Komisje-->
         <scene sceneID="Hcu-2r-sn1">
@@ -482,10 +481,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Dodaj Komisje" id="zRj-di-VlH"/>
+                    <connections>
+                        <segue destination="Qg8-4y-fci" kind="push" identifier="ValidateElectoralCommision" id="3VA-If-51C"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YP1-dN-JZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1440" y="179"/>
+            <point key="canvasLocation" x="976" y="513"/>
         </scene>
     </scenes>
     <resources>
@@ -496,4 +498,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="rOE-uq-aNS"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -50,9 +50,8 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 #pragma mark - ButtonCell Interaction Delegate
 
 - (void)userDidTapOnButtonCell:(ButtonCell *)buttonCell {
-	// TODO: uncoment this code when the flow will change
-//	[self performSegueWithIdentifier:kSegueGoToProtocolFilling
-//							  sender:self];
+	[self performSegueWithIdentifier:kSegueGoToProtocolFilling
+							  sender:self];
 }
 
 #pragma mark - UITextField Delegate
