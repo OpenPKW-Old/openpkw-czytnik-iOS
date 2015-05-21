@@ -56,7 +56,7 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 
 - (void)userDidTapOnButtonCell:(ButtonCell *)buttonCell {
 	
-	if ([self terytCodeIsValid] ) {
+	if ([self terytCodeIsValid]) {
 		[self performSegueWithIdentifier:kSegueGoToProtocolFilling
 								  sender:self];
 	}
