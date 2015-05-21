@@ -58,7 +58,6 @@
 		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
 		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
 		BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */; };
-		BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE951AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,8 +172,6 @@
 		BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTableViewController.m; sourceTree = "<group>"; };
 		BB9FAE8E1AF2CBED00200DE7 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
 		BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
-		BB9FAE941AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralCommissionSelectionViewController.h; sourceTree = "<group>"; };
-		BB9FAE951AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectoralCommissionSelectionViewController.m; sourceTree = "<group>"; };
 		F378295E3E64297F1F92DB82 /* Pods-OpenPKWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenPKWTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenPKWTests/Pods-OpenPKWTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -420,7 +417,6 @@
 				BA2D9E3A1AF5056E00B440D5 /* BeforeLoginNavigationController.h */,
 				BA2D9E3B1AF5056E00B440D5 /* BeforeLoginNavigationController.m */,
 				BA9530981AF387D60021DBF2 /* ElectoralCommisionAdd */,
-				BB9FAE931AF2CD5200200DE7 /* ElectoralCommissionSelection */,
 				BA2D9E341AF5050A00B440D5 /* LoginViewController.h */,
 				BA2D9E351AF5050A00B440D5 /* LoginViewController.m */,
 				BA2D9E3D1AF505A700B440D5 /* RegisterViewController.h */,
@@ -451,15 +447,6 @@
 				BA160CF91AFF63BC00AA248A /* RowDescriptor.m */,
 			);
 			path = Abstracts;
-			sourceTree = "<group>";
-		};
-		BB9FAE931AF2CD5200200DE7 /* ElectoralCommissionSelection */ = {
-			isa = PBXGroup;
-			children = (
-				BB9FAE941AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.h */,
-				BB9FAE951AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m */,
-			);
-			path = ElectoralCommissionSelection;
 			sourceTree = "<group>";
 		};
 		CCED19F0077708AE187EB414 /* Frameworks */ = {
@@ -669,7 +656,6 @@
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
 				BA2BBEB41B079A3F007837B4 /* CountedTitleInputCell.m in Sources */,
 				A175A78A1AFE522D004C5D02 /* PKWSessionManager.m in Sources */,
-				BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */,
 				BA2E1D151AFE17740099DB35 /* ProtocolFilling.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
 				A1D29E921AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m in Sources */,
