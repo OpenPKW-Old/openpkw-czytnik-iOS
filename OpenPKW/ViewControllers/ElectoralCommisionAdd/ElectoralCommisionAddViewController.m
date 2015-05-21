@@ -19,6 +19,8 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 
 @property (nonatomic, strong) NSArray *rows;
 
+@property (nonatomic, strong) NSIndexPath *indexPathForInputField;
+
 @end
 
 @implementation ElectoralCommisionAddViewController
@@ -27,6 +29,8 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 	[super viewDidLoad];
 	
 	self.tableDescriptor = [self setupTableDescriptor];
+	self.indexPathForInputField = [NSIndexPath indexPathForRow:2
+													 inSection:0];
 }
 
 #pragma mark - UITableViewDataSource
