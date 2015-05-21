@@ -12,6 +12,7 @@
 #import "BaseCell.h"
 #import "ButtonCell.h"
 #import "LongTitleInputCell.h"
+#import "TerytCodeInputValidator.h"
 
 static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision";
 
@@ -54,8 +55,14 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 #pragma mark - ButtonCell Interaction Delegate
 
 - (void)userDidTapOnButtonCell:(ButtonCell *)buttonCell {
-	[self performSegueWithIdentifier:kSegueGoToProtocolFilling
-							  sender:self];
+	
+	if ([self terytCodeIsValid] ) {
+		[self performSegueWithIdentifier:kSegueGoToProtocolFilling
+								  sender:self];
+	}
+	else {
+		[self handleTerytError];
+	}
 }
 
 #pragma mark - UITextField Delegate
@@ -64,6 +71,36 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 	[textField resignFirstResponder];
 	
 	return YES;
+}
+
+#pragma mark - Input Validation
+- (BOOL)terytCodeIsValid {
+	
+	UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:self.indexPathForInputField];
+	NSAssert([cell isKindOfClass:[LongTitleInputCell class]], @"Expected a long input cell...");
+	
+	LongTitleInputCell *inputCell = (LongTitleInputCell *)cell;
+	NSString *enteredText = inputCell.inputTextField.text;
+	
+	return [TerytCodeInputValidator isValidTerrytCode:enteredText];
+}
+
+- (void)handleTerytError {
+	// TODO: show allert... beter UX at next interation
+	
+	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Zły kod TERYT"
+																			 message:@"Wpisany został niepoprawny kod TERYT."
+																	  preferredStyle:UIAlertControllerStyleAlert];
+	
+	UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok"
+												 style:UIAlertActionStyleDefault
+											   handler:nil];
+	
+	[alertController addAction:ok];
+	
+	[self presentViewController:alertController
+					   animated:YES
+					 completion:nil];
 }
 
 #pragma mark - Helper Methods
