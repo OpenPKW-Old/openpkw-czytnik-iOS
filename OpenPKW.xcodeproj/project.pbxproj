@@ -54,11 +54,11 @@
 		BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */; };
 		BB14CE5E1B0BBEA2001E051D /* LongTitleInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB14CE5D1B0BBEA2001E051D /* LongTitleInputCell.m */; };
 		BB14CE611B0BCADE001E051D /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB14CE601B0BCADE001E051D /* ImageCell.m */; };
+		BB4A62AB1B0E6B5300452B47 /* TerytCodeInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4A62AA1B0E6B5300452B47 /* TerytCodeInputValidator.m */; };
 		BB6D63041B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */; };
 		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
 		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
 		BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */; };
-		BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE951AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +165,8 @@
 		BB14CE5D1B0BBEA2001E051D /* LongTitleInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongTitleInputCell.m; path = OpenPKW/CustomUI/LongTitleInputCell.m; sourceTree = SOURCE_ROOT; };
 		BB14CE5F1B0BCADE001E051D /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageCell.h; path = OpenPKW/CustomUI/ImageCell.h; sourceTree = SOURCE_ROOT; };
 		BB14CE601B0BCADE001E051D /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageCell.m; path = OpenPKW/CustomUI/ImageCell.m; sourceTree = SOURCE_ROOT; };
+		BB4A62A91B0E6B5300452B47 /* TerytCodeInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TerytCodeInputValidator.h; path = OpenPKW/ViewControllers/ElectoralCommisionAdd/TerytCodeInputValidator.h; sourceTree = SOURCE_ROOT; };
+		BB4A62AA1B0E6B5300452B47 /* TerytCodeInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TerytCodeInputValidator.m; path = OpenPKW/ViewControllers/ElectoralCommisionAdd/TerytCodeInputValidator.m; sourceTree = SOURCE_ROOT; };
 		BB6D63021B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ElectoralCommisionAddViewController+Descriptors.h"; path = "OpenPKW/ViewControllers/ElectoralCommisionAdd/ElectoralCommisionAddViewController+Descriptors.h"; sourceTree = SOURCE_ROOT; };
 		BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ElectoralCommisionAddViewController+Descriptors.m"; path = "OpenPKW/ViewControllers/ElectoralCommisionAdd/ElectoralCommisionAddViewController+Descriptors.m"; sourceTree = SOURCE_ROOT; };
 		BB9FAE8A1AF2CBED00200DE7 /* AbstractNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNavigationController.h; sourceTree = "<group>"; };
@@ -173,8 +175,6 @@
 		BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTableViewController.m; sourceTree = "<group>"; };
 		BB9FAE8E1AF2CBED00200DE7 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
 		BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
-		BB9FAE941AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralCommissionSelectionViewController.h; sourceTree = "<group>"; };
-		BB9FAE951AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectoralCommissionSelectionViewController.m; sourceTree = "<group>"; };
 		F378295E3E64297F1F92DB82 /* Pods-OpenPKWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenPKWTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenPKWTests/Pods-OpenPKWTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -408,6 +408,8 @@
 				BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */,
 				BB6D63021B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.h */,
 				BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */,
+				BB4A62A91B0E6B5300452B47 /* TerytCodeInputValidator.h */,
+				BB4A62AA1B0E6B5300452B47 /* TerytCodeInputValidator.m */,
 			);
 			name = ElectoralCommisionAdd;
 			path = ../../openpkw/ViewControllers/ElectoralCommisionAdd;
@@ -420,7 +422,6 @@
 				BA2D9E3A1AF5056E00B440D5 /* BeforeLoginNavigationController.h */,
 				BA2D9E3B1AF5056E00B440D5 /* BeforeLoginNavigationController.m */,
 				BA9530981AF387D60021DBF2 /* ElectoralCommisionAdd */,
-				BB9FAE931AF2CD5200200DE7 /* ElectoralCommissionSelection */,
 				BA2D9E341AF5050A00B440D5 /* LoginViewController.h */,
 				BA2D9E351AF5050A00B440D5 /* LoginViewController.m */,
 				BA2D9E3D1AF505A700B440D5 /* RegisterViewController.h */,
@@ -451,15 +452,6 @@
 				BA160CF91AFF63BC00AA248A /* RowDescriptor.m */,
 			);
 			path = Abstracts;
-			sourceTree = "<group>";
-		};
-		BB9FAE931AF2CD5200200DE7 /* ElectoralCommissionSelection */ = {
-			isa = PBXGroup;
-			children = (
-				BB9FAE941AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.h */,
-				BB9FAE951AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m */,
-			);
-			path = ElectoralCommissionSelection;
 			sourceTree = "<group>";
 		};
 		CCED19F0077708AE187EB414 /* Frameworks */ = {
@@ -657,6 +649,7 @@
 				BB14CE5E1B0BBEA2001E051D /* LongTitleInputCell.m in Sources */,
 				BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */,
 				BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */,
+				BB4A62AB1B0E6B5300452B47 /* TerytCodeInputValidator.m in Sources */,
 				A1D29E891AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m in Sources */,
 				A1D29E8F1AFF6673000604C5 /* ResultCompleteResponseDto.m in Sources */,
 				BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */,
@@ -669,7 +662,6 @@
 				A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */,
 				BA2BBEB41B079A3F007837B4 /* CountedTitleInputCell.m in Sources */,
 				A175A78A1AFE522D004C5D02 /* PKWSessionManager.m in Sources */,
-				BB9FAE961AF2CD9500200DE7 /* ElectoralCommissionSelectionViewController.m in Sources */,
 				BA2E1D151AFE17740099DB35 /* ProtocolFilling.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
 				A1D29E921AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m in Sources */,
