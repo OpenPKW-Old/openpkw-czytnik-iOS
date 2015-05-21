@@ -23,4 +23,6 @@
 
 + (instancetype)andrzejStoryboard;
 
++ (instancetype)beforeLoginStoryboard;
+
 @end
