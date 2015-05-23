@@ -53,6 +53,8 @@
 		BA2E1D151AFE17740099DB35 /* ProtocolFilling.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */; };
 		BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */; };
 		BAD5A9601B106C1C00F88F34 /* TerytCodeInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A95F1B106C1C00F88F34 /* TerytCodeInputValidator.m */; };
+		BAD5A9631B106F2C00F88F34 /* ProtocolFillingValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A9621B106F2C00F88F34 /* ProtocolFillingValidator.m */; };
+		BAD5A9661B106F6600F88F34 /* ProtocolFillingValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A9651B106F6600F88F34 /* ProtocolFillingValidatorTests.m */; };
 		BB14CE5E1B0BBEA2001E051D /* LongTitleInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB14CE5D1B0BBEA2001E051D /* LongTitleInputCell.m */; };
 		BB14CE611B0BCADE001E051D /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB14CE601B0BCADE001E051D /* ImageCell.m */; };
 		BB4A62AE1B0E81AF00452B47 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4A62AD1B0E81AF00452B47 /* WelcomeViewController.m */; };
@@ -165,6 +167,9 @@
 		BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectoralCommisionAddViewController.m; sourceTree = "<group>"; };
 		BAD5A95E1B106C1C00F88F34 /* TerytCodeInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerytCodeInputValidator.h; sourceTree = "<group>"; };
 		BAD5A95F1B106C1C00F88F34 /* TerytCodeInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerytCodeInputValidator.m; sourceTree = "<group>"; };
+		BAD5A9611B106F2C00F88F34 /* ProtocolFillingValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolFillingValidator.h; sourceTree = "<group>"; };
+		BAD5A9621B106F2C00F88F34 /* ProtocolFillingValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolFillingValidator.m; sourceTree = "<group>"; };
+		BAD5A9651B106F6600F88F34 /* ProtocolFillingValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolFillingValidatorTests.m; sourceTree = "<group>"; };
 		BB14CE5C1B0BBEA2001E051D /* LongTitleInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongTitleInputCell.h; path = OpenPKW/CustomUI/LongTitleInputCell.h; sourceTree = SOURCE_ROOT; };
 		BB14CE5D1B0BBEA2001E051D /* LongTitleInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongTitleInputCell.m; path = OpenPKW/CustomUI/LongTitleInputCell.m; sourceTree = SOURCE_ROOT; };
 		BB14CE5F1B0BCADE001E051D /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageCell.h; path = OpenPKW/CustomUI/ImageCell.h; sourceTree = SOURCE_ROOT; };
@@ -304,6 +309,7 @@
 		A13D41621AEAA3D300B0343E /* OpenPKWTests */ = {
 			isa = PBXGroup;
 			children = (
+				BAD5A9641B106F5300F88F34 /* Validators */,
 				A13D41651AEAA3D300B0343E /* OpenPKWTests.m */,
 				A13D41631AEAA3D300B0343E /* Supporting Files */,
 			);
@@ -425,9 +431,20 @@
 			children = (
 				BAD5A95E1B106C1C00F88F34 /* TerytCodeInputValidator.h */,
 				BAD5A95F1B106C1C00F88F34 /* TerytCodeInputValidator.m */,
+				BAD5A9611B106F2C00F88F34 /* ProtocolFillingValidator.h */,
+				BAD5A9621B106F2C00F88F34 /* ProtocolFillingValidator.m */,
 			);
 			name = Validators;
 			path = openpkw/Validators;
+			sourceTree = SOURCE_ROOT;
+		};
+		BAD5A9641B106F5300F88F34 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5A9651B106F6600F88F34 /* ProtocolFillingValidatorTests.m */,
+			);
+			name = Validators;
+			path = openpkwtests/Validators;
 			sourceTree = SOURCE_ROOT;
 		};
 		BB9FAE881AF2CBED00200DE7 /* ViewControllers */ = {
@@ -662,6 +679,7 @@
 				BA160CF71AFF624D00AA248A /* SectionDescriptor.m in Sources */,
 				BA160D081AFFC06B00AA248A /* Candidate.m in Sources */,
 				BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */,
+				BAD5A9631B106F2C00F88F34 /* ProtocolFillingValidator.m in Sources */,
 				BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */,
 				A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */,
 				BB14CE611B0BCADE001E051D /* ImageCell.m in Sources */,
@@ -704,6 +722,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD5A9661B106F6600F88F34 /* ProtocolFillingValidatorTests.m in Sources */,
 				A13D41661AEAA3D300B0343E /* OpenPKWTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
