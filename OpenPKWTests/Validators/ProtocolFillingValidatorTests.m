@@ -23,6 +23,9 @@ ProtocolForCommissionRequestDto *(^correctProtocolDTO)() = ^{
     dto.votesValidCount   = 30; // valid votes
     dto.votesInvalidCount = 10; // invalid votes
     
+    dto.votesForCandidate = @{ @"1": @20,
+                               @"2": @10 };
+    
     return dto;
 };
 

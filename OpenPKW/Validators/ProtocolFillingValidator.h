@@ -14,12 +14,8 @@
 typedef NS_ENUM(NSUInteger, ProtocolFillingResult) {
     ProtocolFillingResultValid                       = 0,
     ProtocolFillingResultInvalidCardsValidCount      = 1 << 0,
-    ProtocolFillingResultInvalidVotesValidCount      = 1 << 1,
-    ProtocolFillingResultInvalidVotesInvalidCount    = 1 << 2,
-    ProtocolFillingResultInvalidPermittedPeopleCount = 1 << 3,
-    ProtocolFillingResultInvalidVotingPeopleCount    = 1 << 4,
-    ProtocolFillingResultInvalidVotesForCandidate    = 1 << 5,
-    ProtocolFillingResultInvalidMissingProtocolDTO   = 1 << 6
+    ProtocolFillingResultInvalidVotingPeopleCount    = 1 << 1,
+    ProtocolFillingResultInvalidMissingProtocolDTO   = 1 << 2
 };
 
 typedef NS_ENUM(NSUInteger, ProtocolFillingResultWarning) {
@@ -34,8 +30,6 @@ typedef NS_ENUM(NSUInteger, ProtocolFillingResultWarning) {
 @end
 
 @interface ProtocolFillingValidator : NSObject
-
-@property (nonatomic, readonly) ProtocolForCommissionRequestDto *validatingDTO;
 
 - (ProtocolFillingValidatorResult *)validateProtocol:(ProtocolForCommissionRequestDto *)protocol;
 
