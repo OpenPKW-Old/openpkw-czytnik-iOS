@@ -52,9 +52,9 @@
 		BA2D9E421AF505A700B440D5 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2D9E401AF505A700B440D5 /* ResetPasswordViewController.m */; };
 		BA2E1D151AFE17740099DB35 /* ProtocolFilling.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */; };
 		BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */; };
+		BAD5A9601B106C1C00F88F34 /* TerytCodeInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A95F1B106C1C00F88F34 /* TerytCodeInputValidator.m */; };
 		BB14CE5E1B0BBEA2001E051D /* LongTitleInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB14CE5D1B0BBEA2001E051D /* LongTitleInputCell.m */; };
 		BB14CE611B0BCADE001E051D /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB14CE601B0BCADE001E051D /* ImageCell.m */; };
-		BB4A62AB1B0E6B5300452B47 /* TerytCodeInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4A62AA1B0E6B5300452B47 /* TerytCodeInputValidator.m */; };
 		BB4A62AE1B0E81AF00452B47 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4A62AD1B0E81AF00452B47 /* WelcomeViewController.m */; };
 		BB4A62B11B0E894D00452B47 /* RWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4A62B01B0E894D00452B47 /* RWDViewController.m */; };
 		BB6D63041B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */; };
@@ -163,12 +163,12 @@
 		BA2E1D141AFE17740099DB35 /* ProtocolFilling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolFilling.m; sourceTree = "<group>"; };
 		BA9530991AF388030021DBF2 /* ElectoralCommisionAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralCommisionAddViewController.h; sourceTree = "<group>"; };
 		BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectoralCommisionAddViewController.m; sourceTree = "<group>"; };
+		BAD5A95E1B106C1C00F88F34 /* TerytCodeInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerytCodeInputValidator.h; sourceTree = "<group>"; };
+		BAD5A95F1B106C1C00F88F34 /* TerytCodeInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerytCodeInputValidator.m; sourceTree = "<group>"; };
 		BB14CE5C1B0BBEA2001E051D /* LongTitleInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongTitleInputCell.h; path = OpenPKW/CustomUI/LongTitleInputCell.h; sourceTree = SOURCE_ROOT; };
 		BB14CE5D1B0BBEA2001E051D /* LongTitleInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongTitleInputCell.m; path = OpenPKW/CustomUI/LongTitleInputCell.m; sourceTree = SOURCE_ROOT; };
 		BB14CE5F1B0BCADE001E051D /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageCell.h; path = OpenPKW/CustomUI/ImageCell.h; sourceTree = SOURCE_ROOT; };
 		BB14CE601B0BCADE001E051D /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageCell.m; path = OpenPKW/CustomUI/ImageCell.m; sourceTree = SOURCE_ROOT; };
-		BB4A62A91B0E6B5300452B47 /* TerytCodeInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TerytCodeInputValidator.h; path = OpenPKW/ViewControllers/ElectoralCommisionAdd/TerytCodeInputValidator.h; sourceTree = SOURCE_ROOT; };
-		BB4A62AA1B0E6B5300452B47 /* TerytCodeInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TerytCodeInputValidator.m; path = OpenPKW/ViewControllers/ElectoralCommisionAdd/TerytCodeInputValidator.m; sourceTree = SOURCE_ROOT; };
 		BB4A62AC1B0E81AF00452B47 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		BB4A62AD1B0E81AF00452B47 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		BB4A62AF1B0E894D00452B47 /* RWDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDViewController.h; sourceTree = "<group>"; };
@@ -282,6 +282,7 @@
 				A175A77D1AFE2AF3004C5D02 /* API */,
 				A13A4AE31AEBD589002EB070 /* Categories */,
 				A13D41771AEAB3D000B0343E /* Storyboards */,
+				BAD5A95D1B106C1C00F88F34 /* Validators */,
 				BB9FAE881AF2CBED00200DE7 /* ViewControllers */,
 				A13A4AC71AEB939E002EB070 /* Custom UI */,
 				A13D417A1AEAB41400B0343E /* Utils */,
@@ -414,12 +415,20 @@
 				BA95309A1AF388030021DBF2 /* ElectoralCommisionAddViewController.m */,
 				BB6D63021B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.h */,
 				BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */,
-				BB4A62A91B0E6B5300452B47 /* TerytCodeInputValidator.h */,
-				BB4A62AA1B0E6B5300452B47 /* TerytCodeInputValidator.m */,
 			);
 			name = ElectoralCommisionAdd;
 			path = ../../openpkw/ViewControllers/ElectoralCommisionAdd;
 			sourceTree = "<group>";
+		};
+		BAD5A95D1B106C1C00F88F34 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5A95E1B106C1C00F88F34 /* TerytCodeInputValidator.h */,
+				BAD5A95F1B106C1C00F88F34 /* TerytCodeInputValidator.m */,
+			);
+			name = Validators;
+			path = openpkw/Validators;
+			sourceTree = SOURCE_ROOT;
 		};
 		BB9FAE881AF2CBED00200DE7 /* ViewControllers */ = {
 			isa = PBXGroup;
@@ -659,7 +668,6 @@
 				BB14CE5E1B0BBEA2001E051D /* LongTitleInputCell.m in Sources */,
 				BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */,
 				BA2D9E391AF5055400B440D5 /* BeforeLoginAbstractViewController.m in Sources */,
-				BB4A62AB1B0E6B5300452B47 /* TerytCodeInputValidator.m in Sources */,
 				A1D29E891AFF62D3000604C5 /* ProtocolForCommissionRequestDto.m in Sources */,
 				A1D29E8F1AFF6673000604C5 /* ResultCompleteResponseDto.m in Sources */,
 				BB4A62AE1B0E81AF00452B47 /* WelcomeViewController.m in Sources */,
@@ -676,6 +684,7 @@
 				BA2E1D151AFE17740099DB35 /* ProtocolFilling.m in Sources */,
 				A13D41491AEAA3D300B0343E /* main.m in Sources */,
 				A1D29E921AFF73D1000604C5 /* ResultCompleteParentCommissionResponseDto.m in Sources */,
+				BAD5A9601B106C1C00F88F34 /* TerytCodeInputValidator.m in Sources */,
 				A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */,
 				BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */,
 				BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */,
