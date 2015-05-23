@@ -13,4 +13,8 @@
 #define EARLY_EXIT_IF_SELF_IS_NIL if (!(self = [super init])) { return nil; }
 #endif
 
+#ifndef OptionsHasValue
+#define OptionsHasValue(options, value) (((options) & (value)) == (value))
+#endif
+
 #endif
