@@ -17,7 +17,6 @@
 		A13D414C1AEAA3D300B0343E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D414B1AEAA3D300B0343E /* AppDelegate.m */; };
 		A13D41551AEAA3D300B0343E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13D41531AEAA3D300B0343E /* Main.storyboard */; };
 		A13D41571AEAA3D300B0343E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13D41561AEAA3D300B0343E /* Images.xcassets */; };
-		A13D41661AEAA3D300B0343E /* OpenPKWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41651AEAA3D300B0343E /* OpenPKWTests.m */; };
 		A13D41721AEAAF7100B0343E /* OpenPKW-Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */; };
 		A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D41741AEAAFE200B0343E /* OpenPKWData.m */; };
 		A14943F11AF00377008E62F7 /* Andrzej.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14943F01AF00377008E62F7 /* Andrzej.storyboard */; };
@@ -97,7 +96,6 @@
 		A13D41561AEAA3D300B0343E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A13D415F1AEAA3D300B0343E /* OpenPKWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPKWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13D41641AEAA3D300B0343E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A13D41651AEAA3D300B0343E /* OpenPKWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenPKWTests.m; sourceTree = "<group>"; };
 		A13D41711AEAAF7100B0343E /* OpenPKW-Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenPKW-Data.plist"; sourceTree = "<group>"; };
 		A13D41731AEAAFE200B0343E /* OpenPKWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPKWData.h; sourceTree = "<group>"; };
 		A13D41741AEAAFE200B0343E /* OpenPKWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenPKWData.m; sourceTree = "<group>"; };
@@ -310,7 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				BAD5A9641B106F5300F88F34 /* Validators */,
-				A13D41651AEAA3D300B0343E /* OpenPKWTests.m */,
 				A13D41631AEAA3D300B0343E /* Supporting Files */,
 			);
 			path = OpenPKWTests;
@@ -723,7 +720,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD5A9661B106F6600F88F34 /* ProtocolFillingValidatorTests.m in Sources */,
-				A13D41661AEAA3D300B0343E /* OpenPKWTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
