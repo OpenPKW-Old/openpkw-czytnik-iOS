@@ -18,19 +18,8 @@ typedef NS_ENUM(NSUInteger, ProtocolFillingResult) {
     ProtocolFillingResultInvalidMissingProtocolDTO   = 1 << 2
 };
 
-typedef NS_ENUM(NSUInteger, ProtocolFillingResultWarning) {
-    ProtocolFillingResultWarningNoWarnings = 0
-};
-
-@interface ProtocolFillingValidatorResult : NSObject
-
-@property (nonatomic, assign) ProtocolFillingResult hardValidation;
-@property (nonatomic, assign) ProtocolFillingResultWarning softValidation;
-
-@end
-
 @interface ProtocolFillingValidator : NSObject
 
-- (ProtocolFillingValidatorResult *)validateProtocol:(ProtocolForCommissionRequestDto *)protocol;
+- (ProtocolFillingResult)validateProtocol:(ProtocolForCommissionRequestDto *)protocol;
 
 @end

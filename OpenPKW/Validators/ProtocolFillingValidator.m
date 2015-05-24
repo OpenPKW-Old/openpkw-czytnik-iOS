@@ -8,17 +8,12 @@
 
 #import "ProtocolFillingValidator.h"
 
-@implementation ProtocolFillingValidatorResult
-
-@end
-
 @implementation ProtocolFillingValidator
 
-- (ProtocolFillingValidatorResult *)validateProtocol:(ProtocolForCommissionRequestDto *)protocol {
+- (ProtocolFillingResult)validateProtocol:(ProtocolForCommissionRequestDto *)protocol {
     
     // starting as all fields are invalid
     ProtocolFillingResult validationResult = ProtocolFillingResultValid;
-    ProtocolFillingResultWarning warningResult = (~ProtocolFillingResultWarningNoWarnings);
     
     if (protocol == nil) {
         validationResult ^= ProtocolFillingResultInvalidMissingProtocolDTO;
@@ -32,11 +27,7 @@
         validationResult ^= ProtocolFillingResultInvalidCardsValidCount;
     }
     
-    ProtocolFillingValidatorResult *result = [[ProtocolFillingValidatorResult alloc] init];
-    result.hardValidation = validationResult;
-    result.softValidation = warningResult;
-    
-    return result;
+    return validationResult;
 }
 
 - (BOOL)hasValidNumberOfGivenVotingCardsForProtocol:(ProtocolForCommissionRequestDto *)protocol {
