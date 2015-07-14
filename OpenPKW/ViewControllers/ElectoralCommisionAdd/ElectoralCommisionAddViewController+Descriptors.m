@@ -8,6 +8,8 @@
 
 #import "ElectoralCommisionAddViewController+Descriptors.h"
 
+#import "Strings+CommisionSelection.h"
+
 NSString *const kCellReuseIdForElectoralCommisionEmTitle   = @"ElectoralCommissionEmTitle";
 NSString *const kCellReuseIdForElectoralCommisionTitle     = @"ElectoralCommissionTitle";
 NSString *const kCellReuseIdForElectoralCommisionInputCell = @"ElectoralCommissionInputCell";
@@ -28,26 +30,32 @@ NSString *const kCellReuseIdForElectoralCommisionButton    = @"ElectoralCommisio
 - (SectionDescriptor *)setupCells {
 	SectionDescriptor *section = [SectionDescriptor sectionDescriptorWithTitle:nil];
 	
-	[section addRowsDescriptors:@[
-								  [RowDescriptor rowDescriptorWithDisplayText:@"Dodajesz Komisje z które będziesz przekazywać dane"
-																  cellReuseID:kCellReuseIdForElectoralCommisionTitle],
-								  [RowDescriptor rowDescriptorWithDisplayText:@"Wpisz, Kod Terytorialny Gminy w której znajduje się Twoja Komisja (znajdziesz go na protokole wyborczym)"
-																  cellReuseID:kCellReuseIdForElectoralCommisionEmTitle],
-								  
-								  ({
-									RowDescriptor *row = [RowDescriptor rowDescriptorWithDisplayText:@"Podaj Kod Terytorialny"
-																					   secondaryText:@"xxxxxx-xxx"
-																						 cellReuseID:kCellReuseIdForElectoralCommisionInputCell];
-									row.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
-									row;
-								  }),
-								  
-								  [RowDescriptor rowDescriptorWithDisplayText:nil
-																  cellReuseID:kCellReuseIdForElectoralCommisionImageHint],
-								  
-								  [RowDescriptor rowDescriptorWithDisplayText:@"Dalej"
-																  cellReuseID:kCellReuseIdForElectoralCommisionButton]
-								  ]];
+	NSArray *rows = @[
+					  [RowDescriptor rowDescriptorWithDisplayText:[Strings electoralCommisionTitle]
+													  cellReuseID:kCellReuseIdForElectoralCommisionTitle],
+					  
+					  [RowDescriptor rowDescriptorWithDisplayText:[Strings electoralCommisionTip]
+													  cellReuseID:kCellReuseIdForElectoralCommisionEmTitle],
+					  
+					  [RowDescriptor rowDescriptorWithDisplayText:[Strings electoralCommisionQRButtonCTA]
+													  cellReuseID:kCellReuseIdForElectoralCommisionButton],
+					  
+					  ({
+						  RowDescriptor *row = [RowDescriptor rowDescriptorWithDisplayText:[Strings electoralCommisionInputTitle]
+																			 secondaryText:[Strings electoralCommisionInputHint]
+																			   cellReuseID:kCellReuseIdForElectoralCommisionInputCell];
+						  row.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+						  row;
+					  }),
+					  
+					  [RowDescriptor rowDescriptorWithDisplayText:nil
+													  cellReuseID:kCellReuseIdForElectoralCommisionImageHint],
+					  
+					  [RowDescriptor rowDescriptorWithDisplayText:[Strings buttonCtaNext]
+													  cellReuseID:kCellReuseIdForElectoralCommisionButton]
+					  ];
+	
+	[section addRowsDescriptors:rows];
 	
 	return section;
 }
