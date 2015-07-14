@@ -15,6 +15,10 @@
 #import "Strings+CommisionSelection.h"
 #import "TerytCodeInputValidator.h"
 
+//temp imports start
+#import "ElectoralCommisionAddViewController+TempHelpers.h"
+//temp imports stop
+
 static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision";
 static NSString *const kSegueGoToQRScanner       = @"DisplayQRCodeScanner";
 
