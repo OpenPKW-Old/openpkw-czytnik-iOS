@@ -406,10 +406,10 @@
             </objects>
             <point key="canvasLocation" x="976" y="513"/>
         </scene>
-        <!--View Controller-->
+        <!--Code Scanner View Controller-->
         <scene sceneID="dUq-pA-bIC">
             <objects>
-                <viewController id="Nmx-G5-W92" sceneMemberID="viewController">
+                <viewController id="Nmx-G5-W92" customClass="QRCodeScannerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fxh-EA-1sp"/>
                         <viewControllerLayoutGuide type="bottom" id="tCz-hA-3h6"/>
