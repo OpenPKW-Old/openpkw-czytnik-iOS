@@ -16,6 +16,7 @@
 #import "TerytCodeInputValidator.h"
 
 static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision";
+static NSString *const kSegueGoToQRScanner       = @"DisplayQRCodeScanner";
 
 @interface ElectoralCommisionAddViewController() <ButtonCellInteractionDelegate, UITextFieldDelegate>
 
@@ -31,7 +32,7 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 	[super viewDidLoad];
 	
 	self.tableDescriptor = [self setupTableDescriptor];
-	self.indexPathForInputField = [NSIndexPath indexPathForRow:2
+	self.indexPathForInputField = [NSIndexPath indexPathForRow:3
 													 inSection:0];
 }
 
@@ -57,20 +58,22 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 
 - (void)userDidTapOnButtonCell:(ButtonCell *)buttonCell {
 	
-	if ([buttonCell.buttonTitle isEqualToString:[Strings electoralCommisionQRButtonCTA]]) {
-		// TODO: go to the QR scanner screen
+	if ([self terytCodeIsValid] == NO) {
+		[self handleTerytError];
+	}
+	else if ([buttonCell.buttonTitle isEqualToString:[Strings electoralCommisionQRButtonCTA]]) {
+			[self performSegueWithIdentifier:kSegueGoToQRScanner
+									  sender:self];
+		
 	}
 	else if ([buttonCell.buttonTitle isEqualToString:[Strings buttonCtaNext]]) {
-		if ([self terytCodeIsValid]) {
 			[self performSegueWithIdentifier:kSegueGoToProtocolFilling
 									  sender:self];
-		}
-		else {
-			[self handleTerytError];
-		}
+
 	}
-	
-	NSAssert(NO, @"Flow should not get here pleas chec the label on the buttons...");
+	else {
+		NSAssert(NO, @"Flow should not get here pleas check the label on the buttons...");
+	}
 }
 
 #pragma mark - UITextField Delegate
