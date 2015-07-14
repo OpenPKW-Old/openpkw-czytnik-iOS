@@ -12,6 +12,7 @@
 #import "BaseCell.h"
 #import "ButtonCell.h"
 #import "LongTitleInputCell.h"
+#import "Strings+CommisionSelection.h"
 #import "TerytCodeInputValidator.h"
 
 static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision";
@@ -56,13 +57,23 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 
 - (void)userDidTapOnButtonCell:(ButtonCell *)buttonCell {
 	
-	if ([self terytCodeIsValid]) {
-		[self performSegueWithIdentifier:kSegueGoToProtocolFilling
-								  sender:self];
+	if ([buttonCell.buttonTitle isEqualToString:[Strings electoralCommisionQRButtonCTA]]) {
+		// TODO: go to the QR scanner screen
 	}
-	else {
-		[self handleTerytError];
+	
+	else if ([buttonCell.buttonTitle isEqualToString:[Strings buttonCtaNext]]) {
+		if ([self terytCodeIsValid]) {
+			[self performSegueWithIdentifier:kSegueGoToProtocolFilling
+									  sender:self];
+		}
+		else {
+			[self handleTerytError];
+		}
 	}
+	
+	NSAssert(NO, @"Flow should not get here pleas chec the label on the buttons...");
+	
+
 }
 
 #pragma mark - UITextField Delegate
