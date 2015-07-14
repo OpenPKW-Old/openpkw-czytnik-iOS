@@ -22,5 +22,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *button;
 
+@property (nonatomic, readonly, nullable) NSString *buttonTitle;
 
 @end

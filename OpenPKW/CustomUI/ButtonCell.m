@@ -29,4 +29,8 @@
     self.interactionDelegate = nil;
 }
 
+- (NSString *)buttonTitle {
+	return self.button.titleLabel.text;
+}
+
 @end
