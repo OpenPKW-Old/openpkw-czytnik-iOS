@@ -60,7 +60,6 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 	if ([buttonCell.buttonTitle isEqualToString:[Strings electoralCommisionQRButtonCTA]]) {
 		// TODO: go to the QR scanner screen
 	}
-	
 	else if ([buttonCell.buttonTitle isEqualToString:[Strings buttonCtaNext]]) {
 		if ([self terytCodeIsValid]) {
 			[self performSegueWithIdentifier:kSegueGoToProtocolFilling
@@ -72,8 +71,6 @@ static NSString *const kSegueGoToProtocolFilling = @"ValidateElectoralCommision"
 	}
 	
 	NSAssert(NO, @"Flow should not get here pleas chec the label on the buttons...");
-	
-
 }
 
 #pragma mark - UITextField Delegate
