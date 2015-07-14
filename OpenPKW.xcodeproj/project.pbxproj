@@ -59,6 +59,8 @@
 		BB4A62AE1B0E81AF00452B47 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4A62AD1B0E81AF00452B47 /* WelcomeViewController.m */; };
 		BB4A62B11B0E894D00452B47 /* RWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4A62B01B0E894D00452B47 /* RWDViewController.m */; };
 		BB6D63041B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */; };
+		BB895E181B55891B00E4F702 /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = BB895E171B55891B00E4F702 /* Strings.m */; };
+		BB895E1B1B558A2C00E4F702 /* Strings+CommisionSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = BB895E1A1B558A2C00E4F702 /* Strings+CommisionSelection.m */; };
 		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
 		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
 		BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */; };
@@ -178,6 +180,10 @@
 		BB4A62B01B0E894D00452B47 /* RWDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDViewController.m; sourceTree = "<group>"; };
 		BB6D63021B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ElectoralCommisionAddViewController+Descriptors.h"; path = "OpenPKW/ViewControllers/ElectoralCommisionAdd/ElectoralCommisionAddViewController+Descriptors.h"; sourceTree = SOURCE_ROOT; };
 		BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ElectoralCommisionAddViewController+Descriptors.m"; path = "OpenPKW/ViewControllers/ElectoralCommisionAdd/ElectoralCommisionAddViewController+Descriptors.m"; sourceTree = SOURCE_ROOT; };
+		BB895E161B55891B00E4F702 /* Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
+		BB895E171B55891B00E4F702 /* Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Strings.m; sourceTree = "<group>"; };
+		BB895E191B558A2C00E4F702 /* Strings+CommisionSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Strings+CommisionSelection.h"; sourceTree = "<group>"; };
+		BB895E1A1B558A2C00E4F702 /* Strings+CommisionSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Strings+CommisionSelection.m"; sourceTree = "<group>"; };
 		BB9FAE8A1AF2CBED00200DE7 /* AbstractNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNavigationController.h; sourceTree = "<group>"; };
 		BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractNavigationController.m; sourceTree = "<group>"; };
 		BB9FAE8C1AF2CBED00200DE7 /* AbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTableViewController.h; sourceTree = "<group>"; };
@@ -290,6 +296,7 @@
 				A13A4AC71AEB939E002EB070 /* Custom UI */,
 				A13D417A1AEAB41400B0343E /* Utils */,
 				A13D41781AEAB3EB00B0343E /* Resources */,
+				BB895E151B5588FF00E4F702 /* Strings */,
 				A13D41461AEAA3D300B0343E /* Supporting Files */,
 			);
 			path = OpenPKW;
@@ -443,6 +450,17 @@
 			name = Validators;
 			path = openpkwtests/Validators;
 			sourceTree = SOURCE_ROOT;
+		};
+		BB895E151B5588FF00E4F702 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				BB895E161B55891B00E4F702 /* Strings.h */,
+				BB895E171B55891B00E4F702 /* Strings.m */,
+				BB895E191B558A2C00E4F702 /* Strings+CommisionSelection.h */,
+				BB895E1A1B558A2C00E4F702 /* Strings+CommisionSelection.m */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
 		};
 		BB9FAE881AF2CBED00200DE7 /* ViewControllers */ = {
 			isa = PBXGroup;
@@ -679,6 +697,7 @@
 				BAD5A9631B106F2C00F88F34 /* ProtocolFillingValidator.m in Sources */,
 				BA2D9E361AF5050A00B440D5 /* LoginViewController.m in Sources */,
 				A13D41751AEAAFE200B0343E /* OpenPKWData.m in Sources */,
+				BB895E181B55891B00E4F702 /* Strings.m in Sources */,
 				BB14CE611B0BCADE001E051D /* ImageCell.m in Sources */,
 				BB14CE5E1B0BBEA2001E051D /* LongTitleInputCell.m in Sources */,
 				BA160CFD1AFF666F00AA248A /* ProtocolFillingDataSource.m in Sources */,
@@ -702,6 +721,7 @@
 				BAD5A9601B106C1C00F88F34 /* TerytCodeInputValidator.m in Sources */,
 				A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */,
 				BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */,
+				BB895E1B1B558A2C00E4F702 /* Strings+CommisionSelection.m in Sources */,
 				BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */,
 				BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */,
 				A175A7811AFE2B19004C5D02 /* APIManager.m in Sources */,
