@@ -462,13 +462,22 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
+		BB895E1C1B55959300E4F702 /* QRCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QRCodeScanner;
+			sourceTree = "<group>";
+		};
 		BB9FAE881AF2CBED00200DE7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				BB9FAE891AF2CBED00200DE7 /* Abstracts */,
+				BA9530981AF387D60021DBF2 /* ElectoralCommisionAdd */,
+				BA2E1D121AFE0AA60099DB35 /* ProtocolFilling */,
+				BB895E1C1B55959300E4F702 /* QRCodeScanner */,
 				BA2D9E3A1AF5056E00B440D5 /* BeforeLoginNavigationController.h */,
 				BA2D9E3B1AF5056E00B440D5 /* BeforeLoginNavigationController.m */,
-				BA9530981AF387D60021DBF2 /* ElectoralCommisionAdd */,
 				BA2D9E341AF5050A00B440D5 /* LoginViewController.h */,
 				BA2D9E351AF5050A00B440D5 /* LoginViewController.m */,
 				BB4A62AC1B0E81AF00452B47 /* WelcomeViewController.h */,
@@ -479,7 +488,6 @@
 				BA2D9E3E1AF505A700B440D5 /* RegisterViewController.m */,
 				BA2D9E3F1AF505A700B440D5 /* ResetPasswordViewController.h */,
 				BA2D9E401AF505A700B440D5 /* ResetPasswordViewController.m */,
-				BA2E1D121AFE0AA60099DB35 /* ProtocolFilling */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
