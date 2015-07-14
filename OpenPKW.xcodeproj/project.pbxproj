@@ -61,6 +61,7 @@
 		BB6D63041B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D63031B0A74CF0057881A /* ElectoralCommisionAddViewController+Descriptors.m */; };
 		BB895E181B55891B00E4F702 /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = BB895E171B55891B00E4F702 /* Strings.m */; };
 		BB895E1B1B558A2C00E4F702 /* Strings+CommisionSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = BB895E1A1B558A2C00E4F702 /* Strings+CommisionSelection.m */; };
+		BB895E1F1B55964F00E4F702 /* QRCodeScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB895E1E1B55964F00E4F702 /* QRCodeScannerViewController.m */; };
 		BB9FAE901AF2CBED00200DE7 /* AbstractNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */; };
 		BB9FAE911AF2CBED00200DE7 /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8D1AF2CBED00200DE7 /* AbstractTableViewController.m */; };
 		BB9FAE921AF2CBED00200DE7 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9FAE8F1AF2CBED00200DE7 /* AbstractViewController.m */; };
@@ -184,6 +185,8 @@
 		BB895E171B55891B00E4F702 /* Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Strings.m; sourceTree = "<group>"; };
 		BB895E191B558A2C00E4F702 /* Strings+CommisionSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Strings+CommisionSelection.h"; sourceTree = "<group>"; };
 		BB895E1A1B558A2C00E4F702 /* Strings+CommisionSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Strings+CommisionSelection.m"; sourceTree = "<group>"; };
+		BB895E1D1B55964F00E4F702 /* QRCodeScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScannerViewController.h; sourceTree = "<group>"; };
+		BB895E1E1B55964F00E4F702 /* QRCodeScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScannerViewController.m; sourceTree = "<group>"; };
 		BB9FAE8A1AF2CBED00200DE7 /* AbstractNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNavigationController.h; sourceTree = "<group>"; };
 		BB9FAE8B1AF2CBED00200DE7 /* AbstractNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractNavigationController.m; sourceTree = "<group>"; };
 		BB9FAE8C1AF2CBED00200DE7 /* AbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTableViewController.h; sourceTree = "<group>"; };
@@ -465,6 +468,8 @@
 		BB895E1C1B55959300E4F702 /* QRCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				BB895E1D1B55964F00E4F702 /* QRCodeScannerViewController.h */,
+				BB895E1E1B55964F00E4F702 /* QRCodeScannerViewController.m */,
 			);
 			path = QRCodeScanner;
 			sourceTree = "<group>";
@@ -730,6 +735,7 @@
 				A13A4AE61AEBD5B3002EB070 /* UIStoryboard+Storyboards.m in Sources */,
 				BA95309B1AF388030021DBF2 /* ElectoralCommisionAddViewController.m in Sources */,
 				BB895E1B1B558A2C00E4F702 /* Strings+CommisionSelection.m in Sources */,
+				BB895E1F1B55964F00E4F702 /* QRCodeScannerViewController.m in Sources */,
 				BA160CF41AFF609800AA248A /* TableViewDescriptor.m in Sources */,
 				BA160CFA1AFF63BC00AA248A /* RowDescriptor.m in Sources */,
 				A175A7811AFE2B19004C5D02 /* APIManager.m in Sources */,
