@@ -12,15 +12,15 @@
 
 @protocol ButtonCellInteractionDelegate <NSObject>
 
-- (void)userDidTapOnButtonCell:(ButtonCell *)buttonCell;
+- (void)userDidTapOnButtonCell:(ButtonCell * __nonnull)buttonCell;
 
 @end
 
 @interface ButtonCell : BaseCell
 
-@property (nonatomic, weak) id <ButtonCellInteractionDelegate> interactionDelegate;
+@property (nonatomic, weak, nullable) id <ButtonCellInteractionDelegate> interactionDelegate;
 
-@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic, nonnull) IBOutlet UIButton *button;
 
 @property (nonatomic, readonly, nullable) NSString *buttonTitle;
 
