@@ -6,6 +6,7 @@ pod 'CocoaLumberjack', '~> 2.0'
 pod 'SSKeychain', '~> 1.2'
 pod 'SVProgressHUD', '~> 1.1'
 pod 'AFNetworking', '~> 2.5.3'
+pod 'MTBBarcodeScanner'
 
 target :OpenPKWTests, :exclusive => true do
     pod 'Kiwi'    
