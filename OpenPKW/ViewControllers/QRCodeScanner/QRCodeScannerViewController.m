@@ -52,7 +52,7 @@
 - (void)startScanning {
 	[self.scanner startScanningWithResultBlock:^(NSArray *codes) {
 		for (AVMetadataMachineReadableCodeObject *code in codes) {
-			NSLog(@"Found code: %@", code.stringValue);
+			[self processScannedQRCode:code];
 		}
 	}];
 }
@@ -60,6 +60,17 @@
 - (void)handleNoPermisionsOrNoCameraOnTheDevice {
 	// TODO: deal with it
 	NSLog(@"%s\t :  ", __PRETTY_FUNCTION__);
+}
+
+#pragma mark - Process Scanned QR Code
+
+- (void)processScannedQRCode:(AVMetadataMachineReadableCodeObject *)code {
+	
+	// TODO: handle the QR paylod
+	// at the moment the format (json or binary) is in flux so when that settles
+	// work needs to be done here
+	
+	[self.scanner stopScanning];
 }
 
 #pragma mark - Setup
