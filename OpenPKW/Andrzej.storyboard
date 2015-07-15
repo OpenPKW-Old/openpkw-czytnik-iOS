@@ -244,7 +244,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNe-Dl-6ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134" y="513"/>
+            <point key="canvasLocation" x="1406" y="513"/>
         </scene>
         <!--Dodaj Komisje-->
         <scene sceneID="Hcu-2r-sn1">
@@ -399,7 +399,7 @@
                     <navigationItem key="navigationItem" title="Dodaj Komisje" id="zRj-di-VlH"/>
                     <connections>
                         <segue destination="Qg8-4y-fci" kind="push" identifier="ValidateElectoralCommision" id="3VA-If-51C"/>
-                        <segue destination="Nmx-G5-W92" kind="push" identifier="DisplayQRCodeScanner" id="QI0-BS-bor"/>
+                        <segue destination="Nmx-G5-W92" kind="modal" identifier="DisplayQRCodeScanner" id="QI0-BS-bor"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YP1-dN-JZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -420,13 +420,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Lqd-Ic-ZVi"/>
-                    <connections>
-                        <segue destination="Qg8-4y-fci" kind="push" identifier="ManualEntry" id="WAu-LY-w9e"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJj-7X-Dcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="1047"/>
+            <point key="canvasLocation" x="976" y="1259"/>
         </scene>
     </scenes>
     <resources>
@@ -437,7 +434,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="3VA-If-51C"/>
-    </inferredMetricsTieBreakers>
 </document>
