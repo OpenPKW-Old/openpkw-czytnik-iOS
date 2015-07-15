@@ -31,9 +31,12 @@
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	
-	[self.scanner startScanningWithResultBlock:^(NSArray *codes) {
-		for (AVMetadataMachineReadableCodeObject *code in codes) {
-			NSLog(@"Found code: %@", code.stringValue);
+	[MTBBarcodeScanner requestCameraPermissionWithSuccess:^(BOOL success) {
+		if (success) {
+			[self startScanning];
+		}
+		else {
+			[self handleNoPermisionsOrNoCameraOnTheDevice];
 		}
 	}];
 }
@@ -42,6 +45,21 @@
 	[super viewDidDisappear:animated];
 	
 	[self.scanner stopScanning];
+}
+
+#pragma mark - Camera Permisions And Scanning
+
+- (void)startScanning {
+	[self.scanner startScanningWithResultBlock:^(NSArray *codes) {
+		for (AVMetadataMachineReadableCodeObject *code in codes) {
+			NSLog(@"Found code: %@", code.stringValue);
+		}
+	}];
+}
+
+- (void)handleNoPermisionsOrNoCameraOnTheDevice {
+	// TODO: deal with it
+	NSLog(@"%s\t :  ", __PRETTY_FUNCTION__);
 }
 
 #pragma mark - Setup
