@@ -399,14 +399,14 @@
                     <navigationItem key="navigationItem" title="Dodaj Komisje" id="zRj-di-VlH"/>
                     <connections>
                         <segue destination="Qg8-4y-fci" kind="push" identifier="ValidateElectoralCommision" id="3VA-If-51C"/>
-                        <segue destination="Nmx-G5-W92" kind="modal" identifier="DisplayQRCodeScanner" id="QI0-BS-bor"/>
+                        <segue destination="mV6-Qm-ZRP" kind="modal" identifier="DisplayQRCodeScanner" id="QI0-BS-bor"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YP1-dN-JZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="976" y="513"/>
         </scene>
-        <!--Code Scanner View Controller-->
+        <!--Skanuj QR-->
         <scene sceneID="dUq-pA-bIC">
             <objects>
                 <viewController id="Nmx-G5-W92" customClass="QRCodeScannerViewController" sceneMemberID="viewController">
@@ -417,11 +417,44 @@
                     <view key="view" contentMode="scaleToFill" id="D1o-4k-Sji">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7m-jL-VBb">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="p7m-jL-VBb" secondAttribute="bottom" id="9zt-ET-ewn"/>
+                            <constraint firstItem="p7m-jL-VBb" firstAttribute="top" secondItem="Fxh-EA-1sp" secondAttribute="bottom" id="AzH-hK-pMG"/>
+                            <constraint firstAttribute="trailing" secondItem="p7m-jL-VBb" secondAttribute="trailing" id="E67-Az-zWz"/>
+                            <constraint firstItem="p7m-jL-VBb" firstAttribute="leading" secondItem="D1o-4k-Sji" secondAttribute="leading" id="T9T-ZQ-lSn"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Lqd-Ic-ZVi"/>
+                    <navigationItem key="navigationItem" title="Skanuj QR" id="Lqd-Ic-ZVi"/>
+                    <connections>
+                        <outlet property="scannerView" destination="p7m-jL-VBb" id="RJ0-5P-w73"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJj-7X-Dcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1406" y="1259"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rfs-n1-b1X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mV6-Qm-ZRP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jht-J0-mUp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nmx-G5-W92" kind="relationship" relationship="rootViewController" id="WA6-kB-Jre"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Yr-EN-wVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="976" y="1259"/>
         </scene>
